@@ -1,5 +1,7 @@
 package net.beyondLands.tbl;
 
+import net.beyondLands.tbl.item.ModItems;
+
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,7 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TBL.MOD_ID)
 public class TBL
@@ -29,6 +30,11 @@ public class TBL
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+
+
+        ModItems.register(modEventBus);
+
 
 
         // Register ourselves for server and other game events we are interested in
