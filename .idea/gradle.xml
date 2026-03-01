@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/forge-1.21.1-52.1.0-mdk" />
           </set>
         </option>
+        <option name="resolveExternalAnnotations" value="true" />
       </GradleProjectSettings>
     </option>
   </component>

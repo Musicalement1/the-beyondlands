@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tbl:lithium_block",
+    "tbl:raw_lithium_block",
+    "tbl:lithium_ore",
+    "tbl:lithium_deepslate_ore"
+  ]
+}

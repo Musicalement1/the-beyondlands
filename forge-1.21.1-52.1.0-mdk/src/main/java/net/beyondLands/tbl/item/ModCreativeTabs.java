@@ -23,6 +23,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.RAW_LITHIUM.get());
                         output.accept(ModBlocks.LITHIUM_BLOCK.get());
                         output.accept(ModBlocks.RAW_LITHIUM_BLOCK.get());
+                        output.accept(ModBlocks.LITHIUM_ORE.get());
+                        output.accept(ModBlocks.LITHIUM_DEEPSLATE_ORE.get());
                     }).build());
 
 
