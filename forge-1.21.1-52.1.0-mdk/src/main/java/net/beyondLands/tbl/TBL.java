@@ -1,5 +1,7 @@
 package net.beyondLands.tbl;
 
+import net.beyondLands.tbl.block.ModBlocks;
+import net.beyondLands.tbl.item.ModCreativeTabs;
 import net.beyondLands.tbl.item.ModItems;
 
 import com.mojang.logging.LogUtils;
@@ -34,8 +36,8 @@ public class TBL
 
 
         ModItems.register(modEventBus);
-
-
+        ModBlocks.register(modEventBus);
+        ModCreativeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
