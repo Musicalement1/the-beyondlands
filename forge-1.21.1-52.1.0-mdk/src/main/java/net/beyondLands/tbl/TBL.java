@@ -3,6 +3,7 @@ package net.beyondLands.tbl;
 import net.beyondLands.tbl.block.ModBlocks;
 import net.beyondLands.tbl.item.ModCreativeTabs;
 import net.beyondLands.tbl.item.ModItems;
+import net.beyondLands.tbl.block.entity.ModBlockEntities;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -17,6 +18,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TBL.MOD_ID)
 public class TBL
@@ -38,6 +41,7 @@ public class TBL
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

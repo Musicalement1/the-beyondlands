@@ -6,6 +6,7 @@ import net.beyondLands.tbl.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +39,8 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
 
+    public static final RegistryObject<Block> FORCE_FIELD_BLOCK = registerBlock("force_field_block",
+            () -> new ForceFieldBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
 
 

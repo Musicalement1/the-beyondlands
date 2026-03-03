@@ -27,6 +27,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.LITHIUM_DEEPSLATE_ORE.get());
                         output.accept(ModItems.STEEL_INGOT.get());
                         output.accept(ModItems.LITHIUM_BATTERY.get());
+                        output.accept(ModBlocks.FORCE_FIELD_BLOCK.get());
                     }).build());
 
 
