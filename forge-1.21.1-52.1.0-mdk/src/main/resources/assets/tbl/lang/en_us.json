@@ -5,5 +5,6 @@
   "block.tbl.raw_lithium_block": "Raw Lithium Block",
   "creativetab.tbl.tbl_stuff": "The Beyondlands Mod",
   "block.tbl.lithium_ore": "Lithium Ore",
-  "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore"
+  "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore",
+  "item.tbl.steel_ingot": "Steel Ingot"
 }

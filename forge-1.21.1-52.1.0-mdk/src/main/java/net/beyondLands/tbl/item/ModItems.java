@@ -1,6 +1,7 @@
 package net.beyondLands.tbl.item;
 
 import net.beyondLands.tbl.TBL;
+import net.beyondLands.tbl.item.hydroreactive.LithiumReact;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,10 +14,11 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TBL.MOD_ID);
 
     public static final RegistryObject<Item> LITHIUM = ITEMS.register("lithium",
-            () -> new Item(new Item.Properties()));
+            () -> new LithiumReact(new Item.Properties()));
     public static final RegistryObject<Item> RAW_LITHIUM = ITEMS.register("raw_lithium",
+            () -> new LithiumReact(new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties()));
-
 
 
     public static void register(IEventBus eventBus) {
