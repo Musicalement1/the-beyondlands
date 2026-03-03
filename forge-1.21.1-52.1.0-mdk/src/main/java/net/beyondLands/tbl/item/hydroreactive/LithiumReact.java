@@ -40,7 +40,7 @@ public class LithiumReact extends Item {
 
 
         if (!data.contains("hydrotimer")) {
-            data.putInt("hydrotimer", 80);
+            data.putInt("hydrotimer", 100);
             entity.setPickUpDelay(40);
         }
 
