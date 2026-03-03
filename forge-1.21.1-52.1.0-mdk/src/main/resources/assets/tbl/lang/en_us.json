@@ -6,5 +6,6 @@
   "creativetab.tbl.tbl_stuff": "The Beyondlands",
   "block.tbl.lithium_ore": "Lithium Ore",
   "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore",
-  "item.tbl.steel_ingot": "Steel Ingot"
+  "item.tbl.steel_ingot": "Steel Ingot",
+  "item.tbl.lithium_battery": "Lithium Battery"
 }
