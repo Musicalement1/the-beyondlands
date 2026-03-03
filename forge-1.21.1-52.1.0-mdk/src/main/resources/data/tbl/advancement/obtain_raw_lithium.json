@@ -1,0 +1,31 @@
+{
+  "parent": "tbl:root",
+  "criteria": {
+    "get_lithium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:raw_lithium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Obtain your first Lithium ore!",
+    "icon": {
+      "count": 1,
+      "id": "tbl:lithium_ore"
+    },
+    "title": "Breaking Ba...tterie",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "get_lithium"
+    ]
+  ]
+}

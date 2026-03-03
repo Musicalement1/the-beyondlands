@@ -28,6 +28,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.STEEL_INGOT.get());
                         output.accept(ModItems.LITHIUM_BATTERY.get());
                         output.accept(ModBlocks.FORCE_FIELD_BLOCK.get());
+                        output.accept(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get());
                     }).build());
 
 

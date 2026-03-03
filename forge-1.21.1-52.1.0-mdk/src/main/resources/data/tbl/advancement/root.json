@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "tbl:textures/block/lithium_ore.png",
+    "description": "A New Story is Been Written Today.",
+    "icon": {
+      "count": 1,
+      "id": "tbl:lithium"
+    },
+    "show_toast": true,
+    "title": "Beyond The Stories"
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

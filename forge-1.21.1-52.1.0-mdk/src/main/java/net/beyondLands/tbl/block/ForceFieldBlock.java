@@ -10,13 +10,25 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 
 import javax.annotation.Nullable;
 
 public class ForceFieldBlock extends Block implements EntityBlock {
 
+    // true = attract, false = repulse
+    public static final BooleanProperty ATTRACT = BooleanProperty.create("attract");
+
     public ForceFieldBlock(Properties props) {
         super(props);
+        //default repulse
+        this.registerDefaultState(this.stateDefinition.any().setValue(ATTRACT, false));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(ATTRACT);
     }
 
     @Nullable

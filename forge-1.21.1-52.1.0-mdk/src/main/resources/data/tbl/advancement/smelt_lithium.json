@@ -1,0 +1,32 @@
+{
+  "parent": "tbl:obtain_raw_lithium",
+  "criteria": {
+    "li": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Smelt raw lithium for the first time",
+    "icon": {
+      "count": 1,
+      "id": "tbl:lithium"
+    },
+    "title": "Purification",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "li"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

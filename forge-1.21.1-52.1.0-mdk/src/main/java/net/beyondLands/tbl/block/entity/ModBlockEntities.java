@@ -16,7 +16,10 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<ForceFieldBlockEntity>> FORCE_FIELD_BE =
             BLOCK_ENTITIES.register("force_field_be", () ->
                     BlockEntityType.Builder.of(ForceFieldBlockEntity::new,
-                            ModBlocks.FORCE_FIELD_BLOCK.get()).build(null));
+                            ModBlocks.FORCE_FIELD_BLOCK.get(),
+                            ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get()
+                    ).build(null));
+
 
 
     public static void register(IEventBus eventBus) {
