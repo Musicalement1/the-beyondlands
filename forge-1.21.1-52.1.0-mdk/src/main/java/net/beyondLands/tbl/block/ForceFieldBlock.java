@@ -20,9 +20,10 @@ public class ForceFieldBlock extends Block implements EntityBlock {
     // true = attract, false = repulse
     public static final BooleanProperty ATTRACT = BooleanProperty.create("attract");
 
+
     public ForceFieldBlock(Properties props) {
         super(props);
-        //default repulse
+        //default
         this.registerDefaultState(this.stateDefinition.any().setValue(ATTRACT, false));
     }
 

@@ -40,14 +40,12 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> FORCE_FIELD_BLOCK =
-            registerBlock("force_field_block_repulse",
+            registerBlock("force_field_block",
                     () -> new ForceFieldBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     public static final RegistryObject<Block> FORCE_FIELD_BLOCK_ATTRACT =
             registerBlock("force_field_block_attract",
                     () -> new AttractFieldBlock(BlockBehaviour.Properties.of().noOcclusion()));
-
-
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
