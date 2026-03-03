@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tbl:block/force_field_block"
+    }
+  }
+}
