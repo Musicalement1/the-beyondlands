@@ -1,0 +1,17 @@
+// 1.21.1	2026-03-04T17:38:40.0344742	Block States: tbl
+75f9cfd95b1dcf96d0c76b9a0b13fc60ad82e046 assets/tbl/blockstates/force_field_block.json
+a401dbb7af4eb940f0b34d272f4ccab8fc130fb9 assets/tbl/blockstates/force_field_block_attract.json
+a7355a03c86d164257e1b41b6ac8499541d29b1d assets/tbl/blockstates/lithium_block.json
+14ff253ba6947b4678425ba9e858d4358fdaf940 assets/tbl/blockstates/lithium_deepslate_ore.json
+2a997f2dd7b948fd26be7df7b8dfc262a0762086 assets/tbl/blockstates/lithium_ore.json
+567b2b561e29d603d9b0713efe1a9248170b1b86 assets/tbl/blockstates/raw_lithium_block.json
+9f6035ab1eaca15bbd1ef6fa0a836187c8618d7b assets/tbl/models/block/lithium_block.json
+2d38ddd673f80d6311e7fad04c85071e011636a6 assets/tbl/models/block/lithium_deepslate_ore.json
+a68bc7817b8899486a730698c4f87fc2acdd05f5 assets/tbl/models/block/lithium_ore.json
+286811083c2bfce8bb47a899c5f757e25ae7419e assets/tbl/models/block/raw_lithium_block.json
+c041937ebc44599d76e25935085a1852b1c7dab3 assets/tbl/models/item/force_field_block.json
+16d79a461bae04e8c4ac607b85e219a198e6345e assets/tbl/models/item/force_field_block_attract.json
+d6d9fcea27ce62e92269b6f941354bd0b91e9444 assets/tbl/models/item/lithium_block.json
+3b08354be36ad7836316d04113043edfc54dac84 assets/tbl/models/item/lithium_deepslate_ore.json
+86cb27043e4f1140e1ec34132a2d3f2ec5b117e8 assets/tbl/models/item/lithium_ore.json
+f73d20ef176d4719c6e574bc9e9217dff1b338f9 assets/tbl/models/item/raw_lithium_block.json

@@ -1,0 +1,29 @@
+[04mars2026 17:38:34.290] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\mario\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, tbl, --all, --output, C:\Users\mario\Desktop\The Beyondlands\the-beyondlands\forge-1.21.1-52.1.0-mdk\src\generated\resources, --existing, C:\Users\mario\Desktop\The Beyondlands\the-beyondlands\forge-1.21.1-52.1.0-mdk\src\main\resources]
+[04mars2026 17:38:34.293] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[04mars2026 17:38:34.293] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.4 starting: java version 21.0.6 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[04mars2026 17:38:34.370] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[04mars2026 17:38:34.461] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/mario/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[04mars2026 17:38:35.234] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[04mars2026 17:38:35.785] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\mario\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, tbl, --all, --output, C:\Users\mario\Desktop\The Beyondlands\the-beyondlands\forge-1.21.1-52.1.0-mdk\src\generated\resources, --existing, C:\Users\mario\Desktop\The Beyondlands\the-beyondlands\forge-1.21.1-52.1.0-mdk\src\main\resources]
+[04mars2026 17:38:39.378] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 52.1.0, for MC 1.21.1 with MCP 20240808.132146
+[04mars2026 17:38:39.378] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v52.1.0 Initialized
+[04mars2026 17:38:39.394] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[04mars2026 17:38:39.579] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [tbl]
+[04mars2026 17:38:39.623] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/mario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1/forge-1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[04mars2026 17:38:39.623] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/mario/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1/forge-1.21.1-52.1.0_mapped_parchment_2024.11.17-1.21.1-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[04mars2026 17:38:39.724] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[04mars2026 17:38:39.900] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 175 ms
+[04mars2026 17:38:39.900] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[04mars2026 17:38:39.928] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 28 ms
+[04mars2026 17:38:39.928] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id tbl
+[04mars2026 17:38:39.935] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id tbl finished after 5 ms
+[04mars2026 17:38:39.935] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id tbl
+[04mars2026 17:38:39.935] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id tbl finished after 0 ms
+[04mars2026 17:38:39.935] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: tbl
+[04mars2026 17:38:39.941] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: tbl finished after 5 ms
+[04mars2026 17:38:39.941] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: tbl
+[04mars2026 17:38:40.030] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: tbl finished after 88 ms
+[04mars2026 17:38:40.030] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[04mars2026 17:38:40.032] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 2 ms
+[04mars2026 17:38:40.033] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 309 ms
+[04mars2026 17:38:40.038] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 58, old count: 58, new count: 59, removed stale: 0, written: 2
