@@ -1,7 +1,8 @@
-// 1.21.1	2026-03-04T16:25:57.7547605	Loot Tables
+// 1.21.1	2026-03-04T18:32:57.579016	Loot Tables
 7678c05a4a744918ccc05f531642de86330c19c2 data/tbl/loot_table/blocks/force_field_block.json
 6cd1a9dd921d7f5f9e377bd9e75624ad91b9151e data/tbl/loot_table/blocks/force_field_block_attract.json
 d6766d6c8651681d5d02a09adcfcb4f7c9b0e15e data/tbl/loot_table/blocks/lithium_block.json
 eae59fcd4063af4cdafaff659797d74620debe45 data/tbl/loot_table/blocks/lithium_deepslate_ore.json
 549377a6aa1c71e2f487325ee6a37a5dadc0a9e6 data/tbl/loot_table/blocks/lithium_ore.json
 fc852f09e656393be6682ec21f0827a78a211ef0 data/tbl/loot_table/blocks/raw_lithium_block.json
+babdaa6dfc998cac4a92bcb399641bb4fb264a86 data/tbl/loot_table/entities/ashling.json
