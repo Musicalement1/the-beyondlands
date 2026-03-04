@@ -13,5 +13,10 @@
   "entity.tbl.ashling": "Ashling",
   "item.tbl.pepper": "Bell Pepper",
   "item.tbl.ash": "Ashes",
-  "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg"
+  "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
+  "item.tbl.steel_sword": "Steel Sword",
+  "item.tbl.steel_pickaxe": "Steel Pickaxe",
+  "item.tbl.steel_hoe": "Steel Hoe",
+  "item.tbl.steel_shovel": "Steel Shovel",
+  "item.tbl.steel_axe": "Steel Axe"
 }

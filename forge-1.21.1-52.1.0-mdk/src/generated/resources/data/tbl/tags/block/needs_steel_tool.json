@@ -1,0 +1,7 @@
+{
+  "values": [
+    "tbl:raw_lithium_block",
+    "minecraft:obsidian",
+    "#minecraft:needs_iron_tool"
+  ]
+}
