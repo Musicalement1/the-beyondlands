@@ -58,9 +58,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.FORCE_FIELD_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get())).save(pRecipeOutput);
 
-        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.FORCE_FIELD_BLOCK.get())
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.FORCE_FIELD_BLOCK.get())
                 .requires(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get())
-                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get())).save(pRecipeOutput);*/
+                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get())).save(pRecipeOutput, TBL.MOD_ID + ":force_field_block_2" );
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LITHIUM_BATTERY.get())

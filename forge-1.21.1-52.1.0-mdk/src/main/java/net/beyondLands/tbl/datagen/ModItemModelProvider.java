@@ -21,5 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LITHIUM_BATTERY.get());
         basicItem(ModItems.PEPPER.get());
         basicItem(ModItems.ASH.get());
+
+        withExistingParent(ModItems.ASHLING_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 }

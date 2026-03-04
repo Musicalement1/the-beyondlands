@@ -1,10 +1,12 @@
 package net.beyondLands.tbl.item;
 
 import net.beyondLands.tbl.TBL;
+import net.beyondLands.tbl.entity.ModEntities;
 import net.beyondLands.tbl.item.battery.BatteryItem;
 import net.beyondLands.tbl.item.fuel.FuelItem;
 import net.beyondLands.tbl.item.hydroreactive.LithiumReact;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -33,6 +35,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.PEPPER)));
     public static final RegistryObject<Item> ASH = ITEMS.register("ash",
             () -> new FuelItem(new Item.Properties(), 1200));
+
+    public static final RegistryObject<Item> ASHLING_SPAWN_EGG = ITEMS.register("ashling_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.ASHLING, 0x474747, 0x2dbccc, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

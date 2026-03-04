@@ -12,5 +12,6 @@
   "block.tbl.force_field_block_attract": "Force Field (Attractor)",
   "entity.tbl.ashling": "Ashling",
   "item.tbl.pepper": "Bell Pepper",
-  "item.tbl.ash": "Ashes"
+  "item.tbl.ash": "Ashes",
+  "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg"
 }

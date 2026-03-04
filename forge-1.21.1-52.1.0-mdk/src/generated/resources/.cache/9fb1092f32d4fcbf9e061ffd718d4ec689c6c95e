@@ -1,5 +1,6 @@
-// 1.21.1	2026-03-04T17:10:22.7592236	Recipes
+// 1.21.1	2026-03-04T19:25:16.93342	Recipes
 179ea1961980d8bb411bb6cd575f8e9460e99e53 data/tbl/advancement/recipes/misc/force_field_block.json
+adcb65b548ec81cab7875f015485288c41e20f96 data/tbl/advancement/recipes/misc/force_field_block_2.json
 d8f9d101c7fd91363fb1d0dc4b1d5eb97ec472d8 data/tbl/advancement/recipes/misc/force_field_block_attract.json
 2ea658d2c0c97ffac9a374a00e638699f718b15e data/tbl/advancement/recipes/misc/lithium.json
 7bee1f7af1d89bebb420bd775c0af47f19607de4 data/tbl/advancement/recipes/misc/lithium_battery.json
@@ -12,6 +13,7 @@ eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithi
 b85f03956f9bdd0628258722fa12e632dcc4f0d1 data/tbl/advancement/recipes/misc/lithium_from_smelting_raw_lithium.json
 629d20db86d41b4ea3f628a5e92f25ee9df9c869 data/tbl/advancement/recipes/misc/steel_ingot.json
 f4d906d2c289bd3caff0e0ccf2667e9b81a21fae data/tbl/recipe/force_field_block.json
+2db724809bafa0d6b30dc5ea6cb15385f01e61d4 data/tbl/recipe/force_field_block_2.json
 92d9f18a432d052705bd923860e63ea339bad6a9 data/tbl/recipe/force_field_block_attract.json
 f436c1d9511eddaf601ebe4365cb1d7b8d25801d data/tbl/recipe/lithium.json
 c18f5591a678b2dc49601c88b712ebcd166fa887 data/tbl/recipe/lithium_battery.json

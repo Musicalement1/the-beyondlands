@@ -31,6 +31,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get());
                         output.accept(ModItems.PEPPER.get());
                         output.accept(ModItems.ASH.get());
+                        output.accept(ModItems.ASHLING_SPAWN_EGG.get());
                     }).build());
 
 
