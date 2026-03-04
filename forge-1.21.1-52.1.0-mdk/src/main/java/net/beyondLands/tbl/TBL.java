@@ -1,11 +1,14 @@
 package net.beyondLands.tbl;
 
 import net.beyondLands.tbl.block.ModBlocks;
+import net.beyondLands.tbl.entity.ModEntities;
+import net.beyondLands.tbl.entity.client.AshlingRenderer;
 import net.beyondLands.tbl.item.ModCreativeTabs;
 import net.beyondLands.tbl.item.ModItems;
 import net.beyondLands.tbl.block.entity.ModBlockEntities;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -42,6 +45,7 @@ public class TBL
         ModBlocks.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -78,7 +82,7 @@ public class TBL
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            EntityRenderers.register(ModEntities.ASHLING.get(), AshlingRenderer::new);
         }
     }
 }

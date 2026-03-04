@@ -9,5 +9,6 @@
   "item.tbl.steel_ingot": "Steel Ingot",
   "item.tbl.lithium_battery": "Lithium Battery",
   "block.tbl.force_field_block": "Force Field (Repulsor)",
-  "block.tbl.force_field_block_attract": "Force Field (Attractor)"
+  "block.tbl.force_field_block_attract": "Force Field (Attractor)",
+  "entity.tbl.ashling": "Ashling"
 }
