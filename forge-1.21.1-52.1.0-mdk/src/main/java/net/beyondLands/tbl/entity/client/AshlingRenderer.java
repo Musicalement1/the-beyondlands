@@ -25,7 +25,7 @@ public class AshlingRenderer extends MobRenderer<AshlingEntity, AshlingModel<Ash
         if(pEntity.isBaby()) {
             pPoseStack.scale(0.5f, 0.5f, 0.5f);
         } else {
-            pPoseStack.scale(1f, 1f, 1f);
+            pPoseStack.scale(1.5f, 1.5f, 1.5f);//1, 1 ,1
         }
 
         super.render(pEntity, pEntityYaw, pPartialTicks, pPoseStack, pBuffer, pPackedLight);

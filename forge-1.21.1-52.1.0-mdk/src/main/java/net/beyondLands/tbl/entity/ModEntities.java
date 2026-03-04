@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<AshlingEntity>> ASHLING =
             ENTITY_TYPES.register("ashling", () -> EntityType.Builder.of(AshlingEntity::new, MobCategory.CREATURE)
-                    .sized(1.5f, 1.5f).build("ashling"));
+                    .sized(1.0f, 1.0f).build("ashling"));
 
 
     public static void register(IEventBus eventBus) {

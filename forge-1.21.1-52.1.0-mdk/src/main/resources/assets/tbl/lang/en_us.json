@@ -10,5 +10,7 @@
   "item.tbl.lithium_battery": "Lithium Battery",
   "block.tbl.force_field_block": "Force Field (Repulsor)",
   "block.tbl.force_field_block_attract": "Force Field (Attractor)",
-  "entity.tbl.ashling": "Ashling"
+  "entity.tbl.ashling": "Ashling",
+  "item.tbl.pepper": "Bell Pepper",
+  "item.tbl.ash": "Ashes"
 }

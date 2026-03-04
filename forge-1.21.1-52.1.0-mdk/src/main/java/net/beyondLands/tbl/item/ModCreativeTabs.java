@@ -29,6 +29,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.LITHIUM_BATTERY.get());
                         output.accept(ModBlocks.FORCE_FIELD_BLOCK.get());
                         output.accept(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get());
+                        output.accept(ModItems.PEPPER.get());
+                        output.accept(ModItems.ASH.get());
                     }).build());
 
 

@@ -29,7 +29,7 @@ public class AshlingEntity extends Animal {
 
         this.goalSelector.addGoal(1, new PanicGoal(this, 2.0));
         this.goalSelector.addGoal(2, new BreedGoal(this, 1.0));
-        this.goalSelector.addGoal(3, new TemptGoal(this, 1.25, stack -> stack.is(ModItems.RAW_LITHIUM.get()), false));
+        this.goalSelector.addGoal(3, new TemptGoal(this, 1.25, stack -> stack.is(ModItems.PEPPER.get()), false));
 
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.25));
 
@@ -40,14 +40,14 @@ public class AshlingEntity extends Animal {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 30D)
+                .add(Attributes.MAX_HEALTH, 10D)
                 .add(Attributes.MOVEMENT_SPEED, 0.35D)
                 .add(Attributes.FOLLOW_RANGE, 24D);
     }
 
     @Override
     public boolean isFood(ItemStack pStack) {
-        return pStack.is(ModItems.RAW_LITHIUM.get());
+        return pStack.is(ModItems.PEPPER.get());
     }
 
     @Nullable
