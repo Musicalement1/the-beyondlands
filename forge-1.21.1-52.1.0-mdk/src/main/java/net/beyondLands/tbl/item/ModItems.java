@@ -5,7 +5,7 @@ import net.beyondLands.tbl.entity.ModEntities;
 import net.beyondLands.tbl.item.battery.BatteryItem;
 import net.beyondLands.tbl.item.fuel.FuelItem;
 import net.beyondLands.tbl.item.hydroreactive.LithiumReact;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,6 +38,22 @@ public class ModItems {
 
     public static final RegistryObject<Item> ASHLING_SPAWN_EGG = ITEMS.register("ashling_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ASHLING, 0x474747, 0x2dbccc, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new SwordItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 5, -2.7f))));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 1, -2.8f))));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 1.5f, -3.0f))));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 8.5f, -3.5f))));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.STEEL, 0, -3.0f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

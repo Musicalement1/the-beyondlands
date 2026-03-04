@@ -76,6 +76,46 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.IRON_INGOT)
                 .requires(Items.COAL)
                 .unlockedBy(getHasName(Items.COAL), has(Items.COAL)).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SWORD.get())
+                .pattern("t")
+                .pattern("t")
+                .pattern("T")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_PICKAXE.get())
+                .pattern("ttt")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SHOVEL.get())
+                .pattern("t")
+                .pattern("T")
+                .pattern("T")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HOE.get())
+                .pattern("tt")
+                .pattern(" T")
+                .pattern(" T")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_AXE.get())
+                .pattern("tt")
+                .pattern("tT")
+                .pattern(" T")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
     }
 
 

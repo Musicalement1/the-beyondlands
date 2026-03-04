@@ -32,6 +32,11 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PEPPER.get());
                         output.accept(ModItems.ASH.get());
                         output.accept(ModItems.ASHLING_SPAWN_EGG.get());
+                        output.accept(ModItems.STEEL_SWORD.get());
+                        output.accept(ModItems.STEEL_AXE.get());
+                        output.accept(ModItems.STEEL_PICKAXE.get());
+                        output.accept(ModItems.STEEL_HOE.get());
+                        output.accept(ModItems.STEEL_SHOVEL.get());
                     }).build());
 
 
