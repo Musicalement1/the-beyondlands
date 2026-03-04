@@ -41,11 +41,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FORCE_FIELD_BLOCK =
             registerBlock("force_field_block",
-                    () -> new ForceFieldBlock(BlockBehaviour.Properties.of().noOcclusion()));
+                    () -> new ForceFieldBlock(BlockBehaviour.Properties.of().noOcclusion().strength(10f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FORCE_FIELD_BLOCK_ATTRACT =
             registerBlock("force_field_block_attract",
-                    () -> new AttractFieldBlock(BlockBehaviour.Properties.of().noOcclusion()));
+                    () -> new AttractFieldBlock(BlockBehaviour.Properties.of().noOcclusion().strength(10f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
