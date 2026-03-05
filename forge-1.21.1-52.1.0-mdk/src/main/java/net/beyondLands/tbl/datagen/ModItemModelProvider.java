@@ -48,8 +48,11 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(ModItems.STEEL_INGOT.get());
         basicItem(ModItems.LITHIUM_BATTERY.get());
+        basicItem(ModItems.LITHIUM_BATTERY_BOOSTED.get());
         basicItem(ModItems.PEPPER.get());
         basicItem(ModItems.ASH.get());
+        basicItem(ModItems.LITHIUM_BATTERY_STACK.get());
+        basicItem(ModItems.LITHIUM_BATTERY_STACK_BOOSTED.get());
 
         withExistingParent(ModItems.ASHLING_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         handheldItem(ModItems.STEEL_SWORD);

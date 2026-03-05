@@ -12,9 +12,9 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class BatteryItem extends Item {
+public class HighVoltageBatteryItem extends Item {
 
-    public BatteryItem(Properties pProperties) {
+    public HighVoltageBatteryItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -54,8 +54,8 @@ public class BatteryItem extends Item {
             boolean inMainHand = living.getMainHandItem() == stack;
             boolean inOffHand = living.getOffhandItem() == stack;
 
-            if ((inMainHand || inOffHand) && level.getGameTime() % 5 == 0) {
-                stack.hurtAndBreak(2, living, EquipmentSlot.MAINHAND);
+            if ((inMainHand || inOffHand) && level.getGameTime() % 2 == 0) {
+                stack.hurtAndBreak(5, living, EquipmentSlot.MAINHAND);
             }
         }
     }

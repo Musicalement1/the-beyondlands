@@ -10,6 +10,9 @@
   "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore",
   "item.tbl.steel_ingot": "Steel Ingot",
   "item.tbl.lithium_battery": "Lithium Battery",
+  "item.tbl.lithium_battery_boosted": "High Voltage Lithium Battery",
+  "item.tbl.lithium_battery_stack": "High Capability Lithium Battery",
+  "item.tbl.lithium_battery_stack_boosted": "High Voltage and Capability Lithium Battery",
 
   "block.tbl.force_field_block": "Force Field (Repulsor)",
   "block.tbl.force_field_block_attract": "Force Field (Attractor)",

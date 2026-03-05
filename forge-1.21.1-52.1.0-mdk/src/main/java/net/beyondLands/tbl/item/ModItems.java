@@ -3,15 +3,23 @@ package net.beyondLands.tbl.item;
 import net.beyondLands.tbl.TBL;
 import net.beyondLands.tbl.entity.ModEntities;
 import net.beyondLands.tbl.item.battery.BatteryItem;
+import net.beyondLands.tbl.item.battery.HighVoltageBatteryItem;
 import net.beyondLands.tbl.item.fuel.FuelItem;
 import net.beyondLands.tbl.item.hammer.HammerItem;
 import net.beyondLands.tbl.item.hydroreactive.LithiumReact;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.UUID;
 
 
 public class ModItems {
@@ -30,6 +38,76 @@ public class ModItems {
             () -> new BatteryItem(new Item.Properties()
                     .stacksTo(1)
                     .durability(1000)
+                    .attributes(
+                            ItemAttributeModifiers.builder()
+                                    .add(
+                                            Attributes.MOVEMENT_SPEED,
+                                            new AttributeModifier(
+                                                    ResourceLocation.fromNamespaceAndPath("tbl", "battery_speed_bonus"),
+                                                    0.5,//+50%
+                                                    AttributeModifier.Operation.ADD_MULTIPLIED_BASE
+                                            ),
+                                            EquipmentSlotGroup.HAND
+                                    )
+                                    .build()
+                    )
+            ));
+
+    public static final RegistryObject<Item> LITHIUM_BATTERY_STACK = ITEMS.register("lithium_battery_stack",
+            () -> new BatteryItem(new Item.Properties()
+                    .stacksTo(1)
+                    .durability(10000)
+                    .attributes(
+                            ItemAttributeModifiers.builder()
+                                    .add(
+                                            Attributes.MOVEMENT_SPEED,
+                                            new AttributeModifier(
+                                                    ResourceLocation.fromNamespaceAndPath("tbl", "battery_speed_bonus"),
+                                                    0.5,//+50%
+                                                    AttributeModifier.Operation.ADD_MULTIPLIED_BASE
+                                            ),
+                                            EquipmentSlotGroup.HAND
+                                    )
+                                    .build()
+                    )
+            ));
+
+    public static final RegistryObject<Item> LITHIUM_BATTERY_BOOSTED = ITEMS.register("lithium_battery_boosted",
+            () -> new HighVoltageBatteryItem(new Item.Properties()
+                    .stacksTo(1)
+                    .durability(1000)
+                    .attributes(
+                            ItemAttributeModifiers.builder()
+                                    .add(
+                                            Attributes.MOVEMENT_SPEED,
+                                            new AttributeModifier(
+                                                    ResourceLocation.fromNamespaceAndPath("tbl", "battery_speed_bonus"),
+                                                    1.5,//+150%
+                                                    AttributeModifier.Operation.ADD_MULTIPLIED_BASE
+                                            ),
+                                            EquipmentSlotGroup.HAND
+                                    )
+                                    .build()
+                    )
+            ));
+
+    public static final RegistryObject<Item> LITHIUM_BATTERY_STACK_BOOSTED = ITEMS.register("lithium_battery_stack_boosted",
+            () -> new HighVoltageBatteryItem(new Item.Properties()
+                    .stacksTo(1)
+                    .durability(10000)
+                    .attributes(
+                            ItemAttributeModifiers.builder()
+                                    .add(
+                                            Attributes.MOVEMENT_SPEED,
+                                            new AttributeModifier(
+                                                    ResourceLocation.fromNamespaceAndPath("tbl", "battery_speed_bonus"),
+                                                    1.5,//+150%
+                                                    AttributeModifier.Operation.ADD_MULTIPLIED_BASE
+                                            ),
+                                            EquipmentSlotGroup.HAND
+                                    )
+                                    .build()
+                    )
             ));
 
     public static final RegistryObject<Item> PEPPER = ITEMS.register("pepper",

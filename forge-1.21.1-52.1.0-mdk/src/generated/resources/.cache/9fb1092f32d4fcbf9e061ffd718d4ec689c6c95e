@@ -1,9 +1,14 @@
-// 1.21.1	2026-03-05T16:29:49.8707996	Recipes
+// 1.21.1	2026-03-05T20:27:27.8742538	Recipes
+522d1dc705653a1b9468ab41514fc8e9753cb622 data/tbl/advancement/recipes/misc/ash_planks.json
+00518a8cd6606fb0128c651b7add8bcfdb5e2e21 data/tbl/advancement/recipes/misc/ash_wood.json
 c43dd2d736da24c00d2b09418c25f72a7df22a6e data/tbl/advancement/recipes/misc/force_field_block.json
 288fc24f65d5765c939c55b2cd90e824e6437ba0 data/tbl/advancement/recipes/misc/force_field_block_2.json
 249fd6fcab6802fc9c89393fc65dace4c4e5e2eb data/tbl/advancement/recipes/misc/force_field_block_attract.json
 2ea658d2c0c97ffac9a374a00e638699f718b15e data/tbl/advancement/recipes/misc/lithium.json
 ad426fa44d22c2784229be23a0b0bbc9eca348a1 data/tbl/advancement/recipes/misc/lithium_battery.json
+4830e8056f570263cbde025b53a069f867bdcb14 data/tbl/advancement/recipes/misc/lithium_battery_boosted.json
+8371f0bcb629555a02e13bb1fd018300ce993591 data/tbl/advancement/recipes/misc/lithium_battery_stack.json
+b3763472230dbcfc45b4770622a378ede56a54cb data/tbl/advancement/recipes/misc/lithium_battery_stack_boosted.json
 07ebe500e54ac94624de3e282421d6ae10b5c7f8 data/tbl/advancement/recipes/misc/lithium_block.json
 eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithium_from_blasting_lithium_deepslate_ore.json
 5fd496ca0515d0ac5e76759263b365cd4bb05c20 data/tbl/advancement/recipes/misc/lithium_from_blasting_lithium_ore.json
@@ -22,11 +27,16 @@ e3ce233a3d1b1e33b02c0b6b4d2fae108dfd1aa9 data/tbl/advancement/recipes/misc/steel
 f73307f12758a238fa004397e7b6645bff717711 data/tbl/advancement/recipes/misc/steel_pickaxe.json
 fd40ba96d0c2a238fffb8db66846226c2675a598 data/tbl/advancement/recipes/misc/steel_shovel.json
 c14365be7d1c52451af12648d3e5b393c645668b data/tbl/advancement/recipes/misc/steel_sword.json
+c01f4b6b05e6d56eeefcfa516a2d7816ae165035 data/tbl/recipe/ash_planks.json
+16ab667e139b828ee46693ac48571fcdbdd4f679 data/tbl/recipe/ash_wood.json
 f4d906d2c289bd3caff0e0ccf2667e9b81a21fae data/tbl/recipe/force_field_block.json
 2db724809bafa0d6b30dc5ea6cb15385f01e61d4 data/tbl/recipe/force_field_block_2.json
 92d9f18a432d052705bd923860e63ea339bad6a9 data/tbl/recipe/force_field_block_attract.json
 f436c1d9511eddaf601ebe4365cb1d7b8d25801d data/tbl/recipe/lithium.json
 c18f5591a678b2dc49601c88b712ebcd166fa887 data/tbl/recipe/lithium_battery.json
+551bd34e772c9afe0fdb78086057d573380350bb data/tbl/recipe/lithium_battery_boosted.json
+295b731b8517a54910ca5e566b3c6ee762ef5513 data/tbl/recipe/lithium_battery_stack.json
+9945df332421f7174f5bcf715d64a7932c781309 data/tbl/recipe/lithium_battery_stack_boosted.json
 663e983e8e6b0dc7f0f9226799e4c49d1d66b9dd data/tbl/recipe/lithium_block.json
 c78c5bf72cd3360406330673a9ec1f647481da39 data/tbl/recipe/lithium_from_blasting_lithium_deepslate_ore.json
 977358ee218b4bb0f081976794e5461d8e37a50f data/tbl/recipe/lithium_from_blasting_lithium_ore.json

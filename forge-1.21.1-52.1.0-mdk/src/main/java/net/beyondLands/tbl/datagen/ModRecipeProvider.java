@@ -7,6 +7,8 @@ import net.beyondLands.tbl.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -78,6 +80,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define(('t'), ModItems.STEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get()))
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LITHIUM_BATTERY_BOOSTED.get())
+                .pattern("t")
+                .pattern("T")
+                .pattern("t")
+                .define('T', ModBlocks.LITHIUM_BLOCK.get())
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get()))
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LITHIUM_BATTERY_STACK.get())
+                .requires(ModItems.LITHIUM_BATTERY.get(), 9)
+                .unlockedBy(getHasName(ModItems.LITHIUM_BATTERY.get()), has(ModItems.LITHIUM_BATTERY.get()))
+                .save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LITHIUM_BATTERY_STACK_BOOSTED.get())
+                .requires(ModItems.LITHIUM_BATTERY_BOOSTED.get(), 9)
+                .unlockedBy(getHasName(ModItems.LITHIUM_BATTERY.get()), has(ModItems.LITHIUM_BATTERY.get()))
                 .save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get())
@@ -163,6 +185,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("t t")
                 .define(('t'), ModItems.STEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ASH_WOOD.get(), 3)
+                .pattern("tt")
+                .pattern("tt")
+                .define(('t'), ModBlocks.ASH_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ASH_LOG.get()), has(ModBlocks.ASH_LOG.get()))
+                .save(pRecipeOutput);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ASH_PLANKS.get(), 4)
+                .requires(ModBlocks.ASH_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.ASH_LOG.get()), has(ModBlocks.ASH_LOG.get()))
                 .save(pRecipeOutput);
     }
 

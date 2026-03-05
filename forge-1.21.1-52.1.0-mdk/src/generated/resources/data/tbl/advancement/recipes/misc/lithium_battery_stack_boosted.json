@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lithium_battery": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_battery"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tbl:lithium_battery_stack_boosted"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lithium_battery"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tbl:lithium_battery_stack_boosted"
+    ]
+  }
+}
