@@ -1,5 +1,5 @@
-// 1.21.1	2026-03-04T21:23:28.3502182	Tags for minecraft:block mod id tbl
+// 1.21.1	2026-03-05T09:49:05.131617	Tags for minecraft:block mod id tbl
 574d072df4edc65a384d43e8622a4bec153f40af data/minecraft/tags/block/mineable/pickaxe.json
-4d771215056dcb0af2a8b76248bd5010489efaf8 data/minecraft/tags/block/needs_iron_tool.json
+0cb43449944dba57e1957c30f58a8e14e8df034d data/minecraft/tags/block/needs_iron_tool.json
 6c16966ed66ec86f62458876000881e95e8ef2bc data/tbl/tags/block/incorrect_for_steel_tool.json
-1c585061e2fb72fefb7895540a06b56f7674b292 data/tbl/tags/block/needs_steel_tool.json
+3f6b8bf958e38d2ba5ca4e089b848d89eddca410 data/tbl/tags/block/needs_steel_tool.json

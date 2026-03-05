@@ -3,7 +3,9 @@ package net.beyondLands.tbl.util;
 import net.beyondLands.tbl.TBL;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class ModTags {
@@ -16,6 +18,10 @@ public class ModTags {
         }
     }
     public static class Items {
+        public static final TagKey<Item> HYDROREACTIVE_ITEMS = createTag("hydroreactive_items");
 
+        private static TagKey<Item> createTag(String name) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TBL.MOD_ID, name));
+        }
     }
 }

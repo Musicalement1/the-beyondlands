@@ -5,8 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/The Beyondlands.iml" filepath="$PROJECT_DIR$/.idea/The Beyondlands.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge-1.21.1-52.1.0-mdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge-1.21.1-52.1.0-mdk.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge-1.21.1-52.1.0-mdk.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge-1.21.1-52.1.0-mdk.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.beyondLands.tbl.forge-1.21.1-52.1.0-mdk.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.beyondLands.tbl.forge-1.21.1-52.1.0-mdk.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.beyondLands.tbl.forge-1.21.1-52.1.0-mdk.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.beyondLands.tbl.forge-1.21.1-52.1.0-mdk.test.iml" />
     </modules>
   </component>
 </project>

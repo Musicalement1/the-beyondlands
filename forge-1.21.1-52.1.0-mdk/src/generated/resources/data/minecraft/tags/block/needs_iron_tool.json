@@ -1,6 +1,7 @@
 {
   "values": [
     "tbl:lithium_ore",
+    "tbl:raw_lithium_block",
     "tbl:lithium_deepslate_ore"
   ]
 }
