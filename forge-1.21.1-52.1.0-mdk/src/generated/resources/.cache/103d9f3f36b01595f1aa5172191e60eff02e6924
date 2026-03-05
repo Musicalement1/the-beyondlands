@@ -1,4 +1,5 @@
-// 1.21.1	2026-03-04T16:58:44.2885878	Registries
+// 1.21.1	2026-03-05T18:37:32.0636428	Registries
 b459d13784f17e05e81a6849dd2aed3d9614bf34 data/tbl/forge/biome_modifier/add_lithium_ore.json
+2878e72f354161e5ba0682665fd44fabc8e2bc7a data/tbl/worldgen/configured_feature/ash.json
 0a9b1e423bf18c335ace2659ee3d18594615e876 data/tbl/worldgen/configured_feature/lithium_ore.json
 8467173b19f267e1cfbfa50b21a9eeae1a294a58 data/tbl/worldgen/placed_feature/lithium_ore_placed.json

@@ -12,6 +12,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+import net.beyondLands.tbl.block.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -32,5 +33,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.STEEL_CHESTPLATE.get())
                 .add(ModItems.STEEL_LEGGINGS.get())
                 .add(ModItems.STEEL_BOOTS.get());
+
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ASH_LOG.get().asItem())
+                .add(ModBlocks.ASH_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_ASH_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_ASH_WOOD.get().asItem());
+
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.ASH_PLANKS.get().asItem());
     }
 }

@@ -1,3 +1,5 @@
-// 1.21.1	2026-03-05T15:17:08.832041	Tags for minecraft:item mod id tbl
+// 1.21.1	2026-03-05T18:37:32.0616813	Tags for minecraft:item mod id tbl
+02b96716b80335d5852829788d88dccaad7bba44 data/minecraft/tags/item/logs_that_burn.json
+e8f292531a58cbd46a7a042a30d040c9ef6ecc59 data/minecraft/tags/item/planks.json
 e27ae43b3b294fe914d5d22f997c516b054ae066 data/minecraft/tags/item/trimmable_armor.json
 e9f8c6fe80b58107aaa7b1a7e91f46c2acbd916d data/tbl/tags/item/hydroreactive_items.json

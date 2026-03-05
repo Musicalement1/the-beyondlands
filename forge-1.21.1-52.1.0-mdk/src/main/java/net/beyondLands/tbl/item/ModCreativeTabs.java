@@ -43,6 +43,11 @@ public class ModCreativeTabs {
                         output.accept(ModItems.STEEL_LEGGINGS.get());
                         output.accept(ModItems.STEEL_BOOTS.get());
                         output.accept(ModItems.STEEL_HORSE_ARMOR.get());
+                        output.accept(ModBlocks.ASH_LOG.get());
+                        output.accept(ModBlocks.ASH_LEAVES.get());
+                        output.accept(ModBlocks.ASH_WOOD.get());
+                        output.accept(ModBlocks.ASH_PLANKS.get());
+                        output.accept(ModBlocks.ASH_SAPLING.get());
                     }).build());
 
 

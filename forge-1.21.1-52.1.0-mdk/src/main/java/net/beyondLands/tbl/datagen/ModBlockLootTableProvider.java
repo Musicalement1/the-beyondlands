@@ -36,6 +36,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get()));
         this.add(ModBlocks.LITHIUM_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.LITHIUM_DEEPSLATE_ORE.get(), ModItems.RAW_LITHIUM.get(), 2, 6));
+
+
+        this.dropSelf(ModBlocks.ASH_LOG.get());
+        this.dropSelf(ModBlocks.ASH_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_ASH_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_ASH_WOOD.get());
+        this.dropSelf(ModBlocks.ASH_PLANKS.get());
+        this.dropSelf(ModBlocks.ASH_SAPLING.get());
+
+        this.add(ModBlocks.ASH_LEAVES.get(), block ->
+                createLeavesDrops(block, ModBlocks.ASH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

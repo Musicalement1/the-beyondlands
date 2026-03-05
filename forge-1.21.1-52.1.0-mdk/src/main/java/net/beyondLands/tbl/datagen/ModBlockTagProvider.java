@@ -48,5 +48,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.INCORRECT_FOR_STEEL_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_STEEL_TOOL);
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.ASH_LOG.get())
+                .add(ModBlocks.ASH_WOOD.get())
+                .add(ModBlocks.STRIPPED_ASH_LOG.get())
+                .add(ModBlocks.STRIPPED_ASH_WOOD.get());
     }
 }

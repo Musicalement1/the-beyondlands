@@ -3,17 +3,22 @@
   "item.tbl.raw_lithium": "Raw Lithium",
   "block.tbl.lithium_block": "Lithium Block",
   "block.tbl.raw_lithium_block": "Raw Lithium Block",
+
   "creativetab.tbl.tbl_stuff": "The Beyondlands",
+
   "block.tbl.lithium_ore": "Lithium Ore",
   "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore",
   "item.tbl.steel_ingot": "Steel Ingot",
   "item.tbl.lithium_battery": "Lithium Battery",
+
   "block.tbl.force_field_block": "Force Field (Repulsor)",
   "block.tbl.force_field_block_attract": "Force Field (Attractor)",
+
   "entity.tbl.ashling": "Ashling",
   "item.tbl.pepper": "Bell Pepper",
   "item.tbl.ash": "Ashes",
   "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
+
   "item.tbl.steel_sword": "Steel Sword",
   "item.tbl.steel_pickaxe": "Steel Pickaxe",
   "item.tbl.steel_hoe": "Steel Hoe",
@@ -24,5 +29,14 @@
   "item.tbl.steel_chestplate": "Steel Chestplate",
   "item.tbl.steel_leggings": "Steel Leggings",
   "item.tbl.steel_boots": "Steel Boots",
-  "item.tbl.steel_horse_armor": "Steel Horse Armor"
+  "item.tbl.steel_horse_armor": "Steel Horse Armor",
+
+  "block.tbl.ash_log": "Ash Log",
+  "block.tbl.ash_planks": "Ash Planks",
+  "block.tbl.ash_wood": "Ash Wood",
+  "block.tbl.stripped_ash_log": "Stripped Ash Log",
+  "block.tbl.stripped_ash_wood": "Stripped Ash Wood",
+  "block.tbl.ash_leaves": "Ash Leaves",
+
+  "block.tbl.ash_sapling": "Ash Sapling"
 }
