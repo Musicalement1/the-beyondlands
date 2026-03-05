@@ -19,5 +19,9 @@
   "item.tbl.steel_hoe": "Steel Hoe",
   "item.tbl.steel_shovel": "Steel Shovel",
   "item.tbl.steel_axe": "Steel Axe",
-  "item.tbl.steel_hammer": "Steel Hammer"
+  "item.tbl.steel_hammer": "Steel Hammer",
+  "item.tbl.steel_helmet": "Steel Helmet",
+  "item.tbl.steel_chestplate": "Steel Chestplate",
+  "item.tbl.steel_leggings": "Steel Leggings",
+  "item.tbl.steel_boots": "Steel Boots"
 }

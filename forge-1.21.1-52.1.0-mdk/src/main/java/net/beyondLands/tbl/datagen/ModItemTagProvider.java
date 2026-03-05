@@ -7,6 +7,7 @@ import net.beyondLands.tbl.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -25,5 +26,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ModTags.Items.HYDROREACTIVE_ITEMS)
                 .add(ModItems.LITHIUM.get())
                 .add(ModItems.RAW_LITHIUM.get());
+
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.STEEL_HELMET.get())
+                .add(ModItems.STEEL_CHESTPLATE.get())
+                .add(ModItems.STEEL_LEGGINGS.get())
+                .add(ModItems.STEEL_BOOTS.get());
     }
 }

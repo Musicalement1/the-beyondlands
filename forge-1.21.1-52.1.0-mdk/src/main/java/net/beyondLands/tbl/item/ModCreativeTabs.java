@@ -38,6 +38,10 @@ public class ModCreativeTabs {
                         output.accept(ModItems.STEEL_HOE.get());
                         output.accept(ModItems.STEEL_SHOVEL.get());
                         output.accept(ModItems.STEEL_HAMMER.get());
+                        output.accept(ModItems.STEEL_HELMET.get());
+                        output.accept(ModItems.STEEL_CHESTPLATE.get());
+                        output.accept(ModItems.STEEL_LEGGINGS.get());
+                        output.accept(ModItems.STEEL_BOOTS.get());
                     }).build());
 
 
