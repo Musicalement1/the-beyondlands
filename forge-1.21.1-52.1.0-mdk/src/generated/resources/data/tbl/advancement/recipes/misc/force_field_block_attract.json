@@ -11,6 +11,16 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
+    "has_steel_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "tbl:force_field_block_attract"
@@ -21,7 +31,8 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_force_field_block"
+      "has_force_field_block",
+      "has_steel_ingot"
     ]
   ],
   "rewards": {

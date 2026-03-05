@@ -52,16 +52,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', ModBlocks.LITHIUM_BLOCK.get())
                 .define('T', ModItems.LITHIUM_BATTERY.get())
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get()))
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get())
                 .requires(ModBlocks.FORCE_FIELD_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get()))
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.FORCE_FIELD_BLOCK.get())
                 .requires(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get())
-                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get())).save(pRecipeOutput, TBL.MOD_ID + ":force_field_block_2" );
+                .unlockedBy(getHasName(ModBlocks.FORCE_FIELD_BLOCK.get()), has(ModBlocks.FORCE_FIELD_BLOCK.get()))
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput, TBL.MOD_ID + ":force_field_block_2" );
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LITHIUM_BATTERY.get())
@@ -70,12 +76,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("t")
                 .define('T', ModItems.LITHIUM.get())
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get()))
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get())
                 .requires(Items.IRON_INGOT)
                 .requires(Items.COAL)
-                .unlockedBy(getHasName(Items.COAL), has(Items.COAL)).save(pRecipeOutput);
+                .unlockedBy(getHasName(Items.COAL), has(Items.COAL))
+                .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SWORD.get())
                 .pattern("t")
@@ -83,7 +92,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("T")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_PICKAXE.get())
                 .pattern("ttt")
@@ -91,7 +101,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" T ")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_SHOVEL.get())
                 .pattern("t")
@@ -99,7 +110,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("T")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HOE.get())
                 .pattern("tt")
@@ -107,7 +119,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" T")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_AXE.get())
                 .pattern("tt")
@@ -115,14 +128,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" T")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HAMMER.get())
                 .pattern("ttt")
                 .pattern("ttt")
                 .pattern(" T ")
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
-                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HELMET.get())
+                .pattern("ttt")
+                .pattern("t t")
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_CHESTPLATE.get())
+                .pattern("t t")
+                .pattern("ttt")
+                .pattern("ttt")
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_LEGGINGS.get())
+                .pattern("ttt")
+                .pattern("t t")
+                .pattern("t t")
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_BOOTS.get())
+                .pattern("t t")
+                .pattern("t t")
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
     }
 
 

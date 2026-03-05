@@ -1,16 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_force_field_block": {
-      "conditions": {
-        "items": [
-          {
-            "items": "tbl:force_field_block"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_steel_ingot": {
       "conditions": {
         "items": [
@@ -23,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tbl:force_field_block_2"
+        "recipe": "tbl:steel_boots"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_force_field_block",
       "has_steel_ingot"
     ]
   ],
   "rewards": {
     "recipes": [
-      "tbl:force_field_block_2"
+      "tbl:steel_boots"
     ]
   }
 }

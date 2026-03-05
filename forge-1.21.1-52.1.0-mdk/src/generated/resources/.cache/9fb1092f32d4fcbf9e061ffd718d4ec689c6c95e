@@ -1,9 +1,9 @@
-// 1.21.1	2026-03-05T14:08:22.992976	Recipes
-179ea1961980d8bb411bb6cd575f8e9460e99e53 data/tbl/advancement/recipes/misc/force_field_block.json
-adcb65b548ec81cab7875f015485288c41e20f96 data/tbl/advancement/recipes/misc/force_field_block_2.json
-d8f9d101c7fd91363fb1d0dc4b1d5eb97ec472d8 data/tbl/advancement/recipes/misc/force_field_block_attract.json
+// 1.21.1	2026-03-05T16:29:49.8707996	Recipes
+c43dd2d736da24c00d2b09418c25f72a7df22a6e data/tbl/advancement/recipes/misc/force_field_block.json
+288fc24f65d5765c939c55b2cd90e824e6437ba0 data/tbl/advancement/recipes/misc/force_field_block_2.json
+249fd6fcab6802fc9c89393fc65dace4c4e5e2eb data/tbl/advancement/recipes/misc/force_field_block_attract.json
 2ea658d2c0c97ffac9a374a00e638699f718b15e data/tbl/advancement/recipes/misc/lithium.json
-7bee1f7af1d89bebb420bd775c0af47f19607de4 data/tbl/advancement/recipes/misc/lithium_battery.json
+ad426fa44d22c2784229be23a0b0bbc9eca348a1 data/tbl/advancement/recipes/misc/lithium_battery.json
 07ebe500e54ac94624de3e282421d6ae10b5c7f8 data/tbl/advancement/recipes/misc/lithium_block.json
 eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithium_from_blasting_lithium_deepslate_ore.json
 5fd496ca0515d0ac5e76759263b365cd4bb05c20 data/tbl/advancement/recipes/misc/lithium_from_blasting_lithium_ore.json
@@ -12,9 +12,13 @@ eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithi
 097d567ec541ac1f60fdd27940a9f35840d5c57a data/tbl/advancement/recipes/misc/lithium_from_smelting_lithium_ore.json
 b85f03956f9bdd0628258722fa12e632dcc4f0d1 data/tbl/advancement/recipes/misc/lithium_from_smelting_raw_lithium.json
 88ad4c02b7350328d0c188675427615575384102 data/tbl/advancement/recipes/misc/steel_axe.json
+36c7bf4070e0bd8ad6edc5f39806607d02cb714b data/tbl/advancement/recipes/misc/steel_boots.json
+092e992f204515c6e8ea7cd8d546ef5711aaeb86 data/tbl/advancement/recipes/misc/steel_chestplate.json
 503500059ed244baf25cc67421f0a975d16c136c data/tbl/advancement/recipes/misc/steel_hammer.json
+655530372891c9c69c42a58691e657fd7235efb5 data/tbl/advancement/recipes/misc/steel_helmet.json
 e3ce233a3d1b1e33b02c0b6b4d2fae108dfd1aa9 data/tbl/advancement/recipes/misc/steel_hoe.json
 629d20db86d41b4ea3f628a5e92f25ee9df9c869 data/tbl/advancement/recipes/misc/steel_ingot.json
+33f8ca84376faa81944d958000978370d55d1ba6 data/tbl/advancement/recipes/misc/steel_leggings.json
 f73307f12758a238fa004397e7b6645bff717711 data/tbl/advancement/recipes/misc/steel_pickaxe.json
 fd40ba96d0c2a238fffb8db66846226c2675a598 data/tbl/advancement/recipes/misc/steel_shovel.json
 c14365be7d1c52451af12648d3e5b393c645668b data/tbl/advancement/recipes/misc/steel_sword.json
@@ -31,9 +35,13 @@ c78c5bf72cd3360406330673a9ec1f647481da39 data/tbl/recipe/lithium_from_blasting_l
 2eb426c7afa73f4eb67b1bbabd01ac39189454af data/tbl/recipe/lithium_from_smelting_lithium_ore.json
 215fb57e367f14903b5ab81e7b8591174f0f8d90 data/tbl/recipe/lithium_from_smelting_raw_lithium.json
 0b6872bed7d98228d5c90f5a18c76973379fa43b data/tbl/recipe/steel_axe.json
+584ab1b604a97eee1062d0e7fc637ba581a87d68 data/tbl/recipe/steel_boots.json
+67180951a2e8201618cb445eb47ae4d04c7c2554 data/tbl/recipe/steel_chestplate.json
 e718cdcd13cfaad0914c7a045b939826a0c7db87 data/tbl/recipe/steel_hammer.json
+40873f2999862276ccc1ad51421c02b47ede45a8 data/tbl/recipe/steel_helmet.json
 b1507b53628d93258790b3ff76fab0b4810b30e1 data/tbl/recipe/steel_hoe.json
 646580f3f59d60c343230c3caecdde533ea2d198 data/tbl/recipe/steel_ingot.json
+3146875dd31300945111f7b6dd5d878ed297cdb1 data/tbl/recipe/steel_leggings.json
 34b6a2ec86d2e645e0c2883b8ab0840cd50a33f5 data/tbl/recipe/steel_pickaxe.json
 fc1888aa143889fe4ba0b142b25869cb2f3ff62c data/tbl/recipe/steel_shovel.json
 01ccda70ebd46ce06758b5ffcf1ea398c446d6eb data/tbl/recipe/steel_sword.json
