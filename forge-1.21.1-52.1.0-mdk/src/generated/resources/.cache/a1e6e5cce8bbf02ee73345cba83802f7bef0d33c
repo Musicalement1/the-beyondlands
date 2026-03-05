@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-04T21:23:28.3483934	Item Models: tbl
+// 1.21.1	2026-03-05T11:22:36.454766	Item Models: tbl
 9c7675ff4091771bb9b4b71b5abc8698c3103441 assets/tbl/models/item/ash.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tbl/models/item/ashling_spawn_egg.json
 2c370a67624bb7d32be051fb27757b6955e4f897 assets/tbl/models/item/lithium.json
@@ -6,6 +6,7 @@
 6fbe80865850ef209c3225cf5fa49d80c5939687 assets/tbl/models/item/pepper.json
 9cd66b263d9660199fa0ce3ff84c677c62fa1eab assets/tbl/models/item/raw_lithium.json
 494b707c0243f923334dd4712709db8bdfaa3db9 assets/tbl/models/item/steel_axe.json
+ef5da85cb157285454f465a8bbbbe20eac784551 assets/tbl/models/item/steel_hammer.json
 07018109ad33d1e282e3eaf968635aa92d74c10d assets/tbl/models/item/steel_hoe.json
 0dac3c5a2969d1a213a2eff07f92bd8ab3f34c48 assets/tbl/models/item/steel_ingot.json
 98da1ad84376663266fd9d5df247b0e75e793529 assets/tbl/models/item/steel_pickaxe.json

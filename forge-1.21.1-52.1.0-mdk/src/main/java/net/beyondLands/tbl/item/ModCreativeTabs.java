@@ -37,6 +37,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.STEEL_PICKAXE.get());
                         output.accept(ModItems.STEEL_HOE.get());
                         output.accept(ModItems.STEEL_SHOVEL.get());
+                        output.accept(ModItems.STEEL_HAMMER.get());
                     }).build());
 
 

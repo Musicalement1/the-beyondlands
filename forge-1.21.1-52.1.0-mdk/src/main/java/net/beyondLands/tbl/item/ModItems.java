@@ -4,6 +4,7 @@ import net.beyondLands.tbl.TBL;
 import net.beyondLands.tbl.entity.ModEntities;
 import net.beyondLands.tbl.item.battery.BatteryItem;
 import net.beyondLands.tbl.item.fuel.FuelItem;
+import net.beyondLands.tbl.item.hammer.HammerItem;
 import net.beyondLands.tbl.item.hydroreactive.LithiumReact;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -54,6 +55,10 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(ModToolTiers.STEEL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.STEEL, 0, -3.0f))));
+
+    public static final RegistryObject<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
+            () -> new HammerItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 8.5f, -3.9f))));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

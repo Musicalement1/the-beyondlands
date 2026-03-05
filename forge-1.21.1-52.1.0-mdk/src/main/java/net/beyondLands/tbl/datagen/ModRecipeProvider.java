@@ -116,6 +116,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('T', Items.STICK)
                 .define(('t'), ModItems.STEEL_INGOT.get())
                 .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.STEEL_HAMMER.get())
+                .pattern("ttt")
+                .pattern("tTt")
+                .pattern(" T")
+                .define('T', Items.STICK)
+                .define(('t'), ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get())).save(pRecipeOutput);
     }
 
 
