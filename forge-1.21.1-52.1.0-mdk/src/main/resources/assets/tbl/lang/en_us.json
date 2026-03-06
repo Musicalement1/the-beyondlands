@@ -53,5 +53,6 @@
   "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!",
 
   "item.tbl.pepper_seeds": "Pepper Seeds",
-  "block.tbl.pepper_crop": "Pepper Crop"
+  "block.tbl.pepper_crop": "Pepper Crop",
+  "block.tbl.bl_portal": "Beyondlands Portal"
 }

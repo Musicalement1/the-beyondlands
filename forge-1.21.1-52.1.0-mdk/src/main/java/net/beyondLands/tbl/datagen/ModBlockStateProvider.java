@@ -50,6 +50,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.ASH_SAPLING);
 
         makeCrop(((CropBlock) ModBlocks.PEPPER_CROP.get()), "pepper_crop_stage", "pepper_crop_stage");
+
+        blockWithItem(ModBlocks.BL_PORTAL);
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "tbl:block/bl_portal"
+    }
+  }
+}

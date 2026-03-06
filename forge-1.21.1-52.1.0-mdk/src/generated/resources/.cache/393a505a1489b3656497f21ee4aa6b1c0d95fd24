@@ -1,9 +1,10 @@
-// 1.21.1	2026-03-06T10:35:54.240777	Block States: tbl
+// 1.21.1	2026-03-06T13:57:05.945838	Block States: tbl
 a9040f7253666065fcdc0f3279d93e2c9238a8a0 assets/tbl/blockstates/ash_leaves.json
 59c4179de6339e891e75c2da9bef1bc69d9a5923 assets/tbl/blockstates/ash_log.json
 38a9e68fa9c13871128aec6b65b200203a44389a assets/tbl/blockstates/ash_planks.json
 a3dc007b7be7ac260b4ecfd380363c1bb18a7fa8 assets/tbl/blockstates/ash_sapling.json
 290f99280b4447dd4b3bf1c7003093fdc2c01913 assets/tbl/blockstates/ash_wood.json
+01f90e4bea1096ed5e899390ce1182c3926f4993 assets/tbl/blockstates/bl_portal.json
 75f9cfd95b1dcf96d0c76b9a0b13fc60ad82e046 assets/tbl/blockstates/force_field_block.json
 a401dbb7af4eb940f0b34d272f4ccab8fc130fb9 assets/tbl/blockstates/force_field_block_attract.json
 a7355a03c86d164257e1b41b6ac8499541d29b1d assets/tbl/blockstates/lithium_block.json
@@ -20,6 +21,7 @@ e948b2e8b780a15947a94ed1d57202d7189b8326 assets/tbl/models/block/ash_leaves.json
 9538564a44458381d573f3ad2e1339a483ab0a01 assets/tbl/models/block/ash_sapling.json
 f0de6859e2157541def95bd033f3e577566ba007 assets/tbl/models/block/ash_wood.json
 89990168e61d11595e8e225f07fb153a41c13b7f assets/tbl/models/block/ash_wood_horizontal.json
+eb427c5ac1e48b007f0b973e154b724dd1686560 assets/tbl/models/block/bl_portal.json
 9f6035ab1eaca15bbd1ef6fa0a836187c8618d7b assets/tbl/models/block/lithium_block.json
 2d38ddd673f80d6311e7fad04c85071e011636a6 assets/tbl/models/block/lithium_deepslate_ore.json
 a68bc7817b8899486a730698c4f87fc2acdd05f5 assets/tbl/models/block/lithium_ore.json
@@ -39,6 +41,7 @@ ce927c03681d6ccf8bea0b9e7e09a3ad1209f464 assets/tbl/models/item/ash_leaves.json
 6b3cf6c3e88a0a1943e68eb1c2dc4db524d95cd6 assets/tbl/models/item/ash_log.json
 80922b2e8748ca2c708524d1bd098464c4b31f92 assets/tbl/models/item/ash_planks.json
 8ecefa38eec93b924f3a158672f8e1894579bc63 assets/tbl/models/item/ash_wood.json
+47ee56627e1629ef5364f5975d354099864db184 assets/tbl/models/item/bl_portal.json
 c041937ebc44599d76e25935085a1852b1c7dab3 assets/tbl/models/item/force_field_block.json
 16d79a461bae04e8c4ac607b85e219a198e6345e assets/tbl/models/item/force_field_block_attract.json
 d6d9fcea27ce62e92269b6f941354bd0b91e9444 assets/tbl/models/item/lithium_block.json

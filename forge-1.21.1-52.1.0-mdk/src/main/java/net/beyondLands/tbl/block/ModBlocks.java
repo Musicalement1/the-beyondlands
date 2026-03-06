@@ -64,6 +64,8 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
 
 
+    public static final RegistryObject<Block> BL_PORTAL = registerBlock("bl_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.of().noLootTable().noOcclusion().noCollission()));
 
     public static final RegistryObject<Block> PEPPER_CROP = BLOCKS.register("pepper_crop",
             () -> new PepperCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
