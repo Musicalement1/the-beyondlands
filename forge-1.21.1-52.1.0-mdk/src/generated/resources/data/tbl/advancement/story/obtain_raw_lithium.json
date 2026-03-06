@@ -1,7 +1,7 @@
 {
-  "parent": "tbl:root",
+  "parent": "tbl:story/root",
   "criteria": {
-    "get_lithium": {
+    "pickup_raw_li": {
       "conditions": {
         "items": [
           {
@@ -13,19 +13,21 @@
     }
   },
   "display": {
-    "description": "Obtain your first Lithium ore!",
+    "description": {
+      "translate": "advancement.tbl.story.obtain_raw_lithium.description"
+    },
     "icon": {
       "count": 1,
       "id": "tbl:lithium_ore"
     },
-    "title": "Breaking Ba...tterie",
-    "show_toast": true,
-    "announce_to_chat": true,
-    "hidden": false
+    "title": {
+      "translate": "advancement.tbl.story.obtain_raw_lithium.title"
+    }
   },
   "requirements": [
     [
-      "get_lithium"
+      "pickup_raw_li"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

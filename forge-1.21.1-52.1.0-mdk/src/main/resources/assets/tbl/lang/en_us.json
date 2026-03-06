@@ -41,5 +41,14 @@
   "block.tbl.stripped_ash_wood": "Stripped Ash Wood",
   "block.tbl.ash_leaves": "Ash Leaves",
 
-  "block.tbl.ash_sapling": "Ash Sapling"
+  "block.tbl.ash_sapling": "Ash Sapling",
+
+  "advancement.tbl.story.root.title": "Beyond The Stories",
+  "advancement.tbl.story.root.description": "A New Story Is Been Written Today.",
+
+  "advancement.tbl.story.obtain_raw_lithium.title": "Breaking Batt..rie!",
+  "advancement.tbl.story.obtain_raw_lithium.description": "Obtain Your First Lithium Ore!",
+
+  "advancement.tbl.story.smelt_lithium.title": "Purification",
+  "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!"
 }
