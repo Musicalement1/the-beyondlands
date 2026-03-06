@@ -2,6 +2,7 @@ package net.beyondLands.tbl.block;
 
 
 import net.beyondLands.tbl.TBL;
+import net.beyondLands.tbl.block.crop.PepperCropBlock;
 import net.beyondLands.tbl.block.other.ModFlammableRotatedPillarBlock;
 import net.beyondLands.tbl.item.ModItems;
 import net.beyondLands.tbl.worldgen.tree.ModTreeGrowers;
@@ -61,6 +62,11 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<RotatedPillarBlock> STRIPPED_ASH_WOOD = registerBlock("stripped_ash_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
+
+
+
+    public static final RegistryObject<Block> PEPPER_CROP = BLOCKS.register("pepper_crop",
+            () -> new PepperCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
     public static final RegistryObject<Block> ASH_PLANKS = registerBlock("ash_planks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)) {

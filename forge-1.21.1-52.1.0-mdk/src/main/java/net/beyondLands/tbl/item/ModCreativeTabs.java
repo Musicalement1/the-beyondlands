@@ -51,6 +51,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ASH_WOOD.get());
                         output.accept(ModBlocks.ASH_PLANKS.get());
                         output.accept(ModBlocks.ASH_SAPLING.get());
+                        output.accept(ModItems.PEPPER_SEEDS.get());
                     }).build());
 
 

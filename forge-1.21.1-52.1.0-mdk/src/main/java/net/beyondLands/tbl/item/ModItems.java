@@ -1,6 +1,7 @@
 package net.beyondLands.tbl.item;
 
 import net.beyondLands.tbl.TBL;
+import net.beyondLands.tbl.block.ModBlocks;
 import net.beyondLands.tbl.entity.ModEntities;
 import net.beyondLands.tbl.item.battery.BatteryItem;
 import net.beyondLands.tbl.item.battery.HighVoltageBatteryItem;
@@ -157,6 +158,11 @@ public class ModItems {
     public static final RegistryObject<Item> STEEL_HORSE_ARMOR = ITEMS.register("steel_horse_armor",
             () -> new AnimalArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, AnimalArmorItem.BodyType.EQUESTRIAN,
                     false, new Item.Properties().stacksTo(1)));
+
+
+    public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.PEPPER_CROP.get(), new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

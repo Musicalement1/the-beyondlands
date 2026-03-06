@@ -50,5 +50,8 @@
   "advancement.tbl.story.obtain_raw_lithium.description": "Obtain Your First Lithium Ore!",
 
   "advancement.tbl.story.smelt_lithium.title": "Purification",
-  "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!"
+  "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!",
+
+  "item.tbl.pepper_seeds": "Pepper Seeds",
+  "block.tbl.pepper_crop": "Pepper Crop"
 }

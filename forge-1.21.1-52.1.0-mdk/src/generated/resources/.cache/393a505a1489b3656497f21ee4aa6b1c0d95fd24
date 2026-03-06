@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-05T18:37:32.0646256	Block States: tbl
+// 1.21.1	2026-03-06T10:35:54.240777	Block States: tbl
 a9040f7253666065fcdc0f3279d93e2c9238a8a0 assets/tbl/blockstates/ash_leaves.json
 59c4179de6339e891e75c2da9bef1bc69d9a5923 assets/tbl/blockstates/ash_log.json
 38a9e68fa9c13871128aec6b65b200203a44389a assets/tbl/blockstates/ash_planks.json
@@ -9,6 +9,7 @@ a401dbb7af4eb940f0b34d272f4ccab8fc130fb9 assets/tbl/blockstates/force_field_bloc
 a7355a03c86d164257e1b41b6ac8499541d29b1d assets/tbl/blockstates/lithium_block.json
 14ff253ba6947b4678425ba9e858d4358fdaf940 assets/tbl/blockstates/lithium_deepslate_ore.json
 2a997f2dd7b948fd26be7df7b8dfc262a0762086 assets/tbl/blockstates/lithium_ore.json
+7ada05dc3d93b94676921faa24270b2507f2976a assets/tbl/blockstates/pepper_crop.json
 567b2b561e29d603d9b0713efe1a9248170b1b86 assets/tbl/blockstates/raw_lithium_block.json
 2c1b1e3b75e299b911674458ce8368d988f6b296 assets/tbl/blockstates/stripped_ash_log.json
 c9cd45681d7ed127de151d69825087a4346130b7 assets/tbl/blockstates/stripped_ash_wood.json
@@ -22,6 +23,13 @@ f0de6859e2157541def95bd033f3e577566ba007 assets/tbl/models/block/ash_wood.json
 9f6035ab1eaca15bbd1ef6fa0a836187c8618d7b assets/tbl/models/block/lithium_block.json
 2d38ddd673f80d6311e7fad04c85071e011636a6 assets/tbl/models/block/lithium_deepslate_ore.json
 a68bc7817b8899486a730698c4f87fc2acdd05f5 assets/tbl/models/block/lithium_ore.json
+2d080626dc23aa0f1ecc057b12e8d468f2009c4e assets/tbl/models/block/pepper_crop_stage0.json
+0af89646041cfd2bc2443147a0ac4bde18cb213c assets/tbl/models/block/pepper_crop_stage1.json
+74a3a8aecc60fefcacd25d3bfb0f9876cc27dc89 assets/tbl/models/block/pepper_crop_stage2.json
+1b64c9699bd2bb77d23d21a6b1f3489e44ebf32f assets/tbl/models/block/pepper_crop_stage3.json
+7d33ed1b297a5f88601afbc0cd200b612b3d2610 assets/tbl/models/block/pepper_crop_stage4.json
+fafd39ae1731e532d185401b08d93befebc5e9c2 assets/tbl/models/block/pepper_crop_stage5.json
+f683452fec184a561665de2bafbbf61e0aeee72c assets/tbl/models/block/pepper_crop_stage6.json
 286811083c2bfce8bb47a899c5f757e25ae7419e assets/tbl/models/block/raw_lithium_block.json
 de74b33aa74157a99357d0ddae99463e12ab8d47 assets/tbl/models/block/stripped_ash_log.json
 b91d7f04c36c47de51aa1510d4327ef63efdd368 assets/tbl/models/block/stripped_ash_log_horizontal.json
