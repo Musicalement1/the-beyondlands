@@ -18,31 +18,50 @@ import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = TBL.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
+
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
-        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
-                List.of(
-                        new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK),
-                        new LootTableProvider.SubProviderEntry(ModEntityLootProvider::new, LootContextParamSets.ENTITY)
-                ), lookupProvider));
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        //Vanilla (all mc here)
+        CompletableFuture<HolderLookup.Provider> vanillaLookup = event.getLookupProvider();
 
-        BlockTagsProvider blockTagsProvider = new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
+        //Mod registries
+        ModDatapackEntries datapackEntries = new ModDatapackEntries(packOutput, vanillaLookup);
+        generator.addProvider(event.includeServer(), datapackEntries);
+
+        CompletableFuture<HolderLookup.Provider> registryLookup = datapackEntries.getRegistryProvider();
+
+        //loot tables etc
+        generator.addProvider(event.includeServer(),
+                new LootTableProvider(packOutput, Collections.emptySet(),
+                        List.of(
+                                new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK),
+                                new LootTableProvider.SubProviderEntry(ModEntityLootProvider::new, LootContextParamSets.ENTITY)
+                        ),
+                        vanillaLookup));
+
+        generator.addProvider(event.includeServer(),
+                new ModRecipeProvider(packOutput, vanillaLookup));
+
+        generator.addProvider(event.includeServer(),
+                new ModAdvancementProvider(packOutput, vanillaLookup, existingFileHelper));
+
+        //tags that use modified registry
+        BlockTagsProvider blockTagsProvider =
+                new ModBlockTagProvider(packOutput, registryLookup, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
+        generator.addProvider(event.includeServer(),
+                new ModItemTagProvider(packOutput, registryLookup, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        generator.addProvider(event.includeServer(),
+                new ModBiomeTagGenerator(packOutput, registryLookup, existingFileHelper));
+
+        //client side models
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
-
-        generator.addProvider(event.includeServer(), new ModDatapackEntries(packOutput, lookupProvider));
-        generator.addProvider(
-                event.includeServer(),
-                new ModAdvancementProvider(packOutput, lookupProvider, existingFileHelper)
-        );
     }
 }

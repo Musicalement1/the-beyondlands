@@ -1,7 +1,10 @@
-// 1.21.1	2026-03-06T12:12:39.23314	Registries
-d39466543bf21fe4fd98616652b8653cb3ff7c41 data/tbl/dimension/bldim.json
-e241e971aacde6f4d0236c622c99d6c9caeb981e data/tbl/dimension_type/bldim_type.json
-b459d13784f17e05e81a6849dd2aed3d9614bf34 data/tbl/forge/biome_modifier/add_lithium_ore.json
+// 1.21.1	2026-03-06T18:42:05.5217109	Registries
+31d13073d97468497897a7ee1c3f8abe3e2a2d53 data/tbl/dimension/bldim.json
+b3c89697732ecf4378e09b7483b3a9e55d42ba77 data/tbl/dimension_type/bldim_type.json
+1f7a7442923d78c814324cef4477eca1c0723e8c data/tbl/forge/biome_modifier/add_lithium_ore.json
+87a8cb2bc0a7d8a738a163e2df41588943676e07 data/tbl/forge/biome_modifier/add_tree_ash.json
+e256e8666c676e127ac78d017d328c78ba092d37 data/tbl/worldgen/biome/ashland.json
 2878e72f354161e5ba0682665fd44fabc8e2bc7a data/tbl/worldgen/configured_feature/ash.json
 0a9b1e423bf18c335ace2659ee3d18594615e876 data/tbl/worldgen/configured_feature/lithium_ore.json
+98feadee20695197cf52b26f26849a392868facf data/tbl/worldgen/placed_feature/ash_placed.json
 8467173b19f267e1cfbfa50b21a9eeae1a294a58 data/tbl/worldgen/placed_feature/lithium_ore_placed.json

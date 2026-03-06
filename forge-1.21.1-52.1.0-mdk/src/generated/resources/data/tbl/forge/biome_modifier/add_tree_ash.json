@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "tbl:ashland",
+  "features": "tbl:ash_placed",
+  "step": "vegetal_decoration"
+}

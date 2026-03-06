@@ -5,6 +5,7 @@ import net.beyondLands.tbl.TBL;
 import net.beyondLands.tbl.worldgen.ModBiomeModifiers;
 import net.beyondLands.tbl.worldgen.ModConfiguredFeatures;
 import net.beyondLands.tbl.worldgen.ModPlacedFeatures;
+import net.beyondLands.tbl.worldgen.biome.ModBiomes;
 import net.beyondLands.tbl.worldgen.dimension.ModDimensions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
@@ -26,7 +27,8 @@ public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
             .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
-            .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem);
+            .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem)
+            .add(Registries.BIOME, ModBiomes::bootstrap);
 
     public ModDatapackEntries(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(TBL.MOD_ID));

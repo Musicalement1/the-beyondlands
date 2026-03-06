@@ -3,6 +3,8 @@ package net.beyondLands.tbl.worldgen;
 
 
 import net.beyondLands.tbl.TBL;
+import net.beyondLands.tbl.datagen.ModBiomeTagGenerator;
+import net.beyondLands.tbl.worldgen.biome.ModBiomes;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -16,13 +18,14 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_LITHIUM_ORE = registerKey("add_lithium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_ASH_TREE = registerKey("add_tree_ash");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeature = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
         context.register(ADD_LITHIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                biomes.getOrThrow(ModBiomeTagGenerator.IS_BL_OR_OVERWORLD),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.LITHIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
@@ -32,6 +35,10 @@ public class ModBiomeModifiers {
         //         HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.ALEXANDRITE_ORE_PLACED_KEY)),
         //         GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        context.register(ADD_ASH_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.ASHLAND)/*, biomes.getOrThrow(Biomes.SAVANNA)*/),
+                HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.ASH_PLACED_KEY)),
+                GenerationStep.Decoration.VEGETAL_DECORATION));
 
     }
 

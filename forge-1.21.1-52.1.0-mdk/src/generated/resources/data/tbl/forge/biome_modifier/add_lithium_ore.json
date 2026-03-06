@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": "#tbl:is_bl_or_overworld",
   "features": "tbl:lithium_ore_placed",
   "step": "underground_ores"
 }

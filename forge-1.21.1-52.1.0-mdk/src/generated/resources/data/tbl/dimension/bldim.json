@@ -6,7 +6,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:grove",
+          "biome": "tbl:ashland",
           "parameters": {
             "continentalness": 0.0,
             "depth": 0.0,

@@ -63,7 +63,7 @@ public class ModPortalBlock extends Block implements Portal {
             int surfaceY = chunk.getHeight(Heightmap.Types.WORLD_SURFACE,
                     horizontalPos.getX() & 15,
                     horizontalPos.getZ() & 15);
-            BlockPos newPos = horizontalPos.atY(Math.max(surfaceY - 1, serverlevel.getMinBuildHeight() + 1));
+            BlockPos newPos = horizontalPos.atY(Math.max(surfaceY, serverlevel.getMinBuildHeight()));
 
             return ModTeleporter.createTransition(entity, serverlevel, newPos, false);
         }
