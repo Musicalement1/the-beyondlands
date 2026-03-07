@@ -1,6 +1,6 @@
-// 1.21.1	2026-03-07T19:08:47.0798887	Registries
+// 1.21.1	2026-03-07T21:34:00.15948	Registries
 31d13073d97468497897a7ee1c3f8abe3e2a2d53 data/tbl/dimension/bldim.json
-de817f82bf142e993a8cc47b2e14da3942170083 data/tbl/dimension_type/bldim_type.json
+c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
 1f7a7442923d78c814324cef4477eca1c0723e8c data/tbl/forge/biome_modifier/add_lithium_ore.json
 87a8cb2bc0a7d8a738a163e2df41588943676e07 data/tbl/forge/biome_modifier/add_tree_ash.json
 f0127d55834a19e54bf778000b3106cc6711267d data/tbl/worldgen/biome/ashland.json

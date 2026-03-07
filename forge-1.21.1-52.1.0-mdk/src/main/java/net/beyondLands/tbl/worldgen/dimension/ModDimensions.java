@@ -37,7 +37,7 @@ public class ModDimensions {
                 true,
                 false,
                 false,
-                false,
+                true,
                 1.0,
                 true,
                 false,
@@ -46,7 +46,7 @@ public class ModDimensions {
                 384,
                 BlockTags.INFINIBURN_OVERWORLD,
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS,
-                0.4f,
+                0.0f,
                 new DimensionType.MonsterSettings(false, false, UniformInt.of(0, 7), 0)));
     }
 
