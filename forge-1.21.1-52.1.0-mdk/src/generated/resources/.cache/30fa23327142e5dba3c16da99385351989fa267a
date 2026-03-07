@@ -1,4 +1,5 @@
-// 1.21.1	2026-03-06T18:42:05.5231988	Tags for minecraft:worldgen/biome mod id tbl
+// 1.21.1	2026-03-07T16:06:17.5425676	Tags for minecraft:worldgen/biome mod id tbl
+04e647ee0d40949dfa6f8fb628d8e2d3b3c4d4a4 data/tbl/tags/worldgen/biome/ash_ruins_spawn_in.json
 04e647ee0d40949dfa6f8fb628d8e2d3b3c4d4a4 data/tbl/tags/worldgen/biome/is_bl.json
 ece3777c7b4a64bd862bfcd19eefffd7bea4da3f data/tbl/tags/worldgen/biome/is_bl_or_overworld.json
 65b29c965ea2f670ce9603e7900acbe9c1060d4e data/tbl/tags/worldgen/biome/valid_lab_ruins_biomes.json
