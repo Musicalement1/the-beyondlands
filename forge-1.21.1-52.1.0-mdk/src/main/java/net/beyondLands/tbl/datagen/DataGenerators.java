@@ -39,7 +39,8 @@ public class DataGenerators {
                 new LootTableProvider(packOutput, Collections.emptySet(),
                         List.of(
                                 new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK),
-                                new LootTableProvider.SubProviderEntry(ModEntityLootProvider::new, LootContextParamSets.ENTITY)
+                                new LootTableProvider.SubProviderEntry(ModEntityLootProvider::new, LootContextParamSets.ENTITY),
+                                new LootTableProvider.SubProviderEntry(ModChestLootProvider::new, LootContextParamSets.CHEST)
                         ),
                         vanillaLookup));
 
