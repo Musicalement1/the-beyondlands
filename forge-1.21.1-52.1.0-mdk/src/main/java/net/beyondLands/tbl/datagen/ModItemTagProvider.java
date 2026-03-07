@@ -42,5 +42,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.PLANKS)
                 .add(ModBlocks.ASH_PLANKS.get().asItem());
+
+        tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(ModBlocks.GNEISS.get().asItem());
+        tag(ItemTags.STONE_TOOL_MATERIALS)
+                .add(ModBlocks.GNEISS.get().asItem());
     }
 }

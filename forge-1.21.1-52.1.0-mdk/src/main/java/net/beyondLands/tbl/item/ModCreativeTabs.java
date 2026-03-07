@@ -53,6 +53,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ASH_SAPLING.get());
                         output.accept(ModItems.PEPPER_SEEDS.get());
                         output.accept(ModBlocks.BL_PORTAL.get());
+                        output.accept(ModBlocks.GNEISS.get());
                     }).build());
 
 

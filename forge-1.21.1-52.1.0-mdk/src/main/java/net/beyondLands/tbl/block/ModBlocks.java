@@ -6,6 +6,7 @@ import net.beyondLands.tbl.block.crop.PepperCropBlock;
 import net.beyondLands.tbl.block.other.ModFlammableRotatedPillarBlock;
 import net.beyondLands.tbl.item.ModItems;
 import net.beyondLands.tbl.worldgen.tree.ModTreeGrowers;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
@@ -14,6 +15,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -110,7 +112,12 @@ public class ModBlocks {
             () -> new SaplingBlock(ModTreeGrowers.ASH, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
 
-
+    public static final RegistryObject<Block> GNEISS = registerBlock("gneiss",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f, 6f)
+                    .requiresCorrectToolForDrops()
+                    .mapColor(MapColor.STONE)
+                    .sound(SoundType.STONE)));
 
 
 

@@ -5,6 +5,7 @@
     "tbl:lithium_ore",
     "tbl:lithium_deepslate_ore",
     "tbl:force_field_block",
-    "tbl:force_field_block_attract"
+    "tbl:force_field_block_attract",
+    "tbl:gneiss"
   ]
 }

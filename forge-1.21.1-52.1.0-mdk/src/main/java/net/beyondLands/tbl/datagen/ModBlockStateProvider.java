@@ -31,8 +31,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LITHIUM_ORE);
         blockWithItem(ModBlocks.LITHIUM_DEEPSLATE_ORE);
 
-        forceFieldBlock(ModBlocks.FORCE_FIELD_BLOCK);
-        forceFieldBlockAttract(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT);
+        getExistingModel(ModBlocks.FORCE_FIELD_BLOCK, "force_field_block");
+        getExistingModel(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT, "force_field_block_attract");
 
         logBlock(ModBlocks.ASH_LOG.get());
         axisBlock(ModBlocks.ASH_WOOD.get(), blockTexture(ModBlocks.ASH_LOG.get()), blockTexture(ModBlocks.ASH_LOG.get()));
@@ -52,6 +52,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         makeCrop(((CropBlock) ModBlocks.PEPPER_CROP.get()), "pepper_crop_stage", "pepper_crop_stage");
 
         blockWithItem(ModBlocks.BL_PORTAL);
+        randomRotatedExistingModel(ModBlocks.GNEISS, "gneiss");
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
@@ -83,17 +84,42 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-
-    private void forceFieldBlock(RegistryObject<Block> blockRegistryObject) {
-        var model = models().getExistingFile(modLoc("block/force_field_block"));
+    private void getExistingModel(RegistryObject<Block> blockRegistryObject, String name) {
+        var model = models().getExistingFile(modLoc("block/" + name));
         simpleBlock(blockRegistryObject.get(), model);
         simpleBlockItem(blockRegistryObject.get(), model);
     }
+    protected void randomRotatedCubeBlockAll(RegistryObject<Block> block) {
+        String name = block.getId().getPath();
 
-    private void forceFieldBlockAttract(RegistryObject<Block> blockRegistryObject) {
-        var model = models().getExistingFile(modLoc("block/force_field_block_attract"));
-        simpleBlock(blockRegistryObject.get(), model);
-        simpleBlockItem(blockRegistryObject.get(), model);
+        var model = models().cubeAll(name, modLoc("block/" + name));
+
+        getVariantBuilder(block.get()).partialState().setModels(
+                ConfiguredModel.builder()
+                        .modelFile(model).rotationY(0).nextModel()
+                        .modelFile(model).rotationY(90).nextModel()
+                        .modelFile(model).rotationY(180).nextModel()
+                        .modelFile(model).rotationY(270)
+                        .build()
+        );
+
+        simpleBlockItem(block.get(), model);
+    }
+
+
+    protected void randomRotatedExistingModel(RegistryObject<Block> block, String modelName) {
+        ModelFile model = models().getExistingFile(modLoc("block/" + modelName));
+
+        getVariantBuilder(block.get()).partialState().setModels(
+                ConfiguredModel.builder()
+                        .modelFile(model).rotationY(0).nextModel()
+                        .modelFile(model).rotationY(90).nextModel()
+                        .modelFile(model).rotationY(180).nextModel()
+                        .modelFile(model).rotationY(270)
+                        .build()
+        );
+
+        simpleBlockItem(block.get(), model);
     }
 
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {
