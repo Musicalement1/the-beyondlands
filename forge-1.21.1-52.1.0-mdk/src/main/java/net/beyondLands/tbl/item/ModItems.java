@@ -118,6 +118,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ASHLING_SPAWN_EGG = ITEMS.register("ashling_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.ASHLING, 0x474747, 0x2dbccc, new Item.Properties()));
+    public static final RegistryObject<Item> ASH_ZOMBIE_SPAWN_EGG = ITEMS.register("ash_zombie_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.ASH_ZOMBIE, 0x38D1CB, 0xCE38D1, new Item.Properties()));
 
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new SwordItem(ModToolTiers.STEEL, new Item.Properties()

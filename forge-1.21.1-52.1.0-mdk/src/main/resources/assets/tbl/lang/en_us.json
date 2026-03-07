@@ -57,5 +57,7 @@
   "block.tbl.bl_portal": "Mysterious Portal",
   "block.tbl.gneiss": "Gneiss",
   "block.tbl.ash_block": "Ash Block",
-  "block.tbl.lab_block": "Lab Block"
+  "block.tbl.lab_block": "Lab Block",
+  "entity.tbl.ash_zombie": "Ash Zombie",
+  "item.tbl.ash_zombie_spawn_egg": "Ashling Spawn Egg"
 }

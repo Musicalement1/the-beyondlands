@@ -2,6 +2,7 @@ package net.beyondLands.tbl;
 
 import net.beyondLands.tbl.block.ModBlocks;
 import net.beyondLands.tbl.entity.ModEntities;
+import net.beyondLands.tbl.entity.client.AshZombieRenderer;
 import net.beyondLands.tbl.entity.client.AshlingRenderer;
 import net.beyondLands.tbl.item.ModCreativeTabs;
 import net.beyondLands.tbl.item.ModItems;
@@ -90,6 +91,6 @@ public class TBL
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.ASHLING.get(), AshlingRenderer::new);
-        }
+            EntityRenderers.register(ModEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);}
     }
 }

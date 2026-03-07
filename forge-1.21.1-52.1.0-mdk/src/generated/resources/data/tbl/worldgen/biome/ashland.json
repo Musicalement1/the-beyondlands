@@ -52,7 +52,14 @@
       }
     ],
     "misc": [],
-    "monster": [],
+    "monster": [
+      {
+        "type": "tbl:ash_zombie",
+        "maxCount": 4,
+        "minCount": 1,
+        "weight": 2
+      }
+    ],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []

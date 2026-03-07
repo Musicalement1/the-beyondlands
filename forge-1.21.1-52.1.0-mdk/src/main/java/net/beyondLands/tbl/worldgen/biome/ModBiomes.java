@@ -30,7 +30,8 @@ public class ModBiomes {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
         spawnBuilder.addSpawn(MobCategory.CREATURE,
              new MobSpawnSettings.SpawnerData(ModEntities.ASHLING.get(), 8, 2, 4));
-
+        spawnBuilder.addSpawn(MobCategory.MONSTER,
+                new MobSpawnSettings.SpawnerData(ModEntities.ASH_ZOMBIE.get(), 2, 1, 4));
         // GENERATION
         BiomeGenerationSettings.Builder generationBuilder =
                 new BiomeGenerationSettings.Builder(

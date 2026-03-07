@@ -10,6 +10,7 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
@@ -32,21 +33,21 @@ public class ModDimensions {
 
     public static void bootstrapType(BootstrapContext<DimensionType> context) {
         context.register(BLDIM_DIM_TYPE, new DimensionType(
-                OptionalLong.of(12000), // fixedTime
-                false, // hasSkylight
-                false, // hasCeiling
-                false, // ultraWarm
-                false, // natural
-                1.0, // coordinateScale
-                true, // bedWorks
-                false, // respawnAnchorWorks
+                OptionalLong.empty(),
+                true,
+                false,
+                false,
+                false,
+                1.0,
+                true,
+                false,
                 -64,
                 384,
                 384,
-                BlockTags.INFINIBURN_OVERWORLD, // infiniburn
-                BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
-                1.0f, // ambientLight
-                new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
+                BlockTags.INFINIBURN_OVERWORLD,
+                BuiltinDimensionTypes.OVERWORLD_EFFECTS,
+                0.4f,
+                new DimensionType.MonsterSettings(false, false, UniformInt.of(0, 7), 0)));
     }
 
     public static void bootstrapStem(BootstrapContext<LevelStem> context) {

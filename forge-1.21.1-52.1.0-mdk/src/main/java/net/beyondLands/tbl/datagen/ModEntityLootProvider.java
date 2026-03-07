@@ -38,6 +38,21 @@ public class ModEntityLootProvider extends EntityLootSubProvider {
                                         //.when(LootItemKilledByPlayerCondition.killedByPlayer())
                         )
         );
+
+        this.add(
+                ModEntities.ASH_ZOMBIE.get(),
+                LootTable.lootTable()
+                        .withPool(
+                                LootPool.lootPool()
+                                        .setRolls(ConstantValue.exactly(1.0F))
+                                        .add(
+                                                LootItem.lootTableItem(ModItems.ASH.get())
+                                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
+                                                        .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))
+                                        )
+                                //.when(LootItemKilledByPlayerCondition.killedByPlayer())
+                        )
+        );
     }
 
 

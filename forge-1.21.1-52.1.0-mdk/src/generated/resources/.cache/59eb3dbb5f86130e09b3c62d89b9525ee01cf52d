@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-07T15:13:43.7838583	Loot Tables
+// 1.21.1	2026-03-07T17:50:37.0930723	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
@@ -17,3 +17,4 @@ fc852f09e656393be6682ec21f0827a78a211ef0 data/tbl/loot_table/blocks/raw_lithium_
 891fc73519871b50540c9701543924cd764c1861 data/tbl/loot_table/blocks/stripped_ash_wood.json
 0208f935623faf03e9fb7d31d586e1c3901ec30b data/tbl/loot_table/chests/ashling_ruins.json
 babdaa6dfc998cac4a92bcb399641bb4fb264a86 data/tbl/loot_table/entities/ashling.json
+a8179b020a5be575cdc9fb008766ba7e756d28f6 data/tbl/loot_table/entities/ash_zombie.json
