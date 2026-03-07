@@ -73,6 +73,15 @@
           "functions": [
             {
               "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.5
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "add": false,
               "count": {
                 "type": "minecraft:uniform",
                 "max": 2.0,
@@ -89,6 +98,15 @@
           "functions": [
             {
               "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 1.0,
+                "min": 0.5
+              },
+              "function": "minecraft:set_damage"
+            },
+            {
+              "add": false,
               "count": {
                 "type": "minecraft:uniform",
                 "max": 2.0,
@@ -99,6 +117,22 @@
           ],
           "name": "tbl:lithium_battery_stack",
           "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "tbl:pepper_seeds",
+          "weight": 25
         }
       ],
       "rolls": 3.0

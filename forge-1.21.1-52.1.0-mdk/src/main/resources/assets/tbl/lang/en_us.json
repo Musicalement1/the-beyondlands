@@ -55,5 +55,7 @@
   "item.tbl.pepper_seeds": "Pepper Seeds",
   "block.tbl.pepper_crop": "Pepper Crop",
   "block.tbl.bl_portal": "Mysterious Portal",
-  "block.tbl.gneiss": "Gneiss"
+  "block.tbl.gneiss": "Gneiss",
+  "block.tbl.ash_block": "Ash Block",
+  "block.tbl.lab_block": "Lab Block"
 }

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tbl:block/ash_block"
+      },
+      {
+        "model": "tbl:block/ash_block",
+        "y": 90
+      },
+      {
+        "model": "tbl:block/ash_block",
+        "y": 180
+      },
+      {
+        "model": "tbl:block/ash_block",
+        "y": 270
+      }
+    ]
+  }
+}

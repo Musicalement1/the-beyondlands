@@ -10,6 +10,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.storage.loot.*;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.functions.SetItemDamageFunction;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
@@ -31,10 +32,8 @@ public class ModChestLootProvider implements LootTableSubProvider {
 
     @Override
     public void generate(BiConsumer<ResourceKey<LootTable>, LootTable.Builder> consumer) {
-
         consumer.accept(
                 ASHLING_RUINS,
-
                 LootTable.lootTable()
                         .withPool(
                                 LootPool.lootPool()
@@ -60,12 +59,18 @@ public class ModChestLootProvider implements LootTableSubProvider {
                                                         UniformGenerator.between(1, 4))))
                                         .add(LootItem.lootTableItem(ModItems.LITHIUM_BATTERY.get())
                                                 .setWeight(20)
+                                                .apply(SetItemDamageFunction.setDamage(UniformGenerator.between(0.5F, 1.0F)))
                                                 .apply(SetItemCountFunction.setCount(
                                                         UniformGenerator.between(1, 2))))
                                         .add(LootItem.lootTableItem(ModItems.LITHIUM_BATTERY_STACK.get())
                                                 .setWeight(5)
+                                                .apply(SetItemDamageFunction.setDamage(UniformGenerator.between(0.5F, 1.0F)))
                                                 .apply(SetItemCountFunction.setCount(
                                                         UniformGenerator.between(1, 2))))
+                                        .add(LootItem.lootTableItem(ModItems.PEPPER_SEEDS.get())
+                                                .setWeight(25)
+                                                .apply(SetItemCountFunction.setCount(
+                                                        UniformGenerator.between(2, 9))))
                         )
         );
     }

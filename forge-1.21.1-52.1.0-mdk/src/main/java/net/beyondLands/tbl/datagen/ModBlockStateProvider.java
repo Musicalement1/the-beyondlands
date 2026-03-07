@@ -13,6 +13,7 @@ import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -53,6 +54,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.BL_PORTAL);
         randomRotatedExistingModel(ModBlocks.GNEISS, "gneiss");
+
+        randomRotatedCubeBlockAll(ModBlocks.ASH_BLOCK);
+
+        randomRotatedCubeBlockAll(ModBlocks.LAB_BLOCK);
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {

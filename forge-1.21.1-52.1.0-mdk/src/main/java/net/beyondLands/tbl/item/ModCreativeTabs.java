@@ -54,6 +54,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.PEPPER_SEEDS.get());
                         output.accept(ModBlocks.BL_PORTAL.get());
                         output.accept(ModBlocks.GNEISS.get());
+                        output.accept(ModBlocks.ASH_BLOCK.get());
+                        output.accept(ModBlocks.LAB_BLOCK.get());
                     }).build());
 
 

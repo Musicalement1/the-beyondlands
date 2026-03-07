@@ -36,6 +36,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.FORCE_FIELD_BLOCK.get());
         dropSelf(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get());
         dropSelf(ModBlocks.GNEISS.get());
+        dropSelf(ModBlocks.LAB_BLOCK.get());
 
         this.add(ModBlocks.LITHIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get()));

@@ -119,7 +119,19 @@ public class ModBlocks {
                     .mapColor(MapColor.STONE)
                     .sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> ASH_BLOCK = registerBlock("ash_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(0.7f, 0.2f)
+                    .noLootTable()
+                    .sound(SoundType.SAND)
+            ));
 
+    public static final RegistryObject<Block> LAB_BLOCK = registerBlock("lab_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.8f, 8f)
+                    .sound(SoundType.BASALT)
+                    .requiresCorrectToolForDrops()
+            ));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
