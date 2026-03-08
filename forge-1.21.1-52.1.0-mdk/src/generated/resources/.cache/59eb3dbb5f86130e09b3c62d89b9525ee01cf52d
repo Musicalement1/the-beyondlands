@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-07T17:50:37.0930723	Loot Tables
+// 1.21.1	2026-03-08T11:06:43.8729071	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
@@ -6,6 +6,7 @@ b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.j
 bcf3b2d55b714ff8ed59c25efba0e94f25a31752 data/tbl/loot_table/blocks/ash_wood.json
 7678c05a4a744918ccc05f531642de86330c19c2 data/tbl/loot_table/blocks/force_field_block.json
 6cd1a9dd921d7f5f9e377bd9e75624ad91b9151e data/tbl/loot_table/blocks/force_field_block_attract.json
+07ba5af7af4fb4a46d70ff2fad99afc07f0a3e0a data/tbl/loot_table/blocks/gate_opener.json
 fe051e6d3afdf866d0b58013cdd4736f22394383 data/tbl/loot_table/blocks/gneiss.json
 337d65ccb955e144f143b24e74c2898a49fd462e data/tbl/loot_table/blocks/lab_block.json
 d6766d6c8651681d5d02a09adcfcb4f7c9b0e15e data/tbl/loot_table/blocks/lithium_block.json

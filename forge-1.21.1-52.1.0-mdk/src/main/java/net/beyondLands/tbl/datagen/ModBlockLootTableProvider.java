@@ -19,6 +19,7 @@ import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.beyondLands.tbl.item.ModItems;
 import net.beyondLands.tbl.block.ModBlocks;
@@ -37,6 +38,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get());
         dropSelf(ModBlocks.GNEISS.get());
         dropSelf(ModBlocks.LAB_BLOCK.get());
+        dropSelf(ModBlocks.GATE_OPENER.get());
 
         this.add(ModBlocks.LITHIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get()));

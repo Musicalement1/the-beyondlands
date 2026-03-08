@@ -19,6 +19,7 @@ public class ModTags {
     }
     public static class Items {
         public static final TagKey<Item> HYDROREACTIVE_ITEMS = createTag("hydroreactive_items");
+        public static final TagKey<Item> BATTERY = createTag("battery");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(TBL.MOD_ID, name));

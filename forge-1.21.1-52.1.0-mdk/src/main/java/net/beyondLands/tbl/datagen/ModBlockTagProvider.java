@@ -31,7 +31,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FORCE_FIELD_BLOCK.get())
                 .add(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get())
                 .add(ModBlocks.GNEISS.get())
-                .add(ModBlocks.LAB_BLOCK.get());
+                .add(ModBlocks.LAB_BLOCK.get())
+                .add(ModBlocks.GATE_OPENER.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LITHIUM_ORE.get())

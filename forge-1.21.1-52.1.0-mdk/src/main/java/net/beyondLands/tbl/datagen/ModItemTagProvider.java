@@ -40,6 +40,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.STRIPPED_ASH_LOG.get().asItem())
                 .add(ModBlocks.STRIPPED_ASH_WOOD.get().asItem());
 
+        tag(ModTags.Items.BATTERY)
+                .add(ModItems.LITHIUM_BATTERY.get())
+                .add(ModItems.LITHIUM_BATTERY_STACK.get())
+                .add(ModItems.LITHIUM_BATTERY_BOOSTED.get())
+                .add(ModItems.LITHIUM_BATTERY_STACK_BOOSTED.get());
+
         tag(ItemTags.PLANKS)
                 .add(ModBlocks.ASH_PLANKS.get().asItem());
 

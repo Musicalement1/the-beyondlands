@@ -34,6 +34,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         getExistingModel(ModBlocks.FORCE_FIELD_BLOCK, "force_field_block");
         getExistingModel(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT, "force_field_block_attract");
+        getExistingModel(ModBlocks.GATE_OPENER, "gate_opener");
 
         logBlock(ModBlocks.ASH_LOG.get());
         axisBlock(ModBlocks.ASH_WOOD.get(), blockTexture(ModBlocks.ASH_LOG.get()), blockTexture(ModBlocks.ASH_LOG.get()));

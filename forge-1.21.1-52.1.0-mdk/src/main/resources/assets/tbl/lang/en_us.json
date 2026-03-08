@@ -59,5 +59,6 @@
   "block.tbl.ash_block": "Ash Block",
   "block.tbl.lab_block": "Lab Block",
   "entity.tbl.ash_zombie": "Ash Zombie",
-  "item.tbl.ash_zombie_spawn_egg": "Ash Zombie Spawn Egg"
+  "item.tbl.ash_zombie_spawn_egg": "Ash Zombie Spawn Egg",
+  "block.tbl.gate_opener": "Gate Opener"
 }

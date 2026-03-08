@@ -21,6 +21,11 @@ public class ModBlockEntities {
                     ).build(null));
 
 
+    public static final RegistryObject<BlockEntityType<GateOpenerBlockEntity>> GATE_BE =
+            BLOCK_ENTITIES.register("gate_be", () -> BlockEntityType.Builder.of(
+                    GateOpenerBlockEntity::new, ModBlocks.GATE_OPENER.get()).build(null));
+
+
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

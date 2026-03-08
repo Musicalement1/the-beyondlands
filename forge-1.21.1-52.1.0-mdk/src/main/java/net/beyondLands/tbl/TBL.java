@@ -9,6 +9,9 @@ import net.beyondLands.tbl.item.ModItems;
 import net.beyondLands.tbl.block.entity.ModBlockEntities;
 
 import com.mojang.logging.LogUtils;
+import net.beyondLands.tbl.screen.ModMenuTypes;
+import net.beyondLands.tbl.screen.custom.GateScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
@@ -50,7 +53,7 @@ public class TBL
         ModCreativeTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
-
+        ModMenuTypes.register(modEventBus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -91,6 +94,8 @@ public class TBL
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.ASHLING.get(), AshlingRenderer::new);
-            EntityRenderers.register(ModEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);}
+            EntityRenderers.register(ModEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);
+            MenuScreens.register(ModMenuTypes.GATE_MENU.get(), GateScreen::new);
+        }
     }
 }

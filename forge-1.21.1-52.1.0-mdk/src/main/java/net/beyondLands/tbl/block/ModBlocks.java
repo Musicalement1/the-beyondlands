@@ -133,6 +133,13 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ));
 
+    public static final RegistryObject<Block> GATE_OPENER = registerBlock("gate_opener",
+            () -> new GateOpenerBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .strength(10f, 100f)
+            ));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -7,6 +7,7 @@
     "tbl:force_field_block",
     "tbl:force_field_block_attract",
     "tbl:gneiss",
-    "tbl:lab_block"
+    "tbl:lab_block",
+    "tbl:gate_opener"
   ]
 }

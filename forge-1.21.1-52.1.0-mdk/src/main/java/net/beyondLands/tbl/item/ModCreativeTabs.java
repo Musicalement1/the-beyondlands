@@ -57,6 +57,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.GNEISS.get());
                         output.accept(ModBlocks.ASH_BLOCK.get());
                         output.accept(ModBlocks.LAB_BLOCK.get());
+                        output.accept(ModBlocks.GATE_OPENER.get());
                     }).build());
 
 

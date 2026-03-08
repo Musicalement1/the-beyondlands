@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-07T15:19:11.5721018	Block States: tbl
+// 1.21.1	2026-03-08T11:06:43.8749011	Block States: tbl
 524a44c240615f6bf67684cc9ae07dad81dcc7f1 assets/tbl/blockstates/ash_block.json
 a9040f7253666065fcdc0f3279d93e2c9238a8a0 assets/tbl/blockstates/ash_leaves.json
 59c4179de6339e891e75c2da9bef1bc69d9a5923 assets/tbl/blockstates/ash_log.json
@@ -8,6 +8,7 @@ a3dc007b7be7ac260b4ecfd380363c1bb18a7fa8 assets/tbl/blockstates/ash_sapling.json
 01f90e4bea1096ed5e899390ce1182c3926f4993 assets/tbl/blockstates/bl_portal.json
 75f9cfd95b1dcf96d0c76b9a0b13fc60ad82e046 assets/tbl/blockstates/force_field_block.json
 a401dbb7af4eb940f0b34d272f4ccab8fc130fb9 assets/tbl/blockstates/force_field_block_attract.json
+38b982bfbf4c0d61a41c18d9f43f66ad2650c71a assets/tbl/blockstates/gate_opener.json
 5ba7974678a83d67f21cd1db67902274187c81fd assets/tbl/blockstates/gneiss.json
 15dff0ba505e4c275a28b49171fbb8a8b1223829 assets/tbl/blockstates/lab_block.json
 a7355a03c86d164257e1b41b6ac8499541d29b1d assets/tbl/blockstates/lithium_block.json
@@ -50,6 +51,7 @@ ce927c03681d6ccf8bea0b9e7e09a3ad1209f464 assets/tbl/models/item/ash_leaves.json
 47ee56627e1629ef5364f5975d354099864db184 assets/tbl/models/item/bl_portal.json
 c041937ebc44599d76e25935085a1852b1c7dab3 assets/tbl/models/item/force_field_block.json
 16d79a461bae04e8c4ac607b85e219a198e6345e assets/tbl/models/item/force_field_block_attract.json
+032f55408dc585d9fce40c512cf2518a4faf5f7b assets/tbl/models/item/gate_opener.json
 b47baf4b2b2e4f0bed28170d1facfa983ba24b23 assets/tbl/models/item/gneiss.json
 b54df19c523027d33551f02aa7082242ffe20aab assets/tbl/models/item/lab_block.json
 d6d9fcea27ce62e92269b6f941354bd0b91e9444 assets/tbl/models/item/lithium_block.json
