@@ -5,11 +5,15 @@ import net.beyondLands.tbl.screen.custom.GateMenu;
 import net.beyondLands.tbl.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -61,7 +65,7 @@ public class GateOpenerBlockEntity extends BlockEntity implements MenuProvider {
             level.removeBlock(portalPos, false);
         }
     }
-
+    private boolean hasPlayedSound = false;
     public static void tick(Level level, BlockPos pos, BlockState state, GateOpenerBlockEntity blockEntity) {
 
         if(level.isClientSide) return;
@@ -81,17 +85,56 @@ public class GateOpenerBlockEntity extends BlockEntity implements MenuProvider {
                     level.setBlock(portalPos, ModBlocks.BL_PORTAL.get().defaultBlockState(), 3);
                 }
 
+                if(level instanceof ServerLevel serverLevel) {
+                    if (!blockEntity.hasPlayedSound) {
+                        serverLevel.playSound(
+                                null,
+                                portalPos,
+                                SoundEvents.END_PORTAL_SPAWN,
+                                SoundSource.BLOCKS,
+                                1.0F,
+                                1.0F
+                        );
+                        blockEntity.hasPlayedSound = true;
+                    }
+                    serverLevel.sendParticles(
+                            ParticleTypes.PORTAL,
+                            portalPos.getX() + 0.5,
+                            portalPos.getY() + 0.5,
+                            portalPos.getZ() + 0.5,
+                            5,
+                            0.3,
+                            0.5,
+                            0.3,
+                            0.01
+                    );
+                    serverLevel.sendParticles(
+                            ParticleTypes.END_ROD,
+                            portalPos.getX() + 0.5,
+                            portalPos.getY() + 0.8,
+                            portalPos.getZ() + 0.5,
+                            1,
+                            0.2,
+                            0.2,
+                            0.2,
+                            0.01
+                    );
+                }
+
             } else {
                 blockEntity.inventory.setStackInSlot(0, ItemStack.EMPTY);
-                removePortal(level, portalPos);
+                removePortal(level, portalPos, blockEntity);
             }
 
         } else {
-            removePortal(level, portalPos);
+            removePortal(level, portalPos, blockEntity);
         }
     }
-
-    private static void removePortal(Level level, BlockPos pos) {
+    public void resetSoundFlag() {
+        this.hasPlayedSound = false;
+    }
+    private static void removePortal(Level level, BlockPos pos, GateOpenerBlockEntity blockEntity) {
+        blockEntity.resetSoundFlag();
         if(level.getBlockState(pos).is(ModBlocks.BL_PORTAL.get())) {
             level.removeBlock(pos, false);
         }

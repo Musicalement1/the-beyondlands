@@ -16,7 +16,7 @@ public class ModTeleporter {
 
     public static DimensionTransition createTransition(Entity entity, ServerLevel dest, BlockPos pos, boolean forcedEntry) {
 
-        dest.setBlock(pos.below(), Blocks.DIRT.defaultBlockState(), 3);
+        dest.setBlock(pos.below(), ModBlocks.GATE_OPENER.get().defaultBlockState(), 3);
         dest.setBlock(pos, ModBlocks.BL_PORTAL.get().defaultBlockState(), 3);
         dest.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3);
         dest.setBlock(pos.above(2), Blocks.AIR.defaultBlockState(), 3);
