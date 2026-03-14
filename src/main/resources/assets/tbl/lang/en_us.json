@@ -23,6 +23,7 @@
   "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
 
   "item.tbl.steel_sword": "Steel Sword",
+  "item.tbl.steel_knife": "Steel Dagger",
   "item.tbl.steel_pickaxe": "Steel Pickaxe",
   "item.tbl.steel_hoe": "Steel Hoe",
   "item.tbl.steel_shovel": "Steel Shovel",
@@ -46,11 +47,18 @@
   "advancement.tbl.story.root.title": "Beyond The Stories",
   "advancement.tbl.story.root.description": "A New Story Is Been Written Today.",
 
-  "advancement.tbl.story.obtain_raw_lithium.title": "Breaking Batt..rie!",
+  "advancement.tbl.story.obtain_raw_lithium.title": "An Energized Rock",
   "advancement.tbl.story.obtain_raw_lithium.description": "Obtain Your First Lithium Ore!",
 
   "advancement.tbl.story.smelt_lithium.title": "Purification",
   "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!",
+
+  "advancement.tbl.story.obtain_steel.title": "Better, Stronger, Slower",
+  "advancement.tbl.story.obtain_steel.description": "Craft Steel Using Iron and Coal!",
+
+  "advancement.tbl.story.make_battery.title": "Breaking Batt..rie!",
+  "advancement.tbl.story.make_battery.description": "Make your first battery!",
+
 
   "item.tbl.pepper_seeds": "Pepper Seeds",
   "block.tbl.pepper_crop": "Pepper Crop",

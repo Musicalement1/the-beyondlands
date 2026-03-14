@@ -73,5 +73,42 @@ public class ModAdvancementGenerator implements NeoForgeAdvancementProvider.Adva
                         InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM.get()))
                 .requirements(AdvancementRequirements.allOf(List.of("pickup_li")))
                 .save(saver, ResourceLocation.fromNamespaceAndPath("tbl","story/smelt_lithium"), existingFileHelper);
+
+        AdvancementHolder obtain_steel = Advancement.Builder.advancement()
+                .parent(smelt_lithium)
+                .display(
+                        new ItemStack(ModItems.STEEL_INGOT.get()),
+                        Component.translatable("advancement.tbl.story.obtain_steel.title"),
+                        Component.translatable("advancement.tbl.story.obtain_steel.description"),
+                        null,
+                        AdvancementType.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .addCriterion("steel",
+                        InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.STEEL_INGOT.get())
+                )
+                .requirements(AdvancementRequirements.allOf(List.of("steel")))
+                .save(saver, ResourceLocation.fromNamespaceAndPath("tbl","story/obtain_steel"), existingFileHelper);
+
+        AdvancementHolder make_battery = Advancement.Builder.advancement()
+                .parent(obtain_steel)
+                .display(
+                        new ItemStack(ModItems.LITHIUM_BATTERY.get()),
+                        Component.translatable("advancement.tbl.story.make_battery.title"),
+                        Component.translatable("advancement.tbl.story.make_battery.description"),
+                        null,
+                        AdvancementType.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .requirements(AdvancementRequirements.Strategy.OR)
+                .addCriterion("bat", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY))
+                .addCriterion("sbat", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY_STACK))
+                .addCriterion("batb", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY_BOOSTED))
+                .addCriterion("sbatb", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY_STACK_BOOSTED))
+                .save(saver, ResourceLocation.fromNamespaceAndPath("tbl","story/make_battery"), existingFileHelper);
     }
 }

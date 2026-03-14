@@ -122,7 +122,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new SwordItem(ModToolTiers.STEEL, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 5, -2.7f))));
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 3.5f, -2.7f))));
     public static final DeferredItem<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
             () -> new PickaxeItem(ModToolTiers.STEEL, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 1, -2.8f))));
@@ -131,14 +131,17 @@ public class ModItems {
                     .attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 1.5f, -3.0f))));
     public static final DeferredItem<Item> STEEL_AXE = ITEMS.register("steel_axe",
             () -> new AxeItem(ModToolTiers.STEEL, new Item.Properties()
-                    .attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 8.5f, -3.5f))));
+                    .attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 6.5f, -3.2f))));
     public static final DeferredItem<Item> STEEL_HOE = ITEMS.register("steel_hoe",
             () -> new HoeItem(ModToolTiers.STEEL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.STEEL, 0, -3.0f))));
+    public static final DeferredItem<Item> STEEL_KNIFE = ITEMS.register("steel_knife",
+            () -> new SwordItem(ModToolTiers.STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 1.5f, -0.2f))));
 
     public static final DeferredItem<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
             () -> new HammerItem(ModToolTiers.STEEL, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 8.5f, -3.9f))));
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 7.0f, -3.5f))));
 
 
     public static final DeferredItem<ArmorItem> STEEL_HELMET = ITEMS.register("steel_helmet",

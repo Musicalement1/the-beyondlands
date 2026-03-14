@@ -1,0 +1,66 @@
+{
+  "parent": "tbl:story/obtain_steel",
+  "criteria": {
+    "bat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_battery"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "batb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_battery_boosted"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sbat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_battery_stack"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sbatb": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_battery_stack_boosted"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.make_battery.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tbl:lithium_battery"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.make_battery.title"
+    }
+  },
+  "requirements": [
+    [
+      "bat",
+      "sbat",
+      "batb",
+      "sbatb"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

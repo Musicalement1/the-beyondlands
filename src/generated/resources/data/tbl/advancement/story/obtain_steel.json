@@ -1,0 +1,33 @@
+{
+  "parent": "tbl:story/smelt_lithium",
+  "criteria": {
+    "steel": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.obtain_steel.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tbl:steel_ingot"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.obtain_steel.title"
+    }
+  },
+  "requirements": [
+    [
+      "steel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

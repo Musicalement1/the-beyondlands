@@ -38,6 +38,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ASHLING_SPAWN_EGG.get());
                         output.accept(ModItems.ASH_ZOMBIE_SPAWN_EGG.get());
                         output.accept(ModItems.STEEL_SWORD.get());
+                        output.accept(ModItems.STEEL_KNIFE.get());
                         output.accept(ModItems.STEEL_AXE.get());
                         output.accept(ModItems.STEEL_PICKAXE.get());
                         output.accept(ModItems.STEEL_HOE.get());

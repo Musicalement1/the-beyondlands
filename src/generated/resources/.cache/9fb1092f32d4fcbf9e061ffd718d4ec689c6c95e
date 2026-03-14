@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-14T11:02:09.554268	Recipes
+// 1.21.1	2026-03-14T22:09:46.55852	Recipes
 522d1dc705653a1b9468ab41514fc8e9753cb622 data/tbl/advancement/recipes/misc/ash_planks.json
 00518a8cd6606fb0128c651b7add8bcfdb5e2e21 data/tbl/advancement/recipes/misc/ash_wood.json
 c43dd2d736da24c00d2b09418c25f72a7df22a6e data/tbl/advancement/recipes/misc/force_field_block.json
@@ -23,6 +23,7 @@ b85f03956f9bdd0628258722fa12e632dcc4f0d1 data/tbl/advancement/recipes/misc/lithi
 655530372891c9c69c42a58691e657fd7235efb5 data/tbl/advancement/recipes/misc/steel_helmet.json
 e3ce233a3d1b1e33b02c0b6b4d2fae108dfd1aa9 data/tbl/advancement/recipes/misc/steel_hoe.json
 629d20db86d41b4ea3f628a5e92f25ee9df9c869 data/tbl/advancement/recipes/misc/steel_ingot.json
+6069cd148ba7df838ddf88bf3f182ec756aafe4c data/tbl/advancement/recipes/misc/steel_knife.json
 33f8ca84376faa81944d958000978370d55d1ba6 data/tbl/advancement/recipes/misc/steel_leggings.json
 f73307f12758a238fa004397e7b6645bff717711 data/tbl/advancement/recipes/misc/steel_pickaxe.json
 fd40ba96d0c2a238fffb8db66846226c2675a598 data/tbl/advancement/recipes/misc/steel_shovel.json
@@ -51,6 +52,7 @@ e718cdcd13cfaad0914c7a045b939826a0c7db87 data/tbl/recipe/steel_hammer.json
 40873f2999862276ccc1ad51421c02b47ede45a8 data/tbl/recipe/steel_helmet.json
 b1507b53628d93258790b3ff76fab0b4810b30e1 data/tbl/recipe/steel_hoe.json
 646580f3f59d60c343230c3caecdde533ea2d198 data/tbl/recipe/steel_ingot.json
+cc82bb4cfbff894a3ef64c180d47b95c4d2f07df data/tbl/recipe/steel_knife.json
 3146875dd31300945111f7b6dd5d878ed297cdb1 data/tbl/recipe/steel_leggings.json
 34b6a2ec86d2e645e0c2883b8ab0840cd50a33f5 data/tbl/recipe/steel_pickaxe.json
 fc1888aa143889fe4ba0b142b25869cb2f3ff62c data/tbl/recipe/steel_shovel.json

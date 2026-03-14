@@ -116,7 +116,7 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .mapColor(MapColor.STONE)
                     .sound(SoundType.STONE)));
-
+    //new ColoredFallingBlock(new ColorRGBA(0x303030),BlockBehaviour.Properties.of()
     public static final DeferredBlock<Block> ASH_BLOCK = registerBlock("ash_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.7f, 0.2f)

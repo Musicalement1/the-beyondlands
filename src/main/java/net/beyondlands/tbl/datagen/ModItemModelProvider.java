@@ -64,6 +64,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.STEEL_AXE);
         handheldItem(ModItems.STEEL_HOE);
         handheldItem(ModItems.STEEL_HAMMER);
+        handheldItem(ModItems.STEEL_KNIFE);
 
         trimmedArmorItem(ModItems.STEEL_HELMET);
         trimmedArmorItem(ModItems.STEEL_CHESTPLATE);
