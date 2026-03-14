@@ -1,0 +1,13 @@
+// 1.21.1	2026-03-14T11:02:09.553484	Registries
+31d13073d97468497897a7ee1c3f8abe3e2a2d53 data/tbl/dimension/bldim.json
+c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
+94d465c8f24167d4c4c33e985caf6242d623d6df data/tbl/neoforge/biome_modifier/add_lithium_ore.json
+a08f69b1d68fdeb55e26badcba70a89a956ff2ea data/tbl/neoforge/biome_modifier/add_tree_ash.json
+f0127d55834a19e54bf778000b3106cc6711267d data/tbl/worldgen/biome/ashland.json
+2878e72f354161e5ba0682665fd44fabc8e2bc7a data/tbl/worldgen/configured_feature/ash.json
+0a9b1e423bf18c335ace2659ee3d18594615e876 data/tbl/worldgen/configured_feature/lithium_ore.json
+98feadee20695197cf52b26f26849a392868facf data/tbl/worldgen/placed_feature/ash_placed.json
+8467173b19f267e1cfbfa50b21a9eeae1a294a58 data/tbl/worldgen/placed_feature/lithium_ore_placed.json
+4311e64b316c63b5c0d790f9109130f56b847cc0 data/tbl/worldgen/structure/ashling_ruins.json
+a8081a4dc838f092c20535d01e1b356865383041 data/tbl/worldgen/structure_set/ashling_ruins.json
+ae105fc4635bba18a14707cc48cd5a17e0247a0a data/tbl/worldgen/template_pool/ashling_ruins_pool.json

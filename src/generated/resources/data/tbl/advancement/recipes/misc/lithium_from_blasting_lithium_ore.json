@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lithium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tbl:lithium_from_blasting_lithium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_lithium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tbl:lithium_from_blasting_lithium_ore"
+    ]
+  }
+}

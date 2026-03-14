@@ -1,0 +1,8 @@
+{
+  "values": [
+    "tbl:lithium_battery",
+    "tbl:lithium_battery_stack",
+    "tbl:lithium_battery_boosted",
+    "tbl:lithium_battery_stack_boosted"
+  ]
+}

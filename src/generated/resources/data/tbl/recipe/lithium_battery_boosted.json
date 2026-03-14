@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "tbl:lithium_block"
+    },
+    "t": {
+      "item": "tbl:steel_ingot"
+    }
+  },
+  "pattern": [
+    "t",
+    "T",
+    "t"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:lithium_battery_boosted"
+  }
+}

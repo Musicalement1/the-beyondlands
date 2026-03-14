@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "minecraft:stick"
+    },
+    "t": {
+      "item": "tbl:steel_ingot"
+    }
+  },
+  "pattern": [
+    "tt",
+    " T",
+    " T"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:steel_hoe"
+  }
+}

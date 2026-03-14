@@ -1,0 +1,64 @@
+{
+  "item.tbl.lithium": "Lithium",
+  "item.tbl.raw_lithium": "Raw Lithium",
+  "block.tbl.lithium_block": "Lithium Block",
+  "block.tbl.raw_lithium_block": "Raw Lithium Block",
+
+  "creativetab.tbl.tbl_stuff": "The Beyondlands",
+
+  "block.tbl.lithium_ore": "Lithium Ore",
+  "block.tbl.lithium_deepslate_ore": "Lithium Deepslate Ore",
+  "item.tbl.steel_ingot": "Steel Ingot",
+  "item.tbl.lithium_battery": "Lithium Battery",
+  "item.tbl.lithium_battery_boosted": "High Voltage Lithium Battery",
+  "item.tbl.lithium_battery_stack": "High Capability Lithium Battery",
+  "item.tbl.lithium_battery_stack_boosted": "High Voltage and Capability Lithium Battery",
+
+  "block.tbl.force_field_block": "Force Field (Repulsor)",
+  "block.tbl.force_field_block_attract": "Force Field (Attractor)",
+
+  "entity.tbl.ashling": "Ashling",
+  "item.tbl.pepper": "Bell Pepper",
+  "item.tbl.ash": "Ashes",
+  "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
+
+  "item.tbl.steel_sword": "Steel Sword",
+  "item.tbl.steel_pickaxe": "Steel Pickaxe",
+  "item.tbl.steel_hoe": "Steel Hoe",
+  "item.tbl.steel_shovel": "Steel Shovel",
+  "item.tbl.steel_axe": "Steel Axe",
+  "item.tbl.steel_hammer": "Steel Hammer",
+  "item.tbl.steel_helmet": "Steel Helmet",
+  "item.tbl.steel_chestplate": "Steel Chestplate",
+  "item.tbl.steel_leggings": "Steel Leggings",
+  "item.tbl.steel_boots": "Steel Boots",
+  "item.tbl.steel_horse_armor": "Steel Horse Armor",
+
+  "block.tbl.ash_log": "Ash Log",
+  "block.tbl.ash_planks": "Ash Planks",
+  "block.tbl.ash_wood": "Ash Wood",
+  "block.tbl.stripped_ash_log": "Stripped Ash Log",
+  "block.tbl.stripped_ash_wood": "Stripped Ash Wood",
+  "block.tbl.ash_leaves": "Ash Leaves",
+
+  "block.tbl.ash_sapling": "Ash Sapling",
+
+  "advancement.tbl.story.root.title": "Beyond The Stories",
+  "advancement.tbl.story.root.description": "A New Story Is Been Written Today.",
+
+  "advancement.tbl.story.obtain_raw_lithium.title": "Breaking Batt..rie!",
+  "advancement.tbl.story.obtain_raw_lithium.description": "Obtain Your First Lithium Ore!",
+
+  "advancement.tbl.story.smelt_lithium.title": "Purification",
+  "advancement.tbl.story.smelt_lithium.description": "Smelt Lithium To Get Its True Form!",
+
+  "item.tbl.pepper_seeds": "Pepper Seeds",
+  "block.tbl.pepper_crop": "Pepper Crop",
+  "block.tbl.bl_portal": "Mysterious Portal",
+  "block.tbl.gneiss": "Gneiss",
+  "block.tbl.ash_block": "Ash Block",
+  "block.tbl.lab_block": "Lab Block",
+  "entity.tbl.ash_zombie": "Ash Zombie",
+  "item.tbl.ash_zombie_spawn_egg": "Ash Zombie Spawn Egg",
+  "block.tbl.gate_opener": "Gate Opener"
+}

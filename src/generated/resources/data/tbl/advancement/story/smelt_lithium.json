@@ -1,0 +1,33 @@
+{
+  "parent": "tbl:story/obtain_raw_lithium",
+  "criteria": {
+    "pickup_li": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:lithium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.smelt_lithium.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tbl:lithium"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.smelt_lithium.title"
+    }
+  },
+  "requirements": [
+    [
+      "pickup_li"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

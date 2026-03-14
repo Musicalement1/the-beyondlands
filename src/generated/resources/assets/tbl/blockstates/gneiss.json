@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tbl:block/gneiss"
+      },
+      {
+        "model": "tbl:block/gneiss",
+        "y": 90
+      },
+      {
+        "model": "tbl:block/gneiss",
+        "y": 180
+      },
+      {
+        "model": "tbl:block/gneiss",
+        "y": 270
+      }
+    ]
+  }
+}

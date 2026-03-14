@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "tbl:lithium_block"
+    },
+    "T": {
+      "item": "tbl:lithium_battery"
+    },
+    "t": {
+      "item": "tbl:steel_ingot"
+    }
+  },
+  "pattern": [
+    " # ",
+    "tTt",
+    "ttt"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:force_field_block"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "tbl:block/lab_block"
+      },
+      {
+        "model": "tbl:block/lab_block",
+        "y": 90
+      },
+      {
+        "model": "tbl:block/lab_block",
+        "y": 180
+      },
+      {
+        "model": "tbl:block/lab_block",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "t": {
+      "item": "tbl:steel_ingot"
+    }
+  },
+  "pattern": [
+    "t t",
+    "ttt",
+    "ttt"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:steel_chestplate"
+  }
+}
