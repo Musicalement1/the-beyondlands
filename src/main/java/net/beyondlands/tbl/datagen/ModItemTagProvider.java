@@ -33,6 +33,35 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModItems.STEEL_LEGGINGS.get())
                 .add(ModItems.STEEL_BOOTS.get());
 
+        tag(ItemTags.CHEST_ARMOR)
+            .add(ModItems.STEEL_CHESTPLATE.get());
+
+        tag(ItemTags.HEAD_ARMOR)
+                .add(ModItems.STEEL_HELMET.get());
+
+        tag(ItemTags.LEG_ARMOR)
+                .add(ModItems.STEEL_LEGGINGS.get());
+
+        tag(ItemTags.FOOT_ARMOR)
+                .add(ModItems.STEEL_BOOTS.get());
+
+        tag(ItemTags.PICKAXES)
+                .add(ModItems.STEEL_PICKAXE.get())
+                .add(ModItems.STEEL_HAMMER.get());
+
+        tag(ItemTags.HOES)
+                .add(ModItems.STEEL_HOE.get());
+
+        tag(ItemTags.AXES)
+                .add(ModItems.STEEL_AXE.get());
+
+        tag(ItemTags.SWORDS)
+                .add(ModItems.STEEL_SWORD.get())
+                .add(ModItems.STEEL_KNIFE.get());
+
+        tag(ItemTags.SHOVELS)
+            .add(ModItems.STEEL_SHOVEL.get());
+
         tag(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.ASH_LOG.get().asItem())
                 .add(ModBlocks.ASH_WOOD.get().asItem())

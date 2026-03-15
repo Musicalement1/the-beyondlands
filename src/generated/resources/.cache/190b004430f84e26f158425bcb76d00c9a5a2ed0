@@ -1,8 +1,17 @@
-// 1.21.1	2026-03-14T11:02:09.547458	Tags for minecraft:item mod id tbl
+// 1.21.1	2026-03-15T10:50:49.809591	Tags for minecraft:item mod id tbl
+246488afddd4fca4f20d70a66beb7d3b2467cf01 data/minecraft/tags/item/axes.json
+5162a8418625b99b8bb7849b98345c6d8d87fb35 data/minecraft/tags/item/chest_armor.json
+af0331afd7dd2e081f0300e9123595671684c53a data/minecraft/tags/item/foot_armor.json
+6c6bc0cc1d446a037b36184839c3a2d132bbf0e9 data/minecraft/tags/item/head_armor.json
+128c6df76aa1acea40c83ff01ed7c9ba734e02ee data/minecraft/tags/item/hoes.json
+ef22567d024c2d35c2d51140cf0e47034f4e30db data/minecraft/tags/item/leg_armor.json
 02b96716b80335d5852829788d88dccaad7bba44 data/minecraft/tags/item/logs_that_burn.json
+fb780ca4b44f2a3caef7645f110be9986bbfa917 data/minecraft/tags/item/pickaxes.json
 e8f292531a58cbd46a7a042a30d040c9ef6ecc59 data/minecraft/tags/item/planks.json
+1a305cf15cbe498571319ebe27c012f71ab7c1f0 data/minecraft/tags/item/shovels.json
 dcdf08caaddcb5fb4b92d2a83f8dcabc44a04c6d data/minecraft/tags/item/stone_crafting_materials.json
 dcdf08caaddcb5fb4b92d2a83f8dcabc44a04c6d data/minecraft/tags/item/stone_tool_materials.json
+227c8f37886308e8a4e74ab91132897fc869663c data/minecraft/tags/item/swords.json
 e27ae43b3b294fe914d5d22f997c516b054ae066 data/minecraft/tags/item/trimmable_armor.json
 ece6a6ae260c9a16e4fc55408727c6e00938e2d7 data/tbl/tags/item/battery.json
 e9f8c6fe80b58107aaa7b1a7e91f46c2acbd916d data/tbl/tags/item/hydroreactive_items.json
