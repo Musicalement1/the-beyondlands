@@ -90,7 +90,7 @@ public class ModTemplatePools {
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/rooms/room2", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//dim teleporter
-                                        2
+                                        1
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/rooms/room3", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//attractor trap
@@ -111,11 +111,11 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//sometimes a corridor makes another corrido
                                         1
-                                ),
-                                Pair.of(
-                                        StructurePoolElement.empty(),
-                                        4//meh, dead end but works
                                 )
+                                /*Pair.of(
+                                        StructurePoolElement.empty(),
+                                        1//rare case where corridor just stops
+                                )*/
                         ),
                         StructureTemplatePool.Projection.RIGID
                 )
@@ -133,7 +133,7 @@ public class ModTemplatePools {
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c2", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
-                                        4
+                                        3
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c3", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
@@ -146,6 +146,10 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c5", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         1
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.empty(),
+                                        7//meh, dead end but works
                                 )
                         ),
                         StructureTemplatePool.Projection.RIGID
