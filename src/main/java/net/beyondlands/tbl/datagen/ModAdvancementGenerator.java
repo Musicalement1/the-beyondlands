@@ -2,16 +2,23 @@ package net.beyondlands.tbl.datagen;
 
 import net.beyondlands.tbl.block.ModBlocks;
 import net.beyondlands.tbl.item.ModItems;
+import net.beyondlands.tbl.worldgen.structure.ModStructures;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.advancements.AdvancementRequirements;
 import net.minecraft.advancements.AdvancementType;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
+import net.minecraft.advancements.critereon.LocationPredicate;
+import net.minecraft.advancements.critereon.PlayerTrigger;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.levelgen.structure.BuiltinStructures;
+import net.minecraft.world.level.levelgen.structure.Structure;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.common.data.internal.NeoForgeAdvancementProvider;
 
@@ -24,6 +31,9 @@ public class ModAdvancementGenerator implements NeoForgeAdvancementProvider.Adva
     public void generate(HolderLookup.Provider registries,
                          Consumer<AdvancementHolder> saver,
                          ExistingFileHelper existingFileHelper) {
+
+        HolderLookup.RegistryLookup<Biome> biomes = registries.lookupOrThrow(Registries.BIOME);
+        HolderLookup.RegistryLookup<Structure> structures = registries.lookupOrThrow(Registries.STRUCTURE);
 
         AdvancementHolder root = Advancement.Builder.advancement()
                 .display(
@@ -110,5 +120,25 @@ public class ModAdvancementGenerator implements NeoForgeAdvancementProvider.Adva
                 .addCriterion("batb", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY_BOOSTED))
                 .addCriterion("sbatb", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.LITHIUM_BATTERY_STACK_BOOSTED))
                 .save(saver, ResourceLocation.fromNamespaceAndPath("tbl","story/make_battery"), existingFileHelper);
+
+        AdvancementHolder find_lab = Advancement.Builder.advancement()
+                .parent(make_battery)
+                .display(
+                        new ItemStack(ModBlocks.LAB_BLOCK.get()),
+                        Component.translatable("advancement.tbl.story.find_lab.title"),
+                        Component.translatable("advancement.tbl.story.find_lab.description"),
+                        null,
+                        AdvancementType.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .addCriterion(
+                        "fortress",
+                        PlayerTrigger.TriggerInstance.located(
+                                LocationPredicate.Builder.inStructure(structures.getOrThrow(ModStructures.LAB_RUINS))
+                        )
+                )
+                .save(saver, ResourceLocation.fromNamespaceAndPath("tbl","story/find_lab"), existingFileHelper);
     }
 }

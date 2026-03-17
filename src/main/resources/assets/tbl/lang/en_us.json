@@ -59,6 +59,9 @@
   "advancement.tbl.story.make_battery.title": "Breaking Batt..rie!",
   "advancement.tbl.story.make_battery.description": "Make your first battery!",
 
+  "advancement.tbl.story.find_lab.title": "Structures of Knowledge",
+  "advancement.tbl.story.find_lab.description": "Find Lab Ruins... Maybe they had a reason to leave?",
+
 
   "item.tbl.pepper_seeds": "Pepper Seeds",
   "block.tbl.pepper_crop": "Pepper Crop",

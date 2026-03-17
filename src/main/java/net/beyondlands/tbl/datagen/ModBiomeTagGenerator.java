@@ -39,15 +39,15 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
                 Biomes.MANGROVE_SWAMP,
                 Biomes.FROZEN_PEAKS
         );
-        this.tag(IS_BL).addOptional(
-                ModBiomes.ASHLAND.location()
+        this.tag(IS_BL).add(
+                ModBiomes.ASHLAND
         );
         this.tag(IS_BL_OR_OVERWORLD)
                 .addTag(BiomeTags.IS_OVERWORLD)
                 .addTag(ModBiomeTagGenerator.IS_BL);
 
-        this.tag(ASH_RUINS_SPAWN_IN).addOptional(
-                ModBiomes.ASHLAND.location()
+        this.tag(ASH_RUINS_SPAWN_IN).add(
+                ModBiomes.ASHLAND
         );
     }
 }
