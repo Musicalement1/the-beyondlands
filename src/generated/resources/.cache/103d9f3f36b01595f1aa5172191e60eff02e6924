@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-16T19:49:59.701954	Registries
+// 1.21.1	2026-03-17T16:40:21.913449	Registries
 31d13073d97468497897a7ee1c3f8abe3e2a2d53 data/tbl/dimension/bldim.json
 c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
 94d465c8f24167d4c4c33e985caf6242d623d6df data/tbl/neoforge/biome_modifier/add_lithium_ore.json
@@ -9,9 +9,10 @@ f0127d55834a19e54bf778000b3106cc6711267d data/tbl/worldgen/biome/ashland.json
 98feadee20695197cf52b26f26849a392868facf data/tbl/worldgen/placed_feature/ash_placed.json
 8467173b19f267e1cfbfa50b21a9eeae1a294a58 data/tbl/worldgen/placed_feature/lithium_ore_placed.json
 4311e64b316c63b5c0d790f9109130f56b847cc0 data/tbl/worldgen/structure/ashling_ruins.json
-fdf6223a39fa0e14d1f998fd2d6f92df1eaab243 data/tbl/worldgen/structure/lab_ruins.json
+7baf50966336ad4fe3c3841595c4ce73e953f59a data/tbl/worldgen/structure/lab_ruins.json
 a8081a4dc838f092c20535d01e1b356865383041 data/tbl/worldgen/structure_set/ashling_ruins.json
-2cada25d7139ba05fcf955375b042590b7f6a84d data/tbl/worldgen/structure_set/lab_ruins.json
+8c30c09839270b4964e008e1855ddf1dd1827e31 data/tbl/worldgen/structure_set/lab_ruins.json
 ae105fc4635bba18a14707cc48cd5a17e0247a0a data/tbl/worldgen/template_pool/ashling_ruins_pool.json
+f02b4a01a699a5e594f5960a2cf059a6dd0307d8 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_corridors.json
 92d84e4c95add8e66b0ed0b3064286adb72dc10f data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_pool.json
-5e6013cae46fe570503282f36f201c125a87302b data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_rooms.json
+6c5c5d8c993ea7ad7dc679466fc34d591964a66d data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_rooms.json

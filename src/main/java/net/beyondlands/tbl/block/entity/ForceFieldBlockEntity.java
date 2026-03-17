@@ -21,7 +21,7 @@ public class ForceFieldBlockEntity extends BlockEntity {
 
     // default vals
     private double force = 1.0;
-    private double radius = 12.0;
+    private double radius = 8.0;
     //private boolean repulse = true;
 
     public ForceFieldBlockEntity(BlockPos pos, BlockState state) {

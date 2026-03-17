@@ -3,29 +3,18 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room1",
+        "location": "tbl:lab_ruins/corridors/c1",
         "processors": {
           "processors": []
         },
         "projection": "rigid"
       },
-      "weight": 2
+      "weight": 5
     },
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room2",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room3",
+        "location": "tbl:lab_ruins/corridors/c2",
         "processors": {
           "processors": []
         },
@@ -36,18 +25,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room4",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room5",
+        "location": "tbl:lab_ruins/corridors/c3",
         "processors": {
           "processors": []
         },
@@ -58,18 +36,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/rooms/room6",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 2
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/corridors/c1",
+        "location": "tbl:lab_ruins/corridors/c4",
         "processors": {
           "processors": []
         },
@@ -79,7 +46,12 @@
     },
     {
       "element": {
-        "element_type": "minecraft:empty_pool_element"
+        "element_type": "minecraft:single_pool_element",
+        "location": "tbl:lab_ruins/corridors/c5",
+        "processors": {
+          "processors": []
+        },
+        "projection": "rigid"
       },
       "weight": 1
     }

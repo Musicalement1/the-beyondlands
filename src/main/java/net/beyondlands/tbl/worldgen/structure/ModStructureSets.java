@@ -50,8 +50,8 @@ public class ModStructureSets {
                 new StructureSet(
                         List.of(new StructureSet.StructureSelectionEntry(structures.getOrThrow(ModStructures.LAB_RUINS), 1)),
                         new RandomSpreadStructurePlacement(
-                                26,
-                                6,
+                                34,
+                                12,
                                 RandomSpreadType.LINEAR,
                                 13307657
                         )

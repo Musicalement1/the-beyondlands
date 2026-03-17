@@ -33,6 +33,12 @@ public class ModTemplatePools {
                     TBL.prefix("lab_ruins/lab_ruins_rooms")
             );
 
+    public static final ResourceKey<StructureTemplatePool> LAB_RUINS_CORRIDORS =
+            ResourceKey.create(
+                    Registries.TEMPLATE_POOL,
+                    TBL.prefix("lab_ruins/lab_ruins_corridors")
+            );
+
     public static void bootstrap(BootstrapContext<StructureTemplatePool> context) {
 
         context.register(
@@ -97,6 +103,45 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/rooms/room6"),//escalator (9x<!6>x9)
                                         2
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1"),//sometimes a corridor makes another corrido
+                                        1
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.empty(),
+                                        1
+                                )
+                        ),
+                        StructureTemplatePool.Projection.RIGID
+                )
+        );
+
+        context.register(
+                LAB_RUINS_CORRIDORS,
+                new StructureTemplatePool(
+                        context.lookup(Registries.TEMPLATE_POOL)
+                                .getOrThrow(Pools.EMPTY),
+                        List.of(
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1"),
+                                        5
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c2"),
+                                        1
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c3"),
+                                        4
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c4"),
+                                        1
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c5"),
+                                        1
                                 )
                         ),
                         StructureTemplatePool.Projection.RIGID
