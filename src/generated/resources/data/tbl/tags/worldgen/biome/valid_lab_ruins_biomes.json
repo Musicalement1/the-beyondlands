@@ -1,6 +1,14 @@
 {
   "values": [
-    "minecraft:plains",
-    "minecraft:forest"
+    "minecraft:dark_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:snowy_taiga",
+    "minecraft:ice_spikes",
+    "minecraft:desert",
+    "minecraft:mushroom_fields",
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp",
+    "minecraft:frozen_peaks"
   ]
 }

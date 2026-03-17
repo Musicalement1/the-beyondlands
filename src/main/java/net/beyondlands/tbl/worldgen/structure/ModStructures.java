@@ -63,7 +63,7 @@ public class ModStructures {
                                 TerrainAdjustment.BEARD_THIN
                         ),
                         pools.getOrThrow(ModTemplatePools.LAB_RUINS_POOL),
-                        10,
+                        8,
                         ConstantHeight.of(VerticalAnchor.absolute(0)),
                         false,
                         Heightmap.Types.WORLD_SURFACE_WG

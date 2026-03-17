@@ -3,7 +3,7 @@
   "biomes": "#tbl:valid_lab_ruins_biomes",
   "max_distance_from_center": 80,
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
-  "size": 10,
+  "size": 8,
   "spawn_overrides": {},
   "start_height": {
     "absolute": 0

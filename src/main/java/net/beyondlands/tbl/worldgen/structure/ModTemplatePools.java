@@ -2,6 +2,8 @@ package net.beyondlands.tbl.worldgen.structure;
 
 import com.mojang.datafixers.util.Pair;
 import net.beyondlands.tbl.TBL;
+import net.beyondlands.tbl.datagen.ModProcessorsList;
+import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.data.worldgen.Pools;
@@ -9,11 +11,13 @@ import net.minecraft.data.worldgen.ProcessorLists;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
+import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ModTemplatePools {
+
 
     public static final ResourceKey<StructureTemplatePool> ASHLING_RUINS_POOL =
             ResourceKey.create(
@@ -40,7 +44,7 @@ public class ModTemplatePools {
             );
 
     public static void bootstrap(BootstrapContext<StructureTemplatePool> context) {
-
+        HolderGetter<StructureProcessorList> processors = context.lookup(Registries.PROCESSOR_LIST);
         context.register(
                 ASHLING_RUINS_POOL,
                 new StructureTemplatePool(
@@ -64,8 +68,8 @@ public class ModTemplatePools {
                         List.of(
                                 Pair.of(
                                         StructurePoolElement.single(
-                                                "tbl:lab_ruins/entrance/entrance"
-                                                //processors.getOrThrow(ProcessorLists.EMPTY)
+                                                "tbl:lab_ruins/entrance/entrance",
+                                                processors.getOrThrow(ModProcessorsList.LAB_RUINS)
                                         ),
                                         1
                                 )
@@ -81,36 +85,36 @@ public class ModTemplatePools {
                                 .getOrThrow(Pools.EMPTY),
                         List.of(
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room1"),//chest with brew, 1 exit
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//chest with brew, 1 exit
                                         2//ça c'est le poids (weight)
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room2"),//dim teleporter
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room2", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//dim teleporter
                                         2
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room3"),//attractor trap
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room3", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//attractor trap
                                         1
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room4"),//repulsor trap
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room4", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//repulsor trap
                                         1
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room5"),//simple room, acts as a corridor
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room5", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//simple room, acts as a corridor
                                         4
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room6"),//escalator (9x<!6>x9)
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room6", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//escalator (9x<!6>x9)
                                         2
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1"),//sometimes a corridor makes another corrido
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//sometimes a corridor makes another corrido
                                         1
                                 ),
                                 Pair.of(
                                         StructurePoolElement.empty(),
-                                        1
+                                        4//meh, dead end but works
                                 )
                         ),
                         StructureTemplatePool.Projection.RIGID
@@ -124,23 +128,23 @@ public class ModTemplatePools {
                                 .getOrThrow(Pools.EMPTY),
                         List.of(
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1"),
-                                        5
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        20
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c2"),
-                                        1
-                                ),
-                                Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c3"),
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c2", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         4
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c4"),
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c3", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        19
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c4", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         1
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c5"),
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c5", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         1
                                 )
                         ),

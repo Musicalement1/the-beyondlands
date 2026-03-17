@@ -4,9 +4,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/entrance/entrance",
-        "processors": {
-          "processors": []
-        },
+        "processors": "tbl:lab_ruins",
         "projection": "rigid"
       },
       "weight": 1

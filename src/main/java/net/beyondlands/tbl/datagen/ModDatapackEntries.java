@@ -32,6 +32,7 @@ public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap)
             .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
             .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem)
+            .add(Registries.PROCESSOR_LIST, ModProcessorsList::bootstrap)
             .add(Registries.STRUCTURE, ModStructures::bootstrap)
             .add(Registries.STRUCTURE_SET, ModStructureSets::bootstrap)
             .add(Registries.TEMPLATE_POOL, ModTemplatePools::bootstrap);

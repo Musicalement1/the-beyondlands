@@ -4,31 +4,16 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/corridors/c1",
-        "processors": {
-          "processors": []
-        },
+        "processors": "tbl:lab_ruins",
         "projection": "rigid"
       },
-      "weight": 5
+      "weight": 20
     },
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/corridors/c2",
-        "processors": {
-          "processors": []
-        },
-        "projection": "rigid"
-      },
-      "weight": 1
-    },
-    {
-      "element": {
-        "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/corridors/c3",
-        "processors": {
-          "processors": []
-        },
+        "processors": "tbl:lab_ruins",
         "projection": "rigid"
       },
       "weight": 4
@@ -36,10 +21,17 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "tbl:lab_ruins/corridors/c3",
+        "processors": "tbl:lab_ruins",
+        "projection": "rigid"
+      },
+      "weight": 19
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/corridors/c4",
-        "processors": {
-          "processors": []
-        },
+        "processors": "tbl:lab_ruins",
         "projection": "rigid"
       },
       "weight": 1
@@ -48,9 +40,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/corridors/c5",
-        "processors": {
-          "processors": []
-        },
+        "processors": "tbl:lab_ruins",
         "projection": "rigid"
       },
       "weight": 1

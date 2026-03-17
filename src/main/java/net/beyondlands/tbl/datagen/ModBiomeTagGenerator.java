@@ -25,12 +25,19 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
     public ModBiomeTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
         super(output, provider, TBL.MOD_ID, helper);
     }
-
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(VALID_LAB_RUINS_BIOMES).add(
-                Biomes.PLAINS,
-                Biomes.FOREST
+                Biomes.DARK_FOREST,
+                Biomes.OLD_GROWTH_PINE_TAIGA,
+                Biomes.OLD_GROWTH_SPRUCE_TAIGA,
+                Biomes.SNOWY_TAIGA,
+                Biomes.ICE_SPIKES,
+                Biomes.DESERT,
+                Biomes.MUSHROOM_FIELDS,
+                Biomes.SWAMP,
+                Biomes.MANGROVE_SWAMP,
+                Biomes.FROZEN_PEAKS
         );
         this.tag(IS_BL).addOptional(
                 ModBiomes.ASHLAND.location()
