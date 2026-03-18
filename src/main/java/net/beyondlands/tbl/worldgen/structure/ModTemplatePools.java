@@ -111,11 +111,11 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//sometimes a corridor makes another corrido
                                         1
-                                )
-                                /*Pair.of(
+                                ),
+                                Pair.of(
                                         StructurePoolElement.empty(),
                                         1//rare case where corridor just stops
-                                )*/
+                                )
                         ),
                         StructureTemplatePool.Projection.RIGID
                 )
