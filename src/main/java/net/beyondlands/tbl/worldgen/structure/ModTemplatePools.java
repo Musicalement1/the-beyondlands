@@ -109,8 +109,20 @@ public class ModTemplatePools {
                                         2
                                 ),
                                 Pair.of(
-                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room7", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//escalator (9x<!6>x9)
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room7", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         2
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room8", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        3
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room9", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        7//dead end so high weigth
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room9", processors.getOrThrow(ModProcessorsList.LAB_RUINS_REACTOR)),
+                                        1//dead end with corium
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//sometimes a corridor makes another corrido
@@ -150,6 +162,10 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c5", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
                                         1
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/corridors/c6", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        2
                                 ),
                                 Pair.of(
                                         StructurePoolElement.empty(),

@@ -24,7 +24,7 @@ public class CoriumBlock extends Block {
 
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if (!entity.isSteppingCarefully() && entity instanceof LivingEntity) {
-            entity.hurt(level.damageSources().hotFloor(), 5.0F);
+            entity.hurt(level.damageSources().hotFloor(), 8.0F);
         }
 
         super.stepOn(level, pos, state, entity);
@@ -51,7 +51,7 @@ public class CoriumBlock extends Block {
             boolean isLiving = entity instanceof LivingEntity living && !living.isDeadOrDying();
 
             if (isLiving) {
-                entity.hurt(level.damageSources().hotFloor(), 2.0F);
+                entity.hurt(level.damageSources().hotFloor(), 8.0F);
             }
         }
         //level.scheduleTick(pos, this, 20);
@@ -60,12 +60,5 @@ public class CoriumBlock extends Block {
     public void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
         level.scheduleTick(pos, this, 20);
     }
-
-    @Override
-public void onLoad(BlockState state, Level level, BlockPos pos) {
-    if (!level.isClientSide) {
-        level.scheduleTick(pos, this, 20);
-    }
-}
      */
 }
