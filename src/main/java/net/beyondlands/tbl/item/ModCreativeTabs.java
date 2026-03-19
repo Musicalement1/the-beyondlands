@@ -60,6 +60,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.ASH_BLOCK.get());
                         output.accept(ModBlocks.LAB_BLOCK.get());
                         output.accept(ModBlocks.GATE_OPENER.get());
+                        output.accept(ModBlocks.CORIUM.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

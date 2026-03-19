@@ -25,6 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        blockWithItem(ModBlocks.CORIUM);
         blockWithItem(ModBlocks.LITHIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_LITHIUM_BLOCK);
 

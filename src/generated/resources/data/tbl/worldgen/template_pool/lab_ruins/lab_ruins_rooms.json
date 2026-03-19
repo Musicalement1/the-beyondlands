@@ -57,6 +57,15 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
+        "location": "tbl:lab_ruins/rooms/room7",
+        "processors": "tbl:lab_ruins",
+        "projection": "rigid"
+      },
+      "weight": 2
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
         "location": "tbl:lab_ruins/corridors/c1",
         "processors": "tbl:lab_ruins",
         "projection": "rigid"

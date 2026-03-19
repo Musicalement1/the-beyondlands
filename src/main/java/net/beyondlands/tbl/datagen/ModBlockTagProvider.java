@@ -30,6 +30,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.FORCE_FIELD_BLOCK_ATTRACT.get())
                 .add(ModBlocks.GNEISS.get())
                 .add(ModBlocks.LAB_BLOCK.get())
+                .add(ModBlocks.CORIUM.get())
                 .add(ModBlocks.GATE_OPENER.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -37,11 +38,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.RAW_LITHIUM_BLOCK.get())
                 .add(ModBlocks.LITHIUM_DEEPSLATE_ORE.get());
 
-        /*tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.RAW_LITHIUM_BLOCK.get());*/
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.CORIUM.get());
 
 
         tag(ModTags.Blocks.NEEDS_STEEL_TOOL)
+                .add(ModBlocks.CORIUM.get())
                 //.add(ModBlocks.RAW_LITHIUM_BLOCK.get())
                 .add(Blocks.OBSIDIAN)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);

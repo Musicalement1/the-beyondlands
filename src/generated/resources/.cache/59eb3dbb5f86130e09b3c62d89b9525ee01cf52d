@@ -1,9 +1,10 @@
-// 1.21.1	2026-03-15T10:39:01.383662	Loot Tables
+// 1.21.1	2026-03-19T18:12:55.671865	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
 5aec04893355ba4bea2a089c5a56fe8cf553e70d data/tbl/loot_table/blocks/ash_sapling.json
 bcf3b2d55b714ff8ed59c25efba0e94f25a31752 data/tbl/loot_table/blocks/ash_wood.json
+a5dbefa1008cfdf4d440d3c768cf555d043d1374 data/tbl/loot_table/blocks/corium.json
 7678c05a4a744918ccc05f531642de86330c19c2 data/tbl/loot_table/blocks/force_field_block.json
 6cd1a9dd921d7f5f9e377bd9e75624ad91b9151e data/tbl/loot_table/blocks/force_field_block_attract.json
 07ba5af7af4fb4a46d70ff2fad99afc07f0a3e0a data/tbl/loot_table/blocks/gate_opener.json

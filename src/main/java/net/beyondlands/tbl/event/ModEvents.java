@@ -1,14 +1,19 @@
 package net.beyondlands.tbl.event;
 
 import net.beyondlands.tbl.TBL;
+import net.beyondlands.tbl.block.CoriumBlock;
 import net.beyondlands.tbl.item.hammer.HammerItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.level.BlockEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -41,4 +46,28 @@ public class ModEvents {
             }
         }
     }
+
+    @SubscribeEvent
+    public static void coriumDamage(PlayerTickEvent.Post event) {
+        Player player = event.getEntity();
+
+        if (player.level().isClientSide) return;
+
+        HitResult hit = player.pick(5.0D, 0.0F, false);
+
+        if (!(hit instanceof BlockHitResult blockHit)) return;
+
+        BlockPos pos = blockHit.getBlockPos();
+        BlockState state = player.level().getBlockState(pos);
+
+        if (!(state.getBlock() instanceof CoriumBlock)) return;
+
+        if (player.swinging) {//if its mining
+            if (player.tickCount % 10 == 0) {
+                player.hurt(player.level().damageSources().hotFloor(), 1.0F);//hurt them
+            }
+        }
+    }
+
+
 }

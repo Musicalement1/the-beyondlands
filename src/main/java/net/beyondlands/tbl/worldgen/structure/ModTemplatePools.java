@@ -68,8 +68,8 @@ public class ModTemplatePools {
                         List.of(
                                 Pair.of(
                                         StructurePoolElement.single(
-                                                "tbl:lab_ruins/entrance/entrance",
-                                                processors.getOrThrow(ModProcessorsList.LAB_RUINS)
+                                                "tbl:lab_ruins/entrance/reactor",
+                                                processors.getOrThrow(ModProcessorsList.LAB_RUINS_REACTOR)
                                         ),
                                         1
                                 )
@@ -106,6 +106,10 @@ public class ModTemplatePools {
                                 ),
                                 Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/rooms/room6", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//escalator (9x<!6>x9)
+                                        2
+                                ),
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room7", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//escalator (9x<!6>x9)
                                         2
                                 ),
                                 Pair.of(

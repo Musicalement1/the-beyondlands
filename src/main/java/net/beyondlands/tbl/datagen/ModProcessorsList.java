@@ -18,6 +18,10 @@ public class ModProcessorsList {
             Registries.PROCESSOR_LIST,
             TBL.prefix("lab_ruins")
     );
+    public static final ResourceKey<StructureProcessorList> LAB_RUINS_REACTOR = ResourceKey.create(
+            Registries.PROCESSOR_LIST,
+            TBL.prefix("lab_ruins_reactor")
+    );
 
     public static void bootstrap(BootstrapContext<StructureProcessorList> context) {
 
@@ -36,6 +40,38 @@ public class ModProcessorsList {
                                                         new RandomBlockMatchTest(Blocks.AIR, 0.01F),
                                                         AlwaysTrueTest.INSTANCE,
                                                         Blocks.COBWEB.defaultBlockState()
+                                                )
+                                        )
+                                )
+                        )
+                )
+        );
+
+        context.register(
+                LAB_RUINS_REACTOR,
+                new StructureProcessorList(
+                        ImmutableList.of(
+                                new RuleProcessor(
+                                        ImmutableList.of(
+                                                new ProcessorRule(
+                                                        new RandomBlockMatchTest(ModBlocks.LAB_BLOCK.get(), 0.1F),
+                                                        AlwaysTrueTest.INSTANCE,
+                                                        Blocks.POLISHED_DIORITE.defaultBlockState()
+                                                ),
+                                                new ProcessorRule(
+                                                        new RandomBlockMatchTest(ModBlocks.LAB_BLOCK.get(), 0.1F),
+                                                        AlwaysTrueTest.INSTANCE,
+                                                        Blocks.NETHERRACK.defaultBlockState()
+                                                ),
+                                                new ProcessorRule(
+                                                        new RandomBlockMatchTest(ModBlocks.LAB_BLOCK.get(), 0.1F),
+                                                        AlwaysTrueTest.INSTANCE,
+                                                        Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState()
+                                                ),
+                                                new ProcessorRule(
+                                                        new RandomBlockMatchTest(Blocks.AIR, 0.05F),
+                                                        AlwaysTrueTest.INSTANCE,
+                                                        ModBlocks.CORIUM.get().defaultBlockState()
                                                 )
                                         )
                                 )

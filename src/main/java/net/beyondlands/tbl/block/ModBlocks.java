@@ -137,6 +137,13 @@ public class ModBlocks {
                     .strength(10f, 100f)
             ));
 
+    public static final DeferredBlock<Block> CORIUM = registerBlock("corium",
+            () -> new CoriumBlock(BlockBehaviour.Properties.of()
+                    .strength(40.0f, 1000f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()
+            ));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

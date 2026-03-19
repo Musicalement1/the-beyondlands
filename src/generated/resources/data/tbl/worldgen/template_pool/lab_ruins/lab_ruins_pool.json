@@ -3,8 +3,8 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "tbl:lab_ruins/entrance/entrance",
-        "processors": "tbl:lab_ruins",
+        "location": "tbl:lab_ruins/entrance/reactor",
+        "processors": "tbl:lab_ruins_reactor",
         "projection": "rigid"
       },
       "weight": 1
