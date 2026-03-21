@@ -82,6 +82,10 @@ public class GateOpenerBlockEntity extends BlockEntity implements MenuProvider {
                 // place portal
                 if(level.getBlockState(portalPos).isAir()) {
                     level.setBlock(portalPos, ModBlocks.BL_PORTAL.get().defaultBlockState(), 3);
+
+                    if(level instanceof ServerLevel serverLevel) {//init ticking
+                        serverLevel.scheduleTick(portalPos, ModBlocks.BL_PORTAL.get(), 2);
+                    }
                 }
 
                 if(level instanceof ServerLevel serverLevel) {
@@ -107,17 +111,9 @@ public class GateOpenerBlockEntity extends BlockEntity implements MenuProvider {
                             0.3,
                             0.01
                     );
-                    serverLevel.sendParticles(
-                            ParticleTypes.END_ROD,
-                            portalPos.getX() + 0.5,
-                            portalPos.getY() + 0.8,
-                            portalPos.getZ() + 0.5,
-                            1,
-                            0.2,
-                            0.2,
-                            0.2,
-                            0.01
-                    );
+                    if (level.getGameTime() % 20 == 0) {
+                        spawnSphereParticles(serverLevel, portalPos);
+                    }
                 }
 
             } else {
@@ -129,13 +125,83 @@ public class GateOpenerBlockEntity extends BlockEntity implements MenuProvider {
             removePortal(level, portalPos, blockEntity);
         }
     }
+
+    public static void spawnPortalWave(ServerLevel level, BlockPos center) {
+
+        double cx = center.getX() + 0.5;
+        double cy = center.getY() + 0.5;
+        double cz = center.getZ() + 0.5;
+
+        int points = 80;
+        double speed = 0.3;
+
+        for (int i = 0; i < points; i++) {
+
+            double angle = 2 * Math.PI * i / points;
+
+            double x = Math.cos(angle);
+            double z = Math.sin(angle);
+
+            level.sendParticles(
+                    ParticleTypes.END_ROD,
+                    cx, cy, cz,
+                    0,
+                    x * speed,
+                    0,
+                    z * speed,
+                    1
+            );
+        }
+    }
+
+    private static void spawnSphereParticles(ServerLevel level, BlockPos center) {
+
+        double cx = center.getX() + 0.5;
+        double cy = center.getY() + 0.5;
+        double cz = center.getZ() + 0.5;
+
+        int points = 80;//density
+        double radius = 0.5; //ini size
+
+        for (int i = 0; i < points; i++) {
+
+            double theta = 2 * Math.PI * level.random.nextDouble();
+            double phi = Math.acos(2 * level.random.nextDouble() - 1);
+
+            double x = Math.sin(phi) * Math.cos(theta);
+            double y = Math.sin(phi) * Math.sin(theta);
+            double z = Math.cos(phi);
+
+            double px = cx + x * radius;
+            double py = cy + y * radius;
+            double pz = cz + z * radius;
+
+            double speed = 0.2;
+
+            level.sendParticles(
+                    ParticleTypes.END_ROD,
+                    px, py, pz,
+                    0,
+                    x * speed,
+                    y * speed,
+                    z * speed,
+                    1
+            );
+        }
+    }
+
     public void resetSoundFlag() {
         this.hasPlayedSound = false;
     }
     private static void removePortal(Level level, BlockPos pos, GateOpenerBlockEntity blockEntity) {
         blockEntity.resetSoundFlag();
-        if(level.getBlockState(pos).is(ModBlocks.BL_PORTAL.get())) {
-            level.removeBlock(pos, false);
+
+        BlockPos currentPos = pos;
+        while (level.getBlockState(currentPos).is(ModBlocks.BL_PORTAL.get())) {
+            level.removeBlock(currentPos, false);
+            currentPos = currentPos.above();
+
+            if (currentPos.getY() >= level.getMaxBuildHeight()) break;
         }
     }
 

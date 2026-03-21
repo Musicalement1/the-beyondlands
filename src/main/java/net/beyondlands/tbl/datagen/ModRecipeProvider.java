@@ -32,14 +32,23 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', ModItems.LITHIUM.get())
                 .unlockedBy(getHasName(ModItems.LITHIUM.get()), has(ModItems.LITHIUM.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_LITHIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_LITHIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_LITHIUM.get()), has(ModItems.RAW_LITHIUM.get())).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LITHIUM.get(), 9)
                 .requires(ModBlocks.LITHIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.LITHIUM_BLOCK.get()), has(ModBlocks.LITHIUM_BLOCK.get())).save(pRecipeOutput);
 
-        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 32)
-                .requires(ModBlocks.MAGIC_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.ALEXANDRITE_BLOCK.get()), has(ModBlocks.ALEXANDRITE_BLOCK.get()))
-                .save(pRecipeOutput, TBL.MOD_ID + ":alexandrite_from_magic_block");*/
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_LITHIUM.get(), 9)
+                .requires(ModBlocks.RAW_LITHIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_LITHIUM_BLOCK.get()), has(ModBlocks.RAW_LITHIUM_BLOCK.get())).save(pRecipeOutput);
+
+        
 
         oreSmelting(pRecipeOutput, LITHIUM_SMELTABLES, RecipeCategory.MISC, ModItems.LITHIUM.get(), 0.25f, 200, "lithium");
         oreBlasting(pRecipeOutput, LITHIUM_SMELTABLES, RecipeCategory.MISC, ModItems.LITHIUM.get(), 0.25f, 100, "lithium");

@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-14T22:09:46.55852	Recipes
+// 1.21.1	2026-03-21T15:14:36.753003	Recipes
 522d1dc705653a1b9468ab41514fc8e9753cb622 data/tbl/advancement/recipes/misc/ash_planks.json
 00518a8cd6606fb0128c651b7add8bcfdb5e2e21 data/tbl/advancement/recipes/misc/ash_wood.json
 c43dd2d736da24c00d2b09418c25f72a7df22a6e data/tbl/advancement/recipes/misc/force_field_block.json
@@ -16,6 +16,8 @@ eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithi
 83f4cc22688f1ed905a964a66cac44bedcc44851 data/tbl/advancement/recipes/misc/lithium_from_smelting_lithium_deepslate_ore.json
 097d567ec541ac1f60fdd27940a9f35840d5c57a data/tbl/advancement/recipes/misc/lithium_from_smelting_lithium_ore.json
 b85f03956f9bdd0628258722fa12e632dcc4f0d1 data/tbl/advancement/recipes/misc/lithium_from_smelting_raw_lithium.json
+7174e61b5d194f40819e3d47e59b275bb6a53040 data/tbl/advancement/recipes/misc/raw_lithium.json
+da33137c497f411ef565d968d635ac5aa1abdfe9 data/tbl/advancement/recipes/misc/raw_lithium_block.json
 88ad4c02b7350328d0c188675427615575384102 data/tbl/advancement/recipes/misc/steel_axe.json
 36c7bf4070e0bd8ad6edc5f39806607d02cb714b data/tbl/advancement/recipes/misc/steel_boots.json
 092e992f204515c6e8ea7cd8d546ef5711aaeb86 data/tbl/advancement/recipes/misc/steel_chestplate.json
@@ -45,6 +47,8 @@ c3904b3c5fc3ab2de19683917a329df10c2b17b8 data/tbl/recipe/lithium_from_blasting_r
 1dddf88e8c9304b97d9c78b177a0121dd5f723c4 data/tbl/recipe/lithium_from_smelting_lithium_deepslate_ore.json
 06b09b9a91ac3ca2795ebab15b9ee8e55fc78510 data/tbl/recipe/lithium_from_smelting_lithium_ore.json
 1a3cded3a19ffb59eb057597913b2032446908ed data/tbl/recipe/lithium_from_smelting_raw_lithium.json
+0ef8f593e53aaae5cfaf81bef2439a6a9ec198f2 data/tbl/recipe/raw_lithium.json
+6f478e44f4a27abca078c4965d113fcfb8845596 data/tbl/recipe/raw_lithium_block.json
 0b6872bed7d98228d5c90f5a18c76973379fa43b data/tbl/recipe/steel_axe.json
 584ab1b604a97eee1062d0e7fc637ba581a87d68 data/tbl/recipe/steel_boots.json
 67180951a2e8201618cb445eb47ae4d04c7c2554 data/tbl/recipe/steel_chestplate.json
