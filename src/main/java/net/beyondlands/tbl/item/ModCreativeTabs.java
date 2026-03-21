@@ -61,6 +61,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.LAB_BLOCK.get());
                         output.accept(ModBlocks.GATE_OPENER.get());
                         output.accept(ModBlocks.CORIUM.get());
+                        output.accept(ModItems.NUKER_SPAWN_EGG.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -21,6 +21,7 @@
   "item.tbl.pepper": "Bell Pepper",
   "item.tbl.ash": "Ashes",
   "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
+  "item.tbl.nuker_spawn_egg": "Nuker Spawn Egg",
 
   "item.tbl.steel_sword": "Steel Sword",
   "item.tbl.steel_knife": "Steel Dagger",
@@ -72,6 +73,7 @@
   "block.tbl.ash_block": "Ash Block",
   "block.tbl.lab_block": "Lab Block",
   "entity.tbl.ash_zombie": "Ash Zombie",
+  "entity.tbl.nuker": "Nuker",
   "item.tbl.ash_zombie_spawn_egg": "Ash Zombie Spawn Egg",
   "block.tbl.gate_opener": "Gate Opener"
 }

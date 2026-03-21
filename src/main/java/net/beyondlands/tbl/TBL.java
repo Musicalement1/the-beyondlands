@@ -4,6 +4,7 @@ import net.beyondlands.tbl.block.ModBlocks;
 import net.beyondlands.tbl.entity.ModEntities;
 import net.beyondlands.tbl.entity.client.AshZombieRenderer;
 import net.beyondlands.tbl.entity.client.AshlingRenderer;
+import net.beyondlands.tbl.entity.client.NukerRenderer;
 import net.beyondlands.tbl.item.ModCreativeTabs;
 import net.beyondlands.tbl.item.ModItems;
 import net.beyondlands.tbl.block.entity.ModBlockEntities;
@@ -94,6 +95,7 @@ public class TBL
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.ASHLING.get(), AshlingRenderer::new);
             EntityRenderers.register(ModEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);
+            EntityRenderers.register(ModEntities.NUKER.get(), NukerRenderer::new);
         }
 
         @SubscribeEvent

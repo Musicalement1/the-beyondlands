@@ -58,6 +58,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.ASHLING_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.ASH_ZOMBIE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.NUKER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         handheldItem(ModItems.STEEL_SWORD);
         handheldItem(ModItems.STEEL_PICKAXE);
         handheldItem(ModItems.STEEL_SHOVEL);

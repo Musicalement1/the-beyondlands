@@ -33,6 +33,8 @@ public class ModBiomes {
 
     private static Biome createWasteland(BootstrapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
+        spawnBuilder.addSpawn(MobCategory.MONSTER,
+                new MobSpawnSettings.SpawnerData(ModEntities.NUKER.get(), 2, 1, 2));
         BiomeGenerationSettings.Builder generationBuilder =
                 new BiomeGenerationSettings.Builder(
                         context.lookup(Registries.PLACED_FEATURE),

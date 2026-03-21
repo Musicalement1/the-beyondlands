@@ -119,6 +119,8 @@ public class ModItems {
             () -> new DeferredSpawnEggItem(ModEntities.ASHLING, 0x474747, 0x2dbccc, new Item.Properties()));
     public static final DeferredItem<Item> ASH_ZOMBIE_SPAWN_EGG = ITEMS.register("ash_zombie_spawn_egg",
             () -> new DeferredSpawnEggItem(ModEntities.ASH_ZOMBIE, 0x38D1CB, 0xCE38D1, new Item.Properties()));
+    public static final DeferredItem<Item> NUKER_SPAWN_EGG = ITEMS.register("nuker_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.NUKER, 0xF72800, 0x000000, new Item.Properties()));
 
     public static final DeferredItem<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             () -> new SwordItem(ModToolTiers.STEEL, new Item.Properties()
