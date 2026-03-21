@@ -1,18 +1,18 @@
 {
   "carvers": {},
-  "downfall": 0.4,
+  "downfall": 0.7,
   "effects": {
-    "fog_color": 8337193,
-    "grass_color": 4868682,
+    "fog_color": 2143058,
+    "grass_color": 1209140,
     "particle": {
       "options": {
-        "type": "minecraft:ash"
+        "type": "minecraft:item_slime"
       },
       "probability": 0.00625
     },
-    "sky_color": 8337193,
-    "water_color": 16075047,
-    "water_fog_color": 4868682
+    "sky_color": 937765,
+    "water_color": 65366,
+    "water_fog_color": 65366
   },
   "features": [
     [],
@@ -49,26 +49,12 @@
   "spawners": {
     "ambient": [],
     "axolotls": [],
-    "creature": [
-      {
-        "type": "tbl:ashling",
-        "maxCount": 4,
-        "minCount": 2,
-        "weight": 8
-      }
-    ],
+    "creature": [],
     "misc": [],
-    "monster": [
-      {
-        "type": "tbl:ash_zombie",
-        "maxCount": 4,
-        "minCount": 1,
-        "weight": 2
-      }
-    ],
+    "monster": [],
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.8
+  "temperature": 0.4
 }

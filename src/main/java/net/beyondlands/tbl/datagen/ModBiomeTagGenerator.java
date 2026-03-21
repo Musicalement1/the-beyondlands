@@ -20,6 +20,7 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
     public static final TagKey<Biome> IS_BL = TagKey.create(Registries.BIOME, TBL.prefix("is_bl"));
     public static final TagKey<Biome> IS_BL_OR_OVERWORLD = TagKey.create(Registries.BIOME, TBL.prefix("is_bl_or_overworld"));
     public static final  TagKey<Biome> ASH_RUINS_SPAWN_IN = TagKey.create(Registries.BIOME, TBL.prefix("ash_ruins_spawn_in"));
+    public static final TagKey<Biome> CORIUM_FEATURES_SPAWN_IN = TagKey.create(Registries.BIOME, TBL.prefix("corium_features_spawn_in"));
 
 
     public ModBiomeTagGenerator(PackOutput output, CompletableFuture<HolderLookup.Provider> provider, ExistingFileHelper helper) {
@@ -40,7 +41,8 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
                 Biomes.FROZEN_PEAKS
         );
         this.tag(IS_BL).add(
-                ModBiomes.ASHLAND
+                ModBiomes.ASHLAND,
+                ModBiomes.WASTELAND
         );
         this.tag(IS_BL_OR_OVERWORLD)
                 .addTag(BiomeTags.IS_OVERWORLD)
@@ -48,6 +50,10 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
 
         this.tag(ASH_RUINS_SPAWN_IN).add(
                 ModBiomes.ASHLAND
+        );
+
+        this.tag(CORIUM_FEATURES_SPAWN_IN).add(
+                ModBiomes.WASTELAND
         );
     }
 }

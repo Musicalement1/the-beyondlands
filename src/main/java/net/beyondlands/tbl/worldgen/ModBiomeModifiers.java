@@ -18,6 +18,7 @@ import net.neoforged.neoforge.registries.NeoForgeRegistries;
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_LITHIUM_ORE = registerKey("add_lithium_ore");
     public static final ResourceKey<BiomeModifier> ADD_ASH_TREE = registerKey("add_tree_ash");
+    public static final ResourceKey<BiomeModifier> ADD_CORIUM = registerKey("add_corium");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeature = context.lookup(Registries.PLACED_FEATURE);
@@ -38,6 +39,18 @@ public class ModBiomeModifiers {
                 HolderSet.direct(biomes.getOrThrow(ModBiomes.ASHLAND)/*, biomes.getOrThrow(Biomes.SAVANNA)*/),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.ASH_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
+
+        context.register(
+                ADD_CORIUM,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        context.lookup(Registries.BIOME)
+                                .getOrThrow(ModBiomeTagGenerator.CORIUM_FEATURES_SPAWN_IN),
+                        HolderSet.direct(
+                                placedFeature.getOrThrow(ModPlacedFeatures.CORIUM_PLACED_KEY)
+                        ),
+                        GenerationStep.Decoration.SURFACE_STRUCTURES
+                )
+        );
 
     }
 

@@ -1,12 +1,16 @@
-// 1.21.1	2026-03-19T22:11:20.269138	Registries
-31d13073d97468497897a7ee1c3f8abe3e2a2d53 data/tbl/dimension/bldim.json
+// 1.21.1	2026-03-21T19:41:38.449696	Registries
+9c2b9a5ecf44da1fe3914431a4501eae8f450180 data/tbl/dimension/bldim.json
 c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
+22d019ebf394f561cfcf75edeb71051091b6e3b0 data/tbl/neoforge/biome_modifier/add_corium.json
 94d465c8f24167d4c4c33e985caf6242d623d6df data/tbl/neoforge/biome_modifier/add_lithium_ore.json
 a08f69b1d68fdeb55e26badcba70a89a956ff2ea data/tbl/neoforge/biome_modifier/add_tree_ash.json
-f0127d55834a19e54bf778000b3106cc6711267d data/tbl/worldgen/biome/ashland.json
+d7c4ca942d70d9b6d474b85063503bc230291398 data/tbl/worldgen/biome/ashland.json
+7d8c64bfbebc52eb908571a230a705c88dd91388 data/tbl/worldgen/biome/wasteland.json
 2878e72f354161e5ba0682665fd44fabc8e2bc7a data/tbl/worldgen/configured_feature/ash.json
+6dbaef75b214d48749c2cadd101917f541dcc6e9 data/tbl/worldgen/configured_feature/corium.json
 0a9b1e423bf18c335ace2659ee3d18594615e876 data/tbl/worldgen/configured_feature/lithium_ore.json
 98feadee20695197cf52b26f26849a392868facf data/tbl/worldgen/placed_feature/ash_placed.json
+09e2150638c0be5b17d5faea0438541d1ac36156 data/tbl/worldgen/placed_feature/corium_placed.json
 8467173b19f267e1cfbfa50b21a9eeae1a294a58 data/tbl/worldgen/placed_feature/lithium_ore_placed.json
 822764583eb354dae0b3d1472a6ffa3e5b32867a data/tbl/worldgen/processor_list/lab_ruins.json
 0ade6df73c0dd9848949dd6c765808e66dba8e2d data/tbl/worldgen/processor_list/lab_ruins_reactor.json

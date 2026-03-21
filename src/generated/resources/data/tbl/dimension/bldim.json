@@ -8,48 +8,36 @@
         {
           "biome": "tbl:ashland",
           "parameters": {
-            "continentalness": 0.0,
-            "depth": 0.0,
-            "erosion": 0.0,
-            "humidity": 0.0,
+            "continentalness": 0.3,
+            "depth": 0.1,
+            "erosion": 0.15,
+            "humidity": 0.05,
             "offset": 0.0,
-            "temperature": 0.0,
-            "weirdness": 0.0
+            "temperature": 0.8,
+            "weirdness": 0.15
           }
         },
         {
-          "biome": "minecraft:birch_forest",
+          "biome": "tbl:wasteland",
           "parameters": {
-            "continentalness": 0.0,
-            "depth": 0.0,
+            "continentalness": 0.5,
+            "depth": 0.1,
             "erosion": 0.2,
             "humidity": 0.2,
             "offset": 0.0,
-            "temperature": 0.1,
-            "weirdness": 0.0
+            "temperature": 0.6,
+            "weirdness": 0.3
           }
         },
         {
           "biome": "minecraft:ocean",
           "parameters": {
-            "continentalness": 0.1,
+            "continentalness": 0.0,
             "depth": 0.0,
             "erosion": 0.1,
             "humidity": 0.6,
-            "offset": 0.0,
-            "temperature": 0.3,
-            "weirdness": 0.0
-          }
-        },
-        {
-          "biome": "minecraft:dark_forest",
-          "parameters": {
-            "continentalness": 0.2,
-            "depth": 0.0,
-            "erosion": 0.1,
-            "humidity": 0.3,
-            "offset": 0.0,
-            "temperature": 0.4,
+            "offset": 0.4,
+            "temperature": 0.9,
             "weirdness": 0.0
           }
         }

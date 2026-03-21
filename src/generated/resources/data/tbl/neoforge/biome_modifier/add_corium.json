@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#tbl:corium_features_spawn_in",
+  "features": "tbl:corium_placed",
+  "step": "surface_structures"
+}
