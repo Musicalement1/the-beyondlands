@@ -142,6 +142,7 @@ public class ModBlocks {
                     .strength(40.0f, 1000f)
                     .sound(SoundType.ANCIENT_DEBRIS)
                     .requiresCorrectToolForDrops()
+                    .lightLevel((state) -> 15)
             ));
 
 
