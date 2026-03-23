@@ -5,6 +5,7 @@ import net.beyondlands.tbl.entity.ModEntities;
 import net.beyondlands.tbl.entity.client.AshZombieRenderer;
 import net.beyondlands.tbl.entity.client.AshlingRenderer;
 import net.beyondlands.tbl.entity.client.NukerRenderer;
+import net.beyondlands.tbl.entity.custom.AshlingEntity;
 import net.beyondlands.tbl.item.ModCreativeTabs;
 import net.beyondlands.tbl.item.ModItems;
 import net.beyondlands.tbl.block.entity.ModBlockEntities;
@@ -15,9 +16,16 @@ import net.beyondlands.tbl.screen.custom.GateScreen;
 import net.beyondlands.tbl.worldgen.ModFeatures;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.SpawnPlacementTypes;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
 import org.slf4j.Logger;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -71,6 +79,7 @@ public class TBL
     public static ResourceLocation prefix(String name) {
         return ResourceLocation.fromNamespaceAndPath(TBL.MOD_ID, name.toLowerCase(Locale.ROOT));
     }
+
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
