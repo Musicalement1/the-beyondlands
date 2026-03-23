@@ -1,20 +1,16 @@
 {
-  "feature": "tbl:corium",
+  "feature": "tbl:huge_green_mushroom",
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 5
-    },
-    {
-      "type": "minecraft:count",
-      "count": 2
+      "chance": 7
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

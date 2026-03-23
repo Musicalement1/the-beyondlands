@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "tbl:block/green_mushroom_block",
+    "texture": "tbl:block/green_mushroom_block"
+  }
+}

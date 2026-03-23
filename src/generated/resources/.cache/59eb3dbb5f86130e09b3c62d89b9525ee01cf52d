@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-21T23:10:07.534915	Loot Tables
+// 1.21.1	2026-03-23T11:18:45.295508	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
@@ -9,6 +9,8 @@ a5dbefa1008cfdf4d440d3c768cf555d043d1374 data/tbl/loot_table/blocks/corium.json
 6cd1a9dd921d7f5f9e377bd9e75624ad91b9151e data/tbl/loot_table/blocks/force_field_block_attract.json
 07ba5af7af4fb4a46d70ff2fad99afc07f0a3e0a data/tbl/loot_table/blocks/gate_opener.json
 fe051e6d3afdf866d0b58013cdd4736f22394383 data/tbl/loot_table/blocks/gneiss.json
+e40b97750844a5ecd3c88dc32e0064e76b1fa80c data/tbl/loot_table/blocks/green_mushroom.json
+ba1de9ebdc8f6200c035d19e80c9186c54a04f6a data/tbl/loot_table/blocks/green_mushroom_block.json
 337d65ccb955e144f143b24e74c2898a49fd462e data/tbl/loot_table/blocks/lab_block.json
 d6766d6c8651681d5d02a09adcfcb4f7c9b0e15e data/tbl/loot_table/blocks/lithium_block.json
 eae59fcd4063af4cdafaff659797d74620debe45 data/tbl/loot_table/blocks/lithium_deepslate_ore.json

@@ -1,8 +1,9 @@
-// 1.21.1	2026-03-21T23:47:04.528518	Item Models: tbl
+// 1.21.1	2026-03-22T10:35:10.110684	Item Models: tbl
 9c7675ff4091771bb9b4b71b5abc8698c3103441 assets/tbl/models/item/ash.json
 cdecc4e7baf1271952dffbc53b2d56ece1bdc4ca assets/tbl/models/item/ash_sapling.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tbl/models/item/ash_zombie_spawn_egg.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/tbl/models/item/ashling_spawn_egg.json
+b2dfc5337ca7acd60283a82f9356620def60294e assets/tbl/models/item/green_mushroom.json
 2c370a67624bb7d32be051fb27757b6955e4f897 assets/tbl/models/item/lithium.json
 58463dcc49d55d9df8d01461c789050af83d35a7 assets/tbl/models/item/lithium_battery.json
 fa07f6d97a1e1f666dbf3ffe1acca1a52f9fee36 assets/tbl/models/item/lithium_battery_boosted.json

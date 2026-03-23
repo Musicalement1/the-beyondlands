@@ -10,10 +10,14 @@ import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.IntRange;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
+import net.minecraft.world.level.storage.loot.functions.LimitCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -37,6 +41,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LAB_BLOCK.get());
         dropSelf(ModBlocks.GATE_OPENER.get());
         dropSelf(ModBlocks.CORIUM.get());
+        dropSelf(ModBlocks.GREEN_MUSHROOM.get());
+
         this.add(ModBlocks.LITHIUM_ORE.get(),
                 block -> createOreDrop(ModBlocks.LITHIUM_ORE.get(), ModItems.RAW_LITHIUM.get()));
         this.add(ModBlocks.LITHIUM_DEEPSLATE_ORE.get(),
@@ -49,6 +55,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STRIPPED_ASH_WOOD.get());
         this.dropSelf(ModBlocks.ASH_PLANKS.get());
         this.dropSelf(ModBlocks.ASH_SAPLING.get());
+
+        this.add(ModBlocks.GREEN_MUSHROOM_BLOCK.get(), block ->
+                this.createMushroomBlockDrop(block, ModBlocks.GREEN_MUSHROOM_BLOCK)
+                );
 
         this.add(ModBlocks.ASH_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.ASH_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
@@ -71,6 +81,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 )
         );
     }
+
+
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

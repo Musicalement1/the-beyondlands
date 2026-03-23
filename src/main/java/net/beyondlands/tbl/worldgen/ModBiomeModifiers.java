@@ -19,6 +19,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_LITHIUM_ORE = registerKey("add_lithium_ore");
     public static final ResourceKey<BiomeModifier> ADD_ASH_TREE = registerKey("add_tree_ash");
     public static final ResourceKey<BiomeModifier> ADD_CORIUM = registerKey("add_corium");
+    public static final ResourceKey<BiomeModifier> ADD_HUGE_GREEN_MUSHROOM = registerKey("add_huge_green_mushroom");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
         var placedFeature = context.lookup(Registries.PLACED_FEATURE);
@@ -52,6 +53,17 @@ public class ModBiomeModifiers {
                 )
         );
 
+        context.register(
+                ADD_HUGE_GREEN_MUSHROOM,
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        context.lookup(Registries.BIOME)
+                                .getOrThrow(ModBiomeTagGenerator.CORIUM_FEATURES_SPAWN_IN),
+                        HolderSet.direct(
+                                placedFeature.getOrThrow(ModPlacedFeatures.HUGE_GREEN_MUSHROOM_PLACED_KEY)
+                        ),
+                        GenerationStep.Decoration.SURFACE_STRUCTURES
+                )
+        );
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {

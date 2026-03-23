@@ -15,10 +15,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.BlockPileConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
@@ -34,6 +31,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LITHIUM_ORE_KEY = registerKey("lithium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ASH_KEY = registerKey("ash");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CORIUM_KEY = registerKey("corium");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> HUGE_GREEN_MUSHROOM = registerKey("huge_green_mushroom");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -66,6 +64,16 @@ public class ModConfiguredFeatures {
                                         .add(ModBlocks.CORIUM.get().defaultBlockState(), 18)
                                         .add(Blocks.MAGMA_BLOCK.defaultBlockState(), 2)
                         )
+                )
+        );
+        register(
+                context,
+                HUGE_GREEN_MUSHROOM,
+                ModFeatures.HUGE_GREEN_MUSHROOM.get(),
+                new HugeMushroomFeatureConfiguration(
+                        BlockStateProvider.simple(ModBlocks.GREEN_MUSHROOM_BLOCK.get()),
+                        BlockStateProvider.simple(Blocks.MUSHROOM_STEM),
+                        3
                 )
         );
     }

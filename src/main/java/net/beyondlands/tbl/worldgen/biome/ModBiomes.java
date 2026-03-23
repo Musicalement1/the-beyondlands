@@ -54,7 +54,7 @@ public class ModBiomes {
                         .waterFogColor(0x00FF56)
                         .fogColor(0x20B352)
                         .skyColor(0x0E4F25)
-                        .ambientParticle(new AmbientParticleSettings(ParticleTypes.ITEM_SLIME, 0.00625F))
+                        .ambientParticle(new AmbientParticleSettings(ParticleTypes.ITEM_SLIME, 0.003F))
                         .build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .generationSettings(generationBuilder.build())

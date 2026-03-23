@@ -5,17 +5,22 @@ import net.beyondlands.tbl.TBL;
 import net.beyondlands.tbl.block.crop.PepperCropBlock;
 import net.beyondlands.tbl.block.other.ModFlammableRotatedPillarBlock;
 import net.beyondlands.tbl.item.ModItems;
+import net.beyondlands.tbl.worldgen.ModConfiguredFeatures;
+import net.beyondlands.tbl.worldgen.ModFeatures;
 import net.beyondlands.tbl.worldgen.tree.ModTreeGrowers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -144,6 +149,29 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .lightLevel((state) -> 15)
             ));
+
+    public static final DeferredBlock<Block> GREEN_MUSHROOM = registerBlock("green_mushroom",
+            () -> new MushroomBlock(ModConfiguredFeatures.HUGE_GREEN_MUSHROOM, BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_BROWN)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .lightLevel((state) -> 5)
+                    .hasPostProcess((state, level, pos) -> true)
+                    .pushReaction(PushReaction.DESTROY)));
+
+
+    public static final DeferredBlock<Block> GREEN_MUSHROOM_BLOCK = registerBlock("green_mushroom_block",
+            () -> new HugeMushroomBlock(
+                    BlockBehaviour.Properties.of()
+                            .mapColor(MapColor.COLOR_GREEN)
+                            .instrument(NoteBlockInstrument.BASS)
+                            .strength(0.2F)
+                            .sound(SoundType.WOOD)
+                            .ignitedByLava()
+            )
+            );
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -20,6 +20,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LITHIUM_ORE_PLACED_KEY = registerKey("lithium_ore_placed");
     public static final ResourceKey<PlacedFeature> ASH_PLACED_KEY = registerKey("ash_placed");
     public static final ResourceKey<PlacedFeature> CORIUM_PLACED_KEY = registerKey("corium_placed");
+    public static final ResourceKey<PlacedFeature> HUGE_GREEN_MUSHROOM_PLACED_KEY = registerKey("huge_green_mushroom_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -37,9 +38,22 @@ public class ModPlacedFeatures {
                 CORIUM_PLACED_KEY,
                 configuredFeatures.getOrThrow(ModConfiguredFeatures.CORIUM_KEY),
                 List.of(
-                        CountPlacement.of(4),
+                        RarityFilter.onAverageOnceEvery(5),
+                        CountPlacement.of(2),//spawn 2 of them when its placed
                         InSquarePlacement.spread(),
                         HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG),
+                        BiomeFilter.biome()
+                )
+        );
+
+        register(
+                context,
+                HUGE_GREEN_MUSHROOM_PLACED_KEY,
+                configuredFeatures.getOrThrow(ModConfiguredFeatures.HUGE_GREEN_MUSHROOM),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(7),
+                        InSquarePlacement.spread(),
+                        PlacementUtils.HEIGHTMAP,
                         BiomeFilter.biome()
                 )
         );

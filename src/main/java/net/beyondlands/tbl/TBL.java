@@ -12,6 +12,7 @@ import net.beyondlands.tbl.block.entity.ModBlockEntities;
 import com.mojang.logging.LogUtils;
 import net.beyondlands.tbl.screen.ModMenuTypes;
 import net.beyondlands.tbl.screen.custom.GateScreen;
+import net.beyondlands.tbl.worldgen.ModFeatures;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
@@ -59,6 +60,7 @@ public class TBL
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModFeatures.FEATURES.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us

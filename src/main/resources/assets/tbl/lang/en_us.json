@@ -16,6 +16,8 @@
 
   "block.tbl.force_field_block": "Force Field (Repulsor)",
   "block.tbl.force_field_block_attract": "Force Field (Attractor)",
+  "block.tbl.green_mushroom": "Green Mushroom",
+  "block.tbl.green_mushroom_block": "Green Mushroom Block",
 
   "entity.tbl.ashling": "Ashling",
   "item.tbl.pepper": "Bell Pepper",

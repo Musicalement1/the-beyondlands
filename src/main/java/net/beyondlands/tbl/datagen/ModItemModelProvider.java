@@ -75,6 +75,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.STEEL_HORSE_ARMOR.get());
 
         saplingItem(ModBlocks.ASH_SAPLING);
+        saplingItem(ModBlocks.GREEN_MUSHROOM);
 
         basicItem(ModItems.PEPPER_SEEDS.get());
     }

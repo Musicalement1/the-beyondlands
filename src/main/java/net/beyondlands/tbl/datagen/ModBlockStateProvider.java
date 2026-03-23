@@ -6,10 +6,20 @@ import net.beyondlands.tbl.block.ModBlocks;
 import net.beyondlands.tbl.block.crop.PepperCropBlock;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.data.models.blockstates.Condition;
+import net.minecraft.data.models.blockstates.MultiPartGenerator;
+import net.minecraft.data.models.blockstates.Variant;
+import net.minecraft.data.models.blockstates.VariantProperties;
+import net.minecraft.data.models.model.ModelLocationUtils;
+import net.minecraft.data.models.model.ModelTemplates;
+import net.minecraft.data.models.model.TextureMapping;
+import net.minecraft.data.models.model.TexturedModel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
@@ -50,15 +60,90 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(ModBlocks.ASH_LEAVES);
         saplingBlock(ModBlocks.ASH_SAPLING);
-
+        saplingBlock(ModBlocks.GREEN_MUSHROOM);
         makeCrop(((CropBlock) ModBlocks.PEPPER_CROP.get()), "pepper_crop_stage", "pepper_crop_stage");
-
+        createMushroomBlock(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
         blockWithItem(ModBlocks.BL_PORTAL);
         randomRotatedExistingModel(ModBlocks.GNEISS, "gneiss");
 
         randomRotatedCubeBlockAll(ModBlocks.ASH_BLOCK);
 
         randomRotatedCubeBlockAll(ModBlocks.LAB_BLOCK);
+    }
+    private void createMushroomBlock(Block block) {
+
+        String name = BuiltInRegistries.BLOCK.getKey(block).getPath();
+
+        ResourceLocation outside = models()
+                .singleTexture(name,
+                        mcLoc("block/template_single_face"),
+                        "texture",
+                        blockTexture(block))
+                .renderType("cutout")
+                .getLocation();
+
+        ResourceLocation inside = mcLoc("block/mushroom_block_inside");
+
+        getMultipartBuilder(block)
+
+                // NORTH
+                .part().modelFile(models().getExistingFile(outside)).addModel()
+                .condition(BlockStateProperties.NORTH, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).addModel()
+                .condition(BlockStateProperties.NORTH, false)
+                .end()
+
+                // SOUTH
+                .part().modelFile(models().getExistingFile(outside)).rotationY(180).uvLock(true).addModel()
+                .condition(BlockStateProperties.SOUTH, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).rotationY(180).addModel()
+                .condition(BlockStateProperties.SOUTH, false)
+                .end()
+
+                // EAST
+                .part().modelFile(models().getExistingFile(outside)).rotationY(90).uvLock(true).addModel()
+                .condition(BlockStateProperties.EAST, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).rotationY(90).addModel()
+                .condition(BlockStateProperties.EAST, false)
+                .end()
+
+                // WEST
+                .part().modelFile(models().getExistingFile(outside)).rotationY(270).uvLock(true).addModel()
+                .condition(BlockStateProperties.WEST, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).rotationY(270).addModel()
+                .condition(BlockStateProperties.WEST, false)
+                .end()
+
+                // UP
+                .part().modelFile(models().getExistingFile(outside)).rotationX(270).uvLock(true).addModel()
+                .condition(BlockStateProperties.UP, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).rotationX(270).addModel()
+                .condition(BlockStateProperties.UP, false)
+                .end()
+
+                // DOWN
+                .part().modelFile(models().getExistingFile(outside)).rotationX(90).uvLock(true).addModel()
+                .condition(BlockStateProperties.DOWN, true)
+                .end()
+
+                .part().modelFile(models().getExistingFile(inside)).rotationX(90).addModel()
+                .condition(BlockStateProperties.DOWN, false)
+                .end();
+
+        simpleBlockItem(block, models().cubeAll(
+                BuiltInRegistries.BLOCK.getKey(block).getPath(),
+                blockTexture(block)
+        ));
     }
 
     public void makeCrop(CropBlock block, String modelName, String textureName) {
