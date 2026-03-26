@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add",
+  "argument1": "minecraft:shift_x",
+  "argument2": 1000.0
+}

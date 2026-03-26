@@ -25,7 +25,7 @@ public class ModDatapackEntries extends DatapackBuiltinEntriesProvider {
             //.add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap)
             //.add(Registries.TRIM_PATTERN, ModTrimPatterns::bootstrap)
             //.add(Registries.ENCHANTMENT, ModEnchantments::bootstrap)
-
+            //.add(Registries.NOISE_SETTINGS, ModNoiseGeneratorSettings::bootstrap)
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
             .add(Registries.BIOME, ModBiomes::bootstrap)

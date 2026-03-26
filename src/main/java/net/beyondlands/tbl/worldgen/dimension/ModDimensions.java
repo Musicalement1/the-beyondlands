@@ -68,7 +68,12 @@ public class ModDimensions {
                                         Climate.parameters(0.9F, 0.6F, 0.0F, 0.1F, 0.0F, 0.0F, 0.4F), biomeRegistry.getOrThrow(Biomes.OCEAN))
 
                         ))),
-                noiseGenSettings.getOrThrow(NoiseGeneratorSettings.AMPLIFIED));
+                //noiseGenSettings.getOrThrow(ModNoiseGeneratorSettings.BL_NOISE)
+                context.lookup(Registries.NOISE_SETTINGS).getOrThrow(ResourceKey.create(
+                        Registries.NOISE_SETTINGS,
+                        TBL.prefix("bl_noise")
+                ))
+        );
 
         LevelStem stem = new LevelStem(dimTypes.getOrThrow(ModDimensions.BLDIM_DIM_TYPE), noiseBasedChunkGenerator);
 
