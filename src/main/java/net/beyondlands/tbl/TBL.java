@@ -12,6 +12,7 @@ import net.beyondlands.tbl.block.entity.ModBlockEntities;
 import com.mojang.logging.LogUtils;
 import net.beyondlands.tbl.screen.ModMenuTypes;
 import net.beyondlands.tbl.screen.custom.GateScreen;
+import net.beyondlands.tbl.util.ModItemProperties;
 import net.beyondlands.tbl.worldgen.ModFeatures;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
@@ -100,6 +101,7 @@ public class TBL
             EntityRenderers.register(ModEntities.ASHLING.get(), AshlingRenderer::new);
             EntityRenderers.register(ModEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);
             EntityRenderers.register(ModEntities.NUKER.get(), NukerRenderer::new);
+            ModItemProperties.addCustomItemProperties();
         }
 
         @SubscribeEvent

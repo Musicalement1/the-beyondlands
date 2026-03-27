@@ -1,0 +1,6 @@
+{
+  "parent": "tbl:item/prototype_002",
+  "textures": {
+    "layer0": "tbl:item/prototype_002_pulling_0"
+  }
+}

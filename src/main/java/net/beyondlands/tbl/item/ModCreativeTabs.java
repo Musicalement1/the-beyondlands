@@ -64,6 +64,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.NUKER_SPAWN_EGG.get());
                         output.accept(ModBlocks.GREEN_MUSHROOM.get());
                         output.accept(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
+                        output.accept(ModItems.PROTOTYPE_002.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

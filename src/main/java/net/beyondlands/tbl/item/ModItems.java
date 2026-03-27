@@ -5,6 +5,7 @@ import net.beyondlands.tbl.block.ModBlocks;
 import net.beyondlands.tbl.entity.ModEntities;
 import net.beyondlands.tbl.item.battery.BatteryItem;
 import net.beyondlands.tbl.item.battery.HighVoltageBatteryItem;
+import net.beyondlands.tbl.item.bow.Prototype_002;
 import net.beyondlands.tbl.item.fuel.FuelItem;
 import net.beyondlands.tbl.item.hammer.HammerItem;
 import net.beyondlands.tbl.item.hydroreactive.LithiumReact;
@@ -169,6 +170,9 @@ public class ModItems {
     public static final DeferredItem<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds",
             () -> new ItemNameBlockItem(ModBlocks.PEPPER_CROP.get(), new Item.Properties()));
 
+
+    public static final DeferredItem<Item> PROTOTYPE_002 = ITEMS.register("prototype_002",
+            () -> new Prototype_002(new Item.Properties().durability(500)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
