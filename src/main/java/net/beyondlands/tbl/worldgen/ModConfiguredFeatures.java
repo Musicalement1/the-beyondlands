@@ -6,6 +6,7 @@ import net.beyondlands.tbl.TBL;
 import net.beyondlands.tbl.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -32,6 +33,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> ASH_KEY = registerKey("ash");
     public static final ResourceKey<ConfiguredFeature<?, ?>> CORIUM_KEY = registerKey("corium");
     public static final ResourceKey<ConfiguredFeature<?, ?>> HUGE_GREEN_MUSHROOM = registerKey("huge_green_mushroom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN_MUSHROOM = registerKey("green_mushroom");
 
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
@@ -61,8 +63,8 @@ public class ModConfiguredFeatures {
                         //BlockStateProvider.simple(ModBlocks.CORIUM.get())
                         new WeightedStateProvider(
                                 SimpleWeightedRandomList.<BlockState>builder()
-                                        .add(ModBlocks.CORIUM.get().defaultBlockState(), 18)
-                                        .add(Blocks.MAGMA_BLOCK.defaultBlockState(), 2)
+                                        .add(ModBlocks.CORIUM.get().defaultBlockState(), 49)
+                                        .add(Blocks.MAGMA_BLOCK.defaultBlockState(), 1)
                         )
                 )
         );
@@ -74,6 +76,19 @@ public class ModConfiguredFeatures {
                         BlockStateProvider.simple(ModBlocks.GREEN_MUSHROOM_BLOCK.get()),
                         BlockStateProvider.simple(Blocks.MUSHROOM_STEM),
                         3
+                )
+        );
+        register(
+            context,
+            GREEN_MUSHROOM,
+            Feature.RANDOM_PATCH,
+                FeatureUtils.simplePatchConfiguration(
+                        Feature.SIMPLE_BLOCK,
+                        new SimpleBlockConfiguration(
+                                BlockStateProvider.simple(ModBlocks.GREEN_MUSHROOM.get())
+                        ),
+                        List.of(),
+                        16
                 )
         );
     }

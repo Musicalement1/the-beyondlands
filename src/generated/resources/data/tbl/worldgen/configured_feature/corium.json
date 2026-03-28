@@ -8,13 +8,13 @@
           "data": {
             "Name": "tbl:corium"
           },
-          "weight": 18
+          "weight": 49
         },
         {
           "data": {
             "Name": "minecraft:magma_block"
           },
-          "weight": 2
+          "weight": 1
         }
       ]
     }

@@ -3,6 +3,7 @@ package net.beyondlands.tbl.block;
 
 import net.beyondlands.tbl.TBL;
 import net.beyondlands.tbl.block.crop.PepperCropBlock;
+import net.beyondlands.tbl.block.other.GreenMushroom;
 import net.beyondlands.tbl.block.other.ModFlammableRotatedPillarBlock;
 import net.beyondlands.tbl.item.ModItems;
 import net.beyondlands.tbl.worldgen.ModConfiguredFeatures;
@@ -151,7 +152,7 @@ public class ModBlocks {
             ));
 
     public static final DeferredBlock<Block> GREEN_MUSHROOM = registerBlock("green_mushroom",
-            () -> new MushroomBlock(ModConfiguredFeatures.HUGE_GREEN_MUSHROOM, BlockBehaviour.Properties.of()
+            () -> new GreenMushroom(ModConfiguredFeatures.HUGE_GREEN_MUSHROOM, BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_BROWN)
                     .noCollission()
                     .randomTicks()
