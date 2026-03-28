@@ -81,5 +81,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ModBlocks.GNEISS.get().asItem());
         tag(ItemTags.STONE_TOOL_MATERIALS)
                 .add(ModBlocks.GNEISS.get().asItem());
+
+        tag(ItemTags.BOW_ENCHANTABLE)
+                .add(ModItems.PROTOTYPE_002.get());
+        tag(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.PROTOTYPE_002.get());
     }
 }

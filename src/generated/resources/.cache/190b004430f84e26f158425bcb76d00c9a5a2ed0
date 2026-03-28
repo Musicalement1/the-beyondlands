@@ -1,6 +1,8 @@
-// 1.21.1	2026-03-15T10:50:49.809591	Tags for minecraft:item mod id tbl
+// 1.21.1	2026-03-28T14:36:02.437768	Tags for minecraft:item mod id tbl
 246488afddd4fca4f20d70a66beb7d3b2467cf01 data/minecraft/tags/item/axes.json
 5162a8418625b99b8bb7849b98345c6d8d87fb35 data/minecraft/tags/item/chest_armor.json
+3c6f6067eacf6bf479bf0cd8d44820cb82507911 data/minecraft/tags/item/enchantable/bow.json
+3c6f6067eacf6bf479bf0cd8d44820cb82507911 data/minecraft/tags/item/enchantable/durability.json
 af0331afd7dd2e081f0300e9123595671684c53a data/minecraft/tags/item/foot_armor.json
 6c6bc0cc1d446a037b36184839c3a2d132bbf0e9 data/minecraft/tags/item/head_armor.json
 128c6df76aa1acea40c83ff01ed7c9ba734e02ee data/minecraft/tags/item/hoes.json

@@ -11,6 +11,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.EnchantedCountIncreaseFunction;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import java.util.stream.Stream;
@@ -33,7 +35,6 @@ public class ModEntityLootProvider extends EntityLootSubProvider {
                                                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
                                                         .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))
                                         )
-                                        //.when(LootItemKilledByPlayerCondition.killedByPlayer())
                         )
         );
 
@@ -63,7 +64,11 @@ public class ModEntityLootProvider extends EntityLootSubProvider {
                                                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 4.0F)))
                                                         .apply(EnchantedCountIncreaseFunction.lootingMultiplier(this.registries, UniformGenerator.between(0.0F, 1.0F)))
                                         )
-                                //.when(LootItemKilledByPlayerCondition.killedByPlayer())
+                                        .add(
+                                            LootItem.lootTableItem(ModItems.PROTOTYPE_002.get())
+                                                    .when(LootItemRandomChanceCondition.randomChance(0.02F))//2%
+                                        )
+                                .when(LootItemKilledByPlayerCondition.killedByPlayer())
                         )
         );
     }
