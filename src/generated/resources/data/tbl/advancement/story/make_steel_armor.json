@@ -1,0 +1,67 @@
+{
+  "parent": "tbl:story/obtain_steel",
+  "criteria": {
+    "c": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "f": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "h": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "l": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tbl:steel_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.make_steel_armor.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "tbl:steel_chestplate"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.make_steel_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "h",
+      "c",
+      "l",
+      "f"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

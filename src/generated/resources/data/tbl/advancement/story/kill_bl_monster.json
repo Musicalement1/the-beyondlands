@@ -1,0 +1,52 @@
+{
+  "parent": "tbl:story/enter_bl",
+  "criteria": {
+    "ash_zombie": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "tbl:ash_zombie"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "nuker": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "tbl:nuker"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.kill_bl_monster.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "tbl:steel_sword"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.kill_bl_monster.title"
+    }
+  },
+  "requirements": [
+    [
+      "ash_zombie",
+      "nuker"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

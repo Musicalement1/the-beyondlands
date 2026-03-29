@@ -1,7 +1,7 @@
 {
-  "parent": "tbl:story/make_battery",
+  "parent": "tbl:story/find_lab",
   "criteria": {
-    "lab": {
+    "bl": {
       "conditions": {
         "player": [
           {
@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "structures": "tbl:lab_ruins"
+                "dimension": "tbl:bldim"
               }
             }
           }
@@ -20,19 +20,19 @@
   },
   "display": {
     "description": {
-      "translate": "advancement.tbl.story.find_lab.description"
+      "translate": "advancement.tbl.story.enter_bl.description"
     },
     "icon": {
       "count": 1,
-      "id": "tbl:lab_block"
+      "id": "tbl:bl_portal"
     },
     "title": {
-      "translate": "advancement.tbl.story.find_lab.title"
+      "translate": "advancement.tbl.story.enter_bl.title"
     }
   },
   "requirements": [
     [
-      "lab"
+      "bl"
     ]
   ],
   "sends_telemetry_event": true

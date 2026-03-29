@@ -67,6 +67,21 @@
   "advancement.tbl.story.find_lab.title": "Structures of Knowledge",
   "advancement.tbl.story.find_lab.description": "Find Lab Ruins... Maybe they had a reason to leave?",
 
+  "advancement.tbl.story.make_steel_armor.title": "Heavy Protection",
+  "advancement.tbl.story.make_steel_armor.description": "Make Steel Armor.. How can You still walk?",
+
+  "advancement.tbl.story.enter_bl.title": "Beyond Realities",
+  "advancement.tbl.story.enter_bl.description": "Enter The Beyondlands",
+
+  "advancement.tbl.story.kill_bl_monster.title": "Monster Hunter 2",
+  "advancement.tbl.story.kill_bl_monster.description": "Kill Any Mob Out There..",
+
+  "advancement.tbl.story.bl_hunter.title": "Exterminator",
+  "advancement.tbl.story.bl_hunter.description": "Kill All Beyondlands mobs...... You Were the monster weren't you?",
+
+  "advancement.tbl.story.bl_explorer.title": "Realities Explorer",
+  "advancement.tbl.story.bl_explorer.description": "Visit Every Biome out there..",
+
 
   "item.tbl.pepper_seeds": "Pepper Seeds",
   "block.tbl.pepper_crop": "Pepper Crop",
@@ -79,5 +94,5 @@
   "item.tbl.ash_zombie_spawn_egg": "Ash Zombie Spawn Egg",
   "block.tbl.gate_opener": "Gate Opener",
 
-  "item.tbl.prototype_002": "§o§4Prototype 002 §r"
+  "item.tbl.prototype_002": "§c§oPrototype 002§r§r"
 }

@@ -1,0 +1,55 @@
+{
+  "parent": "tbl:story/kill_bl_monster",
+  "criteria": {
+    "ash_zombie": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "tbl:ash_zombie"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    },
+    "nuker": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "tbl:nuker"
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.tbl.story.bl_hunter.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "tbl:steel_axe"
+    },
+    "title": {
+      "translate": "advancement.tbl.story.bl_hunter.title"
+    }
+  },
+  "requirements": [
+    [
+      "ash_zombie"
+    ],
+    [
+      "nuker"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
