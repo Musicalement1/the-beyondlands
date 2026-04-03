@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-28T17:56:03.141017	Registries
+// 1.21.1	2026-04-03T18:06:05.482537	Registries
 824636862521d5e172cf75da82bf573bc829a260 data/tbl/dimension/bldim.json
 c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
 22d019ebf394f561cfcf75edeb71051091b6e3b0 data/tbl/neoforge/biome_modifier/add_corium.json
@@ -23,8 +23,8 @@ bb3c7bc42b4d74f18c1744a1306a7bd7984cfb49 data/tbl/worldgen/placed_feature/huge_g
 4311e64b316c63b5c0d790f9109130f56b847cc0 data/tbl/worldgen/structure/ashling_ruins.json
 fdf6223a39fa0e14d1f998fd2d6f92df1eaab243 data/tbl/worldgen/structure/lab_ruins.json
 a8081a4dc838f092c20535d01e1b356865383041 data/tbl/worldgen/structure_set/ashling_ruins.json
-8c30c09839270b4964e008e1855ddf1dd1827e31 data/tbl/worldgen/structure_set/lab_ruins.json
+170b75baccb5625c9d05b98bf3438eaa26988962 data/tbl/worldgen/structure_set/lab_ruins.json
 ae105fc4635bba18a14707cc48cd5a17e0247a0a data/tbl/worldgen/template_pool/ashling_ruins_pool.json
-2c59ee8f06dd8bd7bc6de3b25d688ae51ad11492 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_corridors.json
+e0eb1050396fbe1c98bd1ecd7bdbf08f6ef8fa7c data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_corridors.json
 d27ae55f286a1df136c44af858b8dc8aff224747 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_pool.json
 d77dc92b52068388dd484efdef92a5647d249e11 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_rooms.json

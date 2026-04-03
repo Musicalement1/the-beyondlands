@@ -169,7 +169,7 @@ public class ModTemplatePools {
                                 ),
                                 Pair.of(
                                         StructurePoolElement.empty(),
-                                        7//meh, dead end but works
+                                        4//meh, dead end but works
                                 )
                         ),
                         StructureTemplatePool.Projection.RIGID

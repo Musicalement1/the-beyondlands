@@ -38,7 +38,20 @@ public class ModBiomeTagGenerator extends BiomeTagsProvider {
                 Biomes.MUSHROOM_FIELDS,
                 Biomes.SWAMP,
                 Biomes.MANGROVE_SWAMP,
-                Biomes.FROZEN_PEAKS
+                Biomes.FROZEN_PEAKS,
+                Biomes.JAGGED_PEAKS,
+                Biomes.JUNGLE,
+                Biomes.BAMBOO_JUNGLE,
+                Biomes.SPARSE_JUNGLE,
+                Biomes.SAVANNA,
+                Biomes.SAVANNA_PLATEAU,
+                Biomes.WINDSWEPT_SAVANNA,
+                Biomes.WOODED_BADLANDS,
+                Biomes.ERODED_BADLANDS,
+                Biomes.BADLANDS,
+                Biomes.PLAINS,
+                Biomes.SNOWY_PLAINS,
+                Biomes.MEADOW
         );
         this.tag(IS_BL).add(
                 ModBiomes.ASHLAND,
