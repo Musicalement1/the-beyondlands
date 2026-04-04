@@ -26,6 +26,10 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("gate_be", () -> BlockEntityType.Builder.of(
                     GateOpenerBlockEntity::new, ModBlocks.GATE_OPENER.get()).build(null));
 
+    public static final Supplier<BlockEntityType<BoostingTableBlockEntity>> BOOSTING_TABLE_BE =
+            BLOCK_ENTITIES.register("boosting_table_be", () -> BlockEntityType.Builder.of(
+                    BoostingTableBlockEntity::new, ModBlocks.BOOSTING_TABLE.get()).build(null));
+
 
 
     public static void register(IEventBus eventBus) {

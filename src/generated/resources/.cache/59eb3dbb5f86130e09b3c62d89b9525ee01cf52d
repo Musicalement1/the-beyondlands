@@ -1,9 +1,10 @@
-// 1.21.1	2026-03-28T14:36:02.444634	Loot Tables
+// 1.21.1	2026-04-04T19:54:40.441788	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
 5aec04893355ba4bea2a089c5a56fe8cf553e70d data/tbl/loot_table/blocks/ash_sapling.json
 bcf3b2d55b714ff8ed59c25efba0e94f25a31752 data/tbl/loot_table/blocks/ash_wood.json
+08565f896758d12e9892de1176099275edffc5ab data/tbl/loot_table/blocks/boosting_table.json
 a5dbefa1008cfdf4d440d3c768cf555d043d1374 data/tbl/loot_table/blocks/corium.json
 7678c05a4a744918ccc05f531642de86330c19c2 data/tbl/loot_table/blocks/force_field_block.json
 6cd1a9dd921d7f5f9e377bd9e75624ad91b9151e data/tbl/loot_table/blocks/force_field_block_attract.json
@@ -19,8 +20,8 @@ ccf0011474b4155bd3f6afe74898712d248ab558 data/tbl/loot_table/blocks/pepper_crop.
 fc852f09e656393be6682ec21f0827a78a211ef0 data/tbl/loot_table/blocks/raw_lithium_block.json
 7220b9dd89dd58ca4e36c825c31f91761ccdc95d data/tbl/loot_table/blocks/stripped_ash_log.json
 891fc73519871b50540c9701543924cd764c1861 data/tbl/loot_table/blocks/stripped_ash_wood.json
-0208f935623faf03e9fb7d31d586e1c3901ec30b data/tbl/loot_table/chests/ashling_ruins.json
-2fb6abd21c0b525aef41f035ab81f922d714ef15 data/tbl/loot_table/chests/lab_ruins.json
+ff080559e47da8c868b3c90a56221b036bdd0a06 data/tbl/loot_table/chests/ashling_ruins.json
+15f9630ca36bcfe21881a4ec993a86bf5026018d data/tbl/loot_table/chests/lab_ruins.json
 a8179b020a5be575cdc9fb008766ba7e756d28f6 data/tbl/loot_table/entities/ash_zombie.json
 babdaa6dfc998cac4a92bcb399641bb4fb264a86 data/tbl/loot_table/entities/ashling.json
 f335a177893df08d7bb7d2935a0ff47c4922900a data/tbl/loot_table/entities/nuker.json

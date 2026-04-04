@@ -65,6 +65,8 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.GREEN_MUSHROOM.get());
                         output.accept(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
                         output.accept(ModItems.PROTOTYPE_002.get());
+                        output.accept(ModItems.ENCHANTITE_SHARD.get());
+                        output.accept(ModBlocks.BOOSTING_TABLE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

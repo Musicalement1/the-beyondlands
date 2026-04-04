@@ -55,6 +55,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ASH.get());
         basicItem(ModItems.LITHIUM_BATTERY_STACK.get());
         basicItem(ModItems.LITHIUM_BATTERY_STACK_BOOSTED.get());
+        basicItem(ModItems.ENCHANTITE_SHARD.get());
 
         withExistingParent(ModItems.ASHLING_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.ASH_ZOMBIE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));

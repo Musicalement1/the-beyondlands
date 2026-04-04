@@ -9,6 +9,7 @@ import net.beyondlands.tbl.item.bow.Prototype_002;
 import net.beyondlands.tbl.item.fuel.FuelItem;
 import net.beyondlands.tbl.item.hammer.HammerItem;
 import net.beyondlands.tbl.item.hydroreactive.LithiumReact;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
@@ -173,6 +174,10 @@ public class ModItems {
 
     public static final DeferredItem<Item> PROTOTYPE_002 = ITEMS.register("prototype_002",
             () -> new Prototype_002(new Item.Properties().durability(500)));
+
+    public static final DeferredItem<Item> ENCHANTITE_SHARD = ITEMS.register("enchantite_shard",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true))
+            );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

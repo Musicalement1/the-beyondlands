@@ -11,6 +11,8 @@ import net.beyondlands.tbl.block.entity.ModBlockEntities;
 
 import com.mojang.logging.LogUtils;
 import net.beyondlands.tbl.screen.ModMenuTypes;
+import net.beyondlands.tbl.screen.custom.BoostingTableMenu;
+import net.beyondlands.tbl.screen.custom.BoostingTableScreen;
 import net.beyondlands.tbl.screen.custom.GateScreen;
 import net.beyondlands.tbl.util.ModItemProperties;
 import net.beyondlands.tbl.worldgen.ModFeatures;
@@ -107,6 +109,7 @@ public class TBL
         @SubscribeEvent
         public static void registerScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.GATE_MENU.get(), GateScreen::new);
+            event.register(ModMenuTypes.BOOSTING_TABLE_MENU.get(), BoostingTableScreen::new);
         }
     }
 }

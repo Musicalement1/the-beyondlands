@@ -1,6 +1,7 @@
 package net.beyondlands.tbl.screen;
 
 import net.beyondlands.tbl.TBL;
+import net.beyondlands.tbl.screen.custom.BoostingTableMenu;
 import net.beyondlands.tbl.screen.custom.GateMenu;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -18,9 +19,13 @@ public class ModMenuTypes {
     public static final DeferredHolder<MenuType<?>, MenuType<GateMenu>> GATE_MENU =
             registerMenuType("gate_menu", GateMenu::new);
 
+    public static final DeferredHolder<MenuType<?>, MenuType<BoostingTableMenu>> BOOSTING_TABLE_MENU =
+            registerMenuType("boosting_table_menu", (containerId, inv, buf) -> new BoostingTableMenu(containerId, inv, buf));
 
-    private static <T extends AbstractContainerMenu>DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
-                                                                                                              IContainerFactory<T> factory) {
+
+
+    private static <T extends AbstractContainerMenu> DeferredHolder<MenuType<?>, MenuType<T>> registerMenuType(String name,
+                                                                                                               IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IMenuTypeExtension.create(factory));
 
     }

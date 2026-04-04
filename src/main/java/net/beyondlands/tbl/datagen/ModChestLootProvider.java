@@ -48,7 +48,7 @@ public class ModChestLootProvider implements LootTableSubProvider {
                 LootTable.lootTable()
                         .withPool(
                                 LootPool.lootPool()
-                                        .setRolls(ConstantValue.exactly(3))
+                                        .setRolls(ConstantValue.exactly(4))
 
                                         .add(LootItem.lootTableItem(Items.DIAMOND)
                                                 .setWeight(5)
@@ -155,6 +155,12 @@ public class ModChestLootProvider implements LootTableSubProvider {
 
                                 .add(LootItem.lootTableItem(Items.WRITABLE_BOOK)
                                         .setWeight(10)
+                                        .apply(SetItemCountFunction.setCount(
+                                                UniformGenerator.between(1, 2))
+                                        )
+                                )
+                                .add(LootItem.lootTableItem(ModItems.ENCHANTITE_SHARD.get())
+                                        .setWeight(7)
                                         .apply(SetItemCountFunction.setCount(
                                                 UniformGenerator.between(1, 2))
                                         )

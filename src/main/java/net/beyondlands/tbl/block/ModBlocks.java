@@ -143,6 +143,12 @@ public class ModBlocks {
                     .strength(10f, 100f)
             ));
 
+    public static final DeferredBlock<Block> BOOSTING_TABLE = registerBlock("boosting_table",
+            () -> new BoostingTableBlock(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .strength(10f, 10f)
+            ));
+
     public static final DeferredBlock<Block> CORIUM = registerBlock("corium",
             () -> new CoriumBlock(BlockBehaviour.Properties.of()
                     .strength(40.0f, 1000f)

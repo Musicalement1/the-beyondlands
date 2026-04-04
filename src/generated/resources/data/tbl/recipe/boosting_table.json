@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "s": {
+      "item": "tbl:enchantite_shard"
+    },
+    "t": {
+      "item": "minecraft:enchanting_table"
+    }
+  },
+  "pattern": [
+    "dsd",
+    "sts",
+    "dsd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:boosting_table"
+  }
+}

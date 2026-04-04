@@ -38,7 +38,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CORIUM);
         blockWithItem(ModBlocks.LITHIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_LITHIUM_BLOCK);
-
+        blockWithItem(ModBlocks.BOOSTING_TABLE);
         blockWithItem(ModBlocks.LITHIUM_ORE);
         blockWithItem(ModBlocks.LITHIUM_DEEPSLATE_ORE);
 

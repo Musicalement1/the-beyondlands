@@ -1,6 +1,7 @@
-// 1.21.1	2026-03-21T15:14:36.753003	Recipes
+// 1.21.1	2026-04-04T20:00:07.395321	Recipes
 522d1dc705653a1b9468ab41514fc8e9753cb622 data/tbl/advancement/recipes/misc/ash_planks.json
 00518a8cd6606fb0128c651b7add8bcfdb5e2e21 data/tbl/advancement/recipes/misc/ash_wood.json
+d93f6df05fc8c57e04675f89033c215f3d9a3fdf data/tbl/advancement/recipes/misc/boosting_table.json
 c43dd2d736da24c00d2b09418c25f72a7df22a6e data/tbl/advancement/recipes/misc/force_field_block.json
 288fc24f65d5765c939c55b2cd90e824e6437ba0 data/tbl/advancement/recipes/misc/force_field_block_2.json
 249fd6fcab6802fc9c89393fc65dace4c4e5e2eb data/tbl/advancement/recipes/misc/force_field_block_attract.json
@@ -32,6 +33,7 @@ fd40ba96d0c2a238fffb8db66846226c2675a598 data/tbl/advancement/recipes/misc/steel
 c14365be7d1c52451af12648d3e5b393c645668b data/tbl/advancement/recipes/misc/steel_sword.json
 c01f4b6b05e6d56eeefcfa516a2d7816ae165035 data/tbl/recipe/ash_planks.json
 16ab667e139b828ee46693ac48571fcdbdd4f679 data/tbl/recipe/ash_wood.json
+0a1be616f7f8d2f96483e0fc288787468bc082c1 data/tbl/recipe/boosting_table.json
 f4d906d2c289bd3caff0e0ccf2667e9b81a21fae data/tbl/recipe/force_field_block.json
 2db724809bafa0d6b30dc5ea6cb15385f01e61d4 data/tbl/recipe/force_field_block_2.json
 92d9f18a432d052705bd923860e63ea339bad6a9 data/tbl/recipe/force_field_block_attract.json
