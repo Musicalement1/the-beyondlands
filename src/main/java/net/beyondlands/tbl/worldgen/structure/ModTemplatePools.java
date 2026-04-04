@@ -125,6 +125,10 @@ public class ModTemplatePools {
                                         1//dead end with corium
                                 ),
                                 Pair.of(
+                                        StructurePoolElement.single("tbl:lab_ruins/rooms/room10", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),
+                                        1//Redstone tests room
+                                ),
+                                Pair.of(
                                         StructurePoolElement.single("tbl:lab_ruins/corridors/c1", processors.getOrThrow(ModProcessorsList.LAB_RUINS)),//sometimes a corridor makes another corrido
                                         1
                                 ),

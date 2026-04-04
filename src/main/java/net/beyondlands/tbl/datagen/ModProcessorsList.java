@@ -69,10 +69,15 @@ public class ModProcessorsList {
                                                         Blocks.CRACKED_POLISHED_BLACKSTONE_BRICKS.defaultBlockState()
                                                 ),
                                                 new ProcessorRule(
-                                                        new RandomBlockMatchTest(Blocks.AIR, 0.02F),
+                                                        new RandomBlockMatchTest(Blocks.AIR, 0.005F),
                                                         AlwaysTrueTest.INSTANCE,
                                                         ModBlocks.CORIUM.get().defaultBlockState()
                                                 )
+                                                /*new ProcessorRule(
+                                                        new BlockMatchTest(ModBlocks.GNEISS.get()),//anti corium feature
+                                                        AlwaysTrueTest.INSTANCE,
+                                                        Blocks.AIR.defaultBlockState()
+                                                )*/
                                         )
                                 )
                         )
