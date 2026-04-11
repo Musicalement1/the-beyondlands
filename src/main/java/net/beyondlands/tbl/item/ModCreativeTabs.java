@@ -37,6 +37,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.ASH.get());
                         output.accept(ModItems.ASHLING_SPAWN_EGG.get());
                         output.accept(ModItems.ASH_ZOMBIE_SPAWN_EGG.get());
+                        output.accept(ModItems.NUKER_SPAWN_EGG.get());
                         output.accept(ModItems.STEEL_SWORD.get());
                         output.accept(ModItems.STEEL_KNIFE.get());
                         output.accept(ModItems.STEEL_AXE.get());
@@ -61,12 +62,12 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.LAB_BLOCK.get());
                         output.accept(ModBlocks.GATE_OPENER.get());
                         output.accept(ModBlocks.CORIUM.get());
-                        output.accept(ModItems.NUKER_SPAWN_EGG.get());
                         output.accept(ModBlocks.GREEN_MUSHROOM.get());
                         output.accept(ModBlocks.GREEN_MUSHROOM_BLOCK.get());
                         output.accept(ModItems.PROTOTYPE_002.get());
                         output.accept(ModItems.ENCHANTITE_SHARD.get());
                         output.accept(ModBlocks.BOOSTING_TABLE.get());
+                        output.accept(ModBlocks.PROPULSOR.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

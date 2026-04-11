@@ -33,6 +33,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.CORIUM.get())
                 .add(ModBlocks.GATE_OPENER.get());
 
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.PROPULSOR.get());
+
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LITHIUM_ORE.get())
                 .add(ModBlocks.RAW_LITHIUM_BLOCK.get())

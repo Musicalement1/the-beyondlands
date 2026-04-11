@@ -5,6 +5,7 @@ import net.beyondlands.tbl.TBL;
 import net.beyondlands.tbl.block.crop.PepperCropBlock;
 import net.beyondlands.tbl.block.other.GreenMushroom;
 import net.beyondlands.tbl.block.other.ModFlammableRotatedPillarBlock;
+import net.beyondlands.tbl.block.other.PropulsorBlock;
 import net.beyondlands.tbl.item.ModItems;
 import net.beyondlands.tbl.worldgen.ModConfiguredFeatures;
 import net.beyondlands.tbl.worldgen.ModFeatures;
@@ -177,6 +178,14 @@ public class ModBlocks {
                             .strength(0.2F)
                             .sound(SoundType.WOOD)
                             .ignitedByLava()
+            )
+            );
+
+    public static final DeferredBlock<Block> PROPULSOR = registerBlock("propulsor",
+            () -> new PropulsorBlock(BlockBehaviour.Properties.of()
+                    .strength(2.4f, 3.0f)
+                    .sound(SoundType.WOOD)
+                    .lightLevel((state) -> 15)
             )
             );
 

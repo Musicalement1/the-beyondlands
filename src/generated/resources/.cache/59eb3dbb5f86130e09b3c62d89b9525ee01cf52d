@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-04T19:54:40.441788	Loot Tables
+// 1.21.1	2026-04-11T14:25:13.298071	Loot Tables
 2ef0ee75333f35bc0e0fd8852ab19400a0d4f236 data/tbl/loot_table/blocks/ash_leaves.json
 300d47a08d0f4f4eedef063c0a3a77e19b78ad7b data/tbl/loot_table/blocks/ash_log.json
 b6453959b3057c201ad7bc22f6da3cbd1acad075 data/tbl/loot_table/blocks/ash_planks.json
@@ -17,6 +17,7 @@ d6766d6c8651681d5d02a09adcfcb4f7c9b0e15e data/tbl/loot_table/blocks/lithium_bloc
 eae59fcd4063af4cdafaff659797d74620debe45 data/tbl/loot_table/blocks/lithium_deepslate_ore.json
 549377a6aa1c71e2f487325ee6a37a5dadc0a9e6 data/tbl/loot_table/blocks/lithium_ore.json
 ccf0011474b4155bd3f6afe74898712d248ab558 data/tbl/loot_table/blocks/pepper_crop.json
+16a512214c2be3ca557f5adfd67e3d7d79504af6 data/tbl/loot_table/blocks/propulsor.json
 fc852f09e656393be6682ec21f0827a78a211ef0 data/tbl/loot_table/blocks/raw_lithium_block.json
 7220b9dd89dd58ca4e36c825c31f91761ccdc95d data/tbl/loot_table/blocks/stripped_ash_log.json
 891fc73519871b50540c9701543924cd764c1861 data/tbl/loot_table/blocks/stripped_ash_wood.json
