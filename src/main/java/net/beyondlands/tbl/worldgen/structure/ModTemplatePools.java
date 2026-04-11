@@ -31,6 +31,12 @@ public class ModTemplatePools {
                     TBL.prefix("lab_ruins/lab_ruins_pool")
             );
 
+    public static final ResourceKey<StructureTemplatePool> WATCHTOWER_POOL =
+            ResourceKey.create(
+                    Registries.TEMPLATE_POOL,
+                    TBL.prefix("watchtower/wathtower_pool")
+            );
+
     public static final ResourceKey<StructureTemplatePool> LAB_RUINS_ROOMS =
             ResourceKey.create(
                     Registries.TEMPLATE_POOL,
@@ -41,6 +47,12 @@ public class ModTemplatePools {
             ResourceKey.create(
                     Registries.TEMPLATE_POOL,
                     TBL.prefix("lab_ruins/lab_ruins_corridors")
+            );
+
+    public static final ResourceKey<StructureTemplatePool> WATCHTOWER_EASY =
+            ResourceKey.create(
+                    Registries.TEMPLATE_POOL,
+                    TBL.prefix("watchtower/easy")
             );
 
     public static void bootstrap(BootstrapContext<StructureTemplatePool> context) {
@@ -174,6 +186,34 @@ public class ModTemplatePools {
                                 Pair.of(
                                         StructurePoolElement.empty(),
                                         4//meh, dead end but works
+                                )
+                        ),
+                        StructureTemplatePool.Projection.RIGID
+                )
+        );
+        context.register(
+                WATCHTOWER_POOL,
+                new StructureTemplatePool(
+                        context.lookup(Registries.TEMPLATE_POOL)
+                                .getOrThrow(Pools.EMPTY),
+                        List.of(
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:watchtower/entrances/entrance"),
+                                        1
+                                )
+                        ),
+                        StructureTemplatePool.Projection.RIGID
+                )
+        );
+        context.register(
+                WATCHTOWER_EASY,
+                new StructureTemplatePool(
+                        context.lookup(Registries.TEMPLATE_POOL)
+                                .getOrThrow(Pools.EMPTY),
+                        List.of(
+                                Pair.of(
+                                        StructurePoolElement.single("tbl:watchtower/easy/1"),
+                                        20
                                 )
                         ),
                         StructureTemplatePool.Projection.RIGID

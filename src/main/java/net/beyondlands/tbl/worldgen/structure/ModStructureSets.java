@@ -28,6 +28,12 @@ public class ModStructureSets {
                     TBL.prefix("lab_ruins")
             );
 
+    public static final ResourceKey<StructureSet> WATCHTOWER_SET =
+            ResourceKey.create(
+                    Registries.STRUCTURE_SET,
+                    TBL.prefix("watchtower")
+            );
+
     public static void bootstrap(BootstrapContext<StructureSet> context) {
 
         HolderGetter<Structure> structures = context.lookup(Registries.STRUCTURE);
@@ -54,6 +60,19 @@ public class ModStructureSets {
                                 10,
                                 RandomSpreadType.LINEAR,
                                 13307657
+                        )
+                )
+        );
+
+        context.register(
+                WATCHTOWER_SET,
+                new StructureSet(
+                        List.of(new StructureSet.StructureSelectionEntry(structures.getOrThrow(ModStructures.WATCHTOWER), 1)),
+                        new RandomSpreadStructurePlacement(
+                                32,
+                                20,
+                                RandomSpreadType.LINEAR,
+                                13307659
                         )
                 )
         );

@@ -28,6 +28,9 @@ public class ModStructures {
     public static final ResourceKey<Structure> LAB_RUINS =
             ResourceKey.create(Registries.STRUCTURE, TBL.prefix("lab_ruins"));
 
+    public static final ResourceKey<Structure> WATCHTOWER =
+            ResourceKey.create(Registries.STRUCTURE, TBL.prefix("watchtower"));
+
 
     public static void bootstrap(BootstrapContext<Structure> context) {
 
@@ -64,6 +67,23 @@ public class ModStructures {
                         ),
                         pools.getOrThrow(ModTemplatePools.LAB_RUINS_POOL),
                         8,
+                        ConstantHeight.of(VerticalAnchor.absolute(0)),
+                        false,
+                        Heightmap.Types.WORLD_SURFACE_WG
+                )
+        );
+
+        context.register(
+                WATCHTOWER,
+                new JigsawStructure(
+                        new Structure.StructureSettings(
+                                biomes.getOrThrow(ModBiomeTagGenerator.CORIUM_FEATURES_SPAWN_IN),
+                                Map.of(),
+                                GenerationStep.Decoration.SURFACE_STRUCTURES,
+                                TerrainAdjustment.BEARD_THIN
+                        ),
+                        pools.getOrThrow(ModTemplatePools.WATCHTOWER_POOL),
+                        10,
                         ConstantHeight.of(VerticalAnchor.absolute(0)),
                         false,
                         Heightmap.Types.WORLD_SURFACE_WG

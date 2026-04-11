@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-04T11:22:19.374653	Registries
+// 1.21.1	2026-04-11T18:05:14.373174	Registries
 824636862521d5e172cf75da82bf573bc829a260 data/tbl/dimension/bldim.json
 c14e833dc026adb0577cb956da5a50be31bc70b0 data/tbl/dimension_type/bldim_type.json
 22d019ebf394f561cfcf75edeb71051091b6e3b0 data/tbl/neoforge/biome_modifier/add_corium.json
@@ -22,9 +22,13 @@ bb3c7bc42b4d74f18c1744a1306a7bd7984cfb49 data/tbl/worldgen/placed_feature/huge_g
 f44d29eb73bdd41810d4b597b03c3cfa8cf91fc2 data/tbl/worldgen/processor_list/lab_ruins_reactor.json
 4311e64b316c63b5c0d790f9109130f56b847cc0 data/tbl/worldgen/structure/ashling_ruins.json
 fdf6223a39fa0e14d1f998fd2d6f92df1eaab243 data/tbl/worldgen/structure/lab_ruins.json
+db53c2cd577f05dfec2530076ef398efbcb3d484 data/tbl/worldgen/structure/watchtower.json
 a8081a4dc838f092c20535d01e1b356865383041 data/tbl/worldgen/structure_set/ashling_ruins.json
 170b75baccb5625c9d05b98bf3438eaa26988962 data/tbl/worldgen/structure_set/lab_ruins.json
+4f5c0993a8198414664708ddf4c4000453951cf1 data/tbl/worldgen/structure_set/watchtower.json
 ae105fc4635bba18a14707cc48cd5a17e0247a0a data/tbl/worldgen/template_pool/ashling_ruins_pool.json
 e0eb1050396fbe1c98bd1ecd7bdbf08f6ef8fa7c data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_corridors.json
 d27ae55f286a1df136c44af858b8dc8aff224747 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_pool.json
 278fd37f6ed9305fb1ead6f29a5f02eae2984010 data/tbl/worldgen/template_pool/lab_ruins/lab_ruins_rooms.json
+5102314f56d499e1e5cb6f745ba45012772111ff data/tbl/worldgen/template_pool/watchtower/easy.json
+3b15b76b1d4a0b268aee3c06c57e410f06578f75 data/tbl/worldgen/template_pool/watchtower/wathtower_pool.json
