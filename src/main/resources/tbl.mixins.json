@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "net.beyondlands.tbl.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["NetherWartBlockMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
