@@ -141,7 +141,7 @@ public class TBlItems {
                     .attributes(HoeItem.createAttributes(TBlToolTiers.STEEL, 0, -3.0f))));
     public static final DeferredItem<Item> STEEL_KNIFE = ITEMS.register("steel_knife",
             () -> new SwordItem(TBlToolTiers.STEEL, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(TBlToolTiers.STEEL, 1.5f, -0.2f))));
+                    .attributes(SwordItem.createAttributes(TBlToolTiers.STEEL, 1.5f, 1.0f))));
 
     public static final DeferredItem<Item> STEEL_HAMMER = ITEMS.register("steel_hammer",
             () -> new HammerItem(TBlToolTiers.STEEL, new Item.Properties()

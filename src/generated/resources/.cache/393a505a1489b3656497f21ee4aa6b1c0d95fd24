@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-11T14:25:13.306906	Block States: tbl
+// 1.21.1	2026-05-09T18:37:08.25523	Block States: tbl
 524a44c240615f6bf67684cc9ae07dad81dcc7f1 assets/tbl/blockstates/ash_block.json
 a9040f7253666065fcdc0f3279d93e2c9238a8a0 assets/tbl/blockstates/ash_leaves.json
 59c4179de6339e891e75c2da9bef1bc69d9a5923 assets/tbl/blockstates/ash_log.json
@@ -18,6 +18,7 @@ e01929e40bcf0bc1ffef64c46691e013af6dde47 assets/tbl/blockstates/green_mushroom.j
 a7355a03c86d164257e1b41b6ac8499541d29b1d assets/tbl/blockstates/lithium_block.json
 14ff253ba6947b4678425ba9e858d4358fdaf940 assets/tbl/blockstates/lithium_deepslate_ore.json
 2a997f2dd7b948fd26be7df7b8dfc262a0762086 assets/tbl/blockstates/lithium_ore.json
+939d0df7a13616bd6b7c80c22bfbc151cfb33a2e assets/tbl/blockstates/napalm.json
 7ada05dc3d93b94676921faa24270b2507f2976a assets/tbl/blockstates/pepper_crop.json
 fd312053b7c0c0dcc710c479508e1e19f2119a1b assets/tbl/blockstates/propulsor.json
 567b2b561e29d603d9b0713efe1a9248170b1b86 assets/tbl/blockstates/raw_lithium_block.json
@@ -69,6 +70,7 @@ b54df19c523027d33551f02aa7082242ffe20aab assets/tbl/models/item/lab_block.json
 d6d9fcea27ce62e92269b6f941354bd0b91e9444 assets/tbl/models/item/lithium_block.json
 3b08354be36ad7836316d04113043edfc54dac84 assets/tbl/models/item/lithium_deepslate_ore.json
 86cb27043e4f1140e1ec34132a2d3f2ec5b117e8 assets/tbl/models/item/lithium_ore.json
+c191dc113ab0f4f3722b39f4e2a8500ca7682332 assets/tbl/models/item/napalm.json
 e5ee1c162035fc5fe2312e5b1e3d58214228caf9 assets/tbl/models/item/propulsor.json
 f73d20ef176d4719c6e574bc9e9217dff1b338f9 assets/tbl/models/item/raw_lithium_block.json
 1c59a27a23ce8589a03375ca5352f0a3eaadc4af assets/tbl/models/item/stripped_ash_log.json

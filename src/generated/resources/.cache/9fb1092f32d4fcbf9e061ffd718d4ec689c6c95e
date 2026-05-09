@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-04T20:00:07.395321	Recipes
+// 1.21.1	2026-05-09T21:18:13.463921	Recipes
 522d1dc705653a1b9468ab41514fc8e9753cb622 data/tbl/advancement/recipes/misc/ash_planks.json
 00518a8cd6606fb0128c651b7add8bcfdb5e2e21 data/tbl/advancement/recipes/misc/ash_wood.json
 d93f6df05fc8c57e04675f89033c215f3d9a3fdf data/tbl/advancement/recipes/misc/boosting_table.json
@@ -17,6 +17,7 @@ eea4cbb026ee0da07bec14462455155004e7c7ac data/tbl/advancement/recipes/misc/lithi
 83f4cc22688f1ed905a964a66cac44bedcc44851 data/tbl/advancement/recipes/misc/lithium_from_smelting_lithium_deepslate_ore.json
 097d567ec541ac1f60fdd27940a9f35840d5c57a data/tbl/advancement/recipes/misc/lithium_from_smelting_lithium_ore.json
 b85f03956f9bdd0628258722fa12e632dcc4f0d1 data/tbl/advancement/recipes/misc/lithium_from_smelting_raw_lithium.json
+8aba6dfdc662a5df8bcb3802e7431e319a7106d2 data/tbl/advancement/recipes/misc/napalm.json
 7174e61b5d194f40819e3d47e59b275bb6a53040 data/tbl/advancement/recipes/misc/raw_lithium.json
 da33137c497f411ef565d968d635ac5aa1abdfe9 data/tbl/advancement/recipes/misc/raw_lithium_block.json
 88ad4c02b7350328d0c188675427615575384102 data/tbl/advancement/recipes/misc/steel_axe.json
@@ -49,6 +50,7 @@ c3904b3c5fc3ab2de19683917a329df10c2b17b8 data/tbl/recipe/lithium_from_blasting_r
 1dddf88e8c9304b97d9c78b177a0121dd5f723c4 data/tbl/recipe/lithium_from_smelting_lithium_deepslate_ore.json
 06b09b9a91ac3ca2795ebab15b9ee8e55fc78510 data/tbl/recipe/lithium_from_smelting_lithium_ore.json
 1a3cded3a19ffb59eb057597913b2032446908ed data/tbl/recipe/lithium_from_smelting_raw_lithium.json
+886cbf725cbb13c6a2e694480cafaa7449c8b51a data/tbl/recipe/napalm.json
 0ef8f593e53aaae5cfaf81bef2439a6a9ec198f2 data/tbl/recipe/raw_lithium.json
 6f478e44f4a27abca078c4965d113fcfb8845596 data/tbl/recipe/raw_lithium_block.json
 0b6872bed7d98228d5c90f5a18c76973379fa43b data/tbl/recipe/steel_axe.json

@@ -3,6 +3,7 @@ package net.musicalement.tbl.block;
 
 import net.musicalement.tbl.TBL;
 import net.musicalement.tbl.block.crop.PepperCropBlock;
+import net.musicalement.tbl.block.explosives.NapalmBlock;
 import net.musicalement.tbl.block.other.GreenMushroom;
 import net.musicalement.tbl.block.other.TBlFlammableRotatedPillarBlock;
 import net.musicalement.tbl.block.other.PropulsorBlock;
@@ -184,6 +185,13 @@ public class TBlBlocks {
                     .strength(2.4f, 3.0f)
                     .sound(SoundType.WOOD)
                     .lightLevel((state) -> 15)
+            )
+            );
+
+    public static final DeferredBlock<Block> NAPALM = registerBlock("napalm",
+            () -> new NapalmBlock(BlockBehaviour.Properties.of()
+                    .strength(2.0f, 0.0f)
+                    .sound(SoundType.HEAVY_CORE)
             )
             );
 

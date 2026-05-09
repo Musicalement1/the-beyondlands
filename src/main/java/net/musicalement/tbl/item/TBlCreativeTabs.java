@@ -68,6 +68,7 @@ public class TBlCreativeTabs {
                         output.accept(TBlItems.ENCHANTITE_SHARD.get());
                         output.accept(TBlBlocks.BOOSTING_TABLE.get());
                         output.accept(TBlBlocks.PROPULSOR.get());
+                        output.accept(TBlBlocks.NAPALM.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

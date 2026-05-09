@@ -224,7 +224,15 @@ public class TBlRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(TBlItems.ENCHANTITE_SHARD.get()), has(TBlItems.ENCHANTITE_SHARD.get()))
                 .save(pRecipeOutput);
 
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, TBlBlocks.NAPALM.get(), 1)
+                .pattern("asa")
+                .pattern("sts")
+                .pattern("asa")
+                .define(('t'), Blocks.TNT)
+                .define(('s'), TBlItems.ASH.get())
+                .define(('a'), TBlItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(TBlItems.STEEL_INGOT.get()), has(TBlItems.STEEL_INGOT.get()))
+                .save(pRecipeOutput);
     }
 
 

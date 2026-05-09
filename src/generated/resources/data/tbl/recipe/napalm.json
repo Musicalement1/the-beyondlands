@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "tbl:steel_ingot"
+    },
+    "s": {
+      "item": "tbl:ash"
+    },
+    "t": {
+      "item": "minecraft:tnt"
+    }
+  },
+  "pattern": [
+    "asa",
+    "sts",
+    "asa"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tbl:napalm"
+  }
+}

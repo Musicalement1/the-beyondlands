@@ -21,7 +21,7 @@
 
   "entity.tbl.ashling": "Ashling",
   "item.tbl.pepper": "Bell Pepper",
-  "item.tbl.ash": "Ashes",
+  "item.tbl.ash": "Heated Powder Catalyst",
   "item.tbl.ashling_spawn_egg": "Ashling Spawn Egg",
   "item.tbl.nuker_spawn_egg": "Nuker Spawn Egg",
 
@@ -96,6 +96,7 @@
   "block.tbl.boosting_table": "Boosting Table",
   "item.tbl.enchantite_shard": "Enchantite Shard",
   "block.tbl.propulsor": "Propulsor",
+  "block.tbl.napalm": "Napalm",
 
   "item.tbl.prototype_002": "§c§oPrototype 002§r§r"
 }

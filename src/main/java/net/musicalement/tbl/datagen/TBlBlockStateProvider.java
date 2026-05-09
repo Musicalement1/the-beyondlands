@@ -37,6 +37,7 @@ public class TBlBlockStateProvider extends BlockStateProvider {
         getExistingModel(TBlBlocks.FORCE_FIELD_BLOCK_ATTRACT, "force_field_block_attract");
         getExistingModel(TBlBlocks.GATE_OPENER, "gate_opener");
         getExistingModel(TBlBlocks.PROPULSOR, "propulsor");
+        getExistingModel(TBlBlocks.NAPALM, "napalm");
 
         logBlock(TBlBlocks.ASH_LOG.get());
         axisBlock(TBlBlocks.ASH_WOOD.get(), blockTexture(TBlBlocks.ASH_LOG.get()), blockTexture(TBlBlocks.ASH_LOG.get()));
