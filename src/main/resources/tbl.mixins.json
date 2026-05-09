@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.beyondlands.tbl.mixins",
+  "package": "net.musicalement.tbl.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["NetherWartBlockMixin"],
   "injectors": {
