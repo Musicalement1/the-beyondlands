@@ -41,6 +41,7 @@ public class TBlBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(TBlBlocks.BOOSTING_TABLE.get());
         dropSelf(TBlBlocks.PROPULSOR.get());
         dropSelf(TBlBlocks.NAPALM.get());
+        dropSelf(TBlBlocks.NUKE.get());
 
         this.add(TBlBlocks.LITHIUM_ORE.get(),
                 block -> createOreDrop(TBlBlocks.LITHIUM_ORE.get(), TBlItems.RAW_LITHIUM.get()));

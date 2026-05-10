@@ -38,6 +38,7 @@ public class TBlBlockStateProvider extends BlockStateProvider {
         getExistingModel(TBlBlocks.GATE_OPENER, "gate_opener");
         getExistingModel(TBlBlocks.PROPULSOR, "propulsor");
         getExistingModel(TBlBlocks.NAPALM, "napalm");
+        getExistingModel(TBlBlocks.NUKE, "nuke");
 
         logBlock(TBlBlocks.ASH_LOG.get());
         axisBlock(TBlBlocks.ASH_WOOD.get(), blockTexture(TBlBlocks.ASH_LOG.get()), blockTexture(TBlBlocks.ASH_LOG.get()));

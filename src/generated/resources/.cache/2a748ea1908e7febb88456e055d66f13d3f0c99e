@@ -1,7 +1,7 @@
-// 1.21.1	2026-05-09T18:37:08.250151	Tags for minecraft:block mod id tbl
+// 1.21.1	2026-05-10T09:34:53.569718	Tags for minecraft:block mod id tbl
 02b96716b80335d5852829788d88dccaad7bba44 data/minecraft/tags/block/logs_that_burn.json
 ea19c0802bd4dd6ea57ceefbaead61b532d712c6 data/minecraft/tags/block/mineable/axe.json
-6a9e8a8b109bcf222aca1d4355596ec0b6aa9406 data/minecraft/tags/block/mineable/pickaxe.json
+ed259d80fe630f7a5c80cf843be742ffc886415d data/minecraft/tags/block/mineable/pickaxe.json
 18c2437ac39fb6991f033d2691556ed57a0d0488 data/minecraft/tags/block/needs_diamond_tool.json
 0cb43449944dba57e1957c30f58a8e14e8df034d data/minecraft/tags/block/needs_iron_tool.json
 6c16966ed66ec86f62458876000881e95e8ef2bc data/tbl/tags/block/incorrect_for_steel_tool.json

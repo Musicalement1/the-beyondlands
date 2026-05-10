@@ -4,11 +4,13 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import net.musicalement.tbl.item.TBlItems;
 
 import java.util.List;
 
@@ -45,8 +47,14 @@ public class CoriumBlock extends Block {
 
         for (Entity entity : entities) {
             boolean isLiving = entity instanceof LivingEntity living && !living.isDeadOrDying();
+            boolean wearSteel = false;
+            if (entity instanceof LivingEntity living) {
+                if (living.getItemBySlot(EquipmentSlot.CHEST).is(TBlItems.STEEL_CHESTPLATE) || living.getItemBySlot(EquipmentSlot.HEAD).is(TBlItems.STEEL_HELMET) || living.getItemBySlot(EquipmentSlot.LEGS).is(TBlItems.STEEL_LEGGINGS) || living.getItemBySlot(EquipmentSlot.FEET).is(TBlItems.STEEL_BOOTS)) {
+                    wearSteel = true;
+                }
+            }
 
-            if (isLiving) {
+            if (isLiving && !wearSteel) {
                 entity.hurt(level.damageSources().hotFloor(), 8.0F);
             }
         }

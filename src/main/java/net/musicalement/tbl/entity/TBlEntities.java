@@ -3,6 +3,7 @@ package net.musicalement.tbl.entity;
 import net.musicalement.tbl.TBL;
 import net.musicalement.tbl.entity.custom.AshZombie;
 import net.musicalement.tbl.entity.custom.AshlingEntity;
+import net.musicalement.tbl.entity.custom.NukeExplosionEntity;
 import net.musicalement.tbl.entity.custom.NukerEntity;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -25,6 +26,16 @@ public class TBlEntities {
     public static final Supplier<EntityType<NukerEntity>> NUKER =
             ENTITY_TYPES.register("nuker", () -> EntityType.Builder.of(NukerEntity::new, MobCategory.MONSTER)
                     .sized(0.6f * 1.3f, 1.7f * 1.3f).build("nuker"));
+    public static final Supplier<EntityType<NukeExplosionEntity>> NUKE_EXPLOSION =
+            ENTITY_TYPES.register(
+                    "nuke_explosion",
+                    () -> EntityType.Builder.<NukeExplosionEntity>of(
+                                    NukeExplosionEntity::new,
+                                    MobCategory.MISC
+                            )
+                            .sized(1f, 1f)
+                            .build("nuke_explosion")
+            );
 
 
 

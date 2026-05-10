@@ -4,6 +4,7 @@ package net.musicalement.tbl.block;
 import net.musicalement.tbl.TBL;
 import net.musicalement.tbl.block.crop.PepperCropBlock;
 import net.musicalement.tbl.block.explosives.NapalmBlock;
+import net.musicalement.tbl.block.explosives.NukeBlock;
 import net.musicalement.tbl.block.other.GreenMushroom;
 import net.musicalement.tbl.block.other.TBlFlammableRotatedPillarBlock;
 import net.musicalement.tbl.block.other.PropulsorBlock;
@@ -194,6 +195,13 @@ public class TBlBlocks {
                     .sound(SoundType.HEAVY_CORE)
             )
             );
+
+    public static final DeferredBlock<Block> NUKE = registerBlock("nuke",
+            () -> new NukeBlock(BlockBehaviour.Properties.of()
+                    .strength(8.0f, 4.0f)
+                    .sound(SoundType.HEAVY_CORE)
+            )
+    );
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

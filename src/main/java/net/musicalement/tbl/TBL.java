@@ -4,6 +4,7 @@ import net.musicalement.tbl.block.TBlBlocks;
 import net.musicalement.tbl.entity.TBlEntities;
 import net.musicalement.tbl.entity.client.AshZombieRenderer;
 import net.musicalement.tbl.entity.client.AshlingRenderer;
+import net.musicalement.tbl.entity.client.NukeExplosionEntityRenderer;
 import net.musicalement.tbl.entity.client.NukerRenderer;
 import net.musicalement.tbl.item.TBlCreativeTabs;
 import net.musicalement.tbl.item.TBlItems;
@@ -102,6 +103,7 @@ public class TBL
             EntityRenderers.register(TBlEntities.ASHLING.get(), AshlingRenderer::new);
             EntityRenderers.register(TBlEntities.ASH_ZOMBIE.get(), AshZombieRenderer::new);
             EntityRenderers.register(TBlEntities.NUKER.get(), NukerRenderer::new);
+            EntityRenderers.register(TBlEntities.NUKE_EXPLOSION.get(), NukeExplosionEntityRenderer::new);
             TBlItemProperties.addCustomItemProperties();
         }
 

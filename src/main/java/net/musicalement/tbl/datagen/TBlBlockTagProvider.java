@@ -32,8 +32,9 @@ public class TBlBlockTagProvider extends BlockTagsProvider {
                 .add(TBlBlocks.LAB_BLOCK.get())
                 .add(TBlBlocks.CORIUM.get())
                 .add(TBlBlocks.GATE_OPENER.get())
-                .add(TBlBlocks.NAPALM.get());
-                
+                .add(TBlBlocks.NAPALM.get())
+                .add(TBlBlocks.NUKE.get());
+
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(TBlBlocks.PROPULSOR.get());
 

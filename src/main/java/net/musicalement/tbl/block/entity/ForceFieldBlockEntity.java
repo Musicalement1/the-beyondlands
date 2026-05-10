@@ -1,5 +1,6 @@
 package net.musicalement.tbl.block.entity;
 
+import net.minecraft.world.entity.EquipmentSlot;
 import net.musicalement.tbl.block.ForceFieldBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
@@ -12,6 +13,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.item.FallingBlockEntity;
+import net.musicalement.tbl.item.TBlItems;
+import net.musicalement.tbl.util.TBlTags;
 
 
 import java.util.List;
@@ -86,8 +89,15 @@ public class ForceFieldBlockEntity extends BlockEntity {
             boolean isProjectile = entity instanceof Projectile;
             boolean isItem = entity instanceof ItemEntity;
             boolean isFalling = entity instanceof FallingBlockEntity;
+            boolean fieldignore = false;
+            if (entity instanceof LivingEntity living) {
+                if (living.getItemBySlot(EquipmentSlot.CHEST).is(TBlItems.STEEL_CHESTPLATE) || living.getItemBySlot(EquipmentSlot.HEAD).is(TBlItems.STEEL_HELMET) || living.getItemBySlot(EquipmentSlot.LEGS).is(TBlItems.STEEL_LEGGINGS) || living.getItemBySlot(EquipmentSlot.FEET).is(TBlItems.STEEL_BOOTS) || living.getMainHandItem().is(TBlTags.Items.BATTERY) || living.getOffhandItem().is(TBlTags.Items.BATTERY)) {
+                    fieldignore = true;
+                }
+            }
 
-            if (isLiving || isProjectile  || isItem || isFalling) {
+
+            if ((isLiving && !fieldignore) || isProjectile  || isItem || isFalling) {
                 applyForceToEntity(entity, center, be.getForce(), be.getMaxDistSq(), be.isRepulse());
             }
         }
